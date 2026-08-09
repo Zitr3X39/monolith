@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-08T17:57:10.509228+00:00",
+ "updated_at": "2026-08-09T07:44:21.802344+00:00",
  "meta": {
-  "fresh": 17,
-  "rejected": 15,
+  "fresh": 15,
+  "rejected": 17,
   "ai": 0
  },
  "items": [
@@ -31,7 +31,7 @@
    "domain": "github.com",
    "score": 2483,
    "source_score": 2483,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "PrimeIntellect-ai/prime-agent",
    "summary_ru": "Самосовершенствующийся агент RLM для рабочих процессов кодирования и длительных автономных задач.",
    "description_ru": "Самосовершенствующийся агент RLM для рабочих процессов кодирования и длительных автономных задач.",
@@ -41,7 +41,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/mattpocock/skills",
@@ -65,9 +65,9 @@
    "topic": "ai-skills",
    "topic_name": "AI-скиллы",
    "domain": "github.com",
-   "score": 1354,
-   "source_score": 1354,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "score": 1359,
+   "source_score": 1359,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "mattpocock/skills",
    "summary_ru": "Навыки для настоящих инженеров. Прямо из моего каталога .agents.",
    "description_ru": "Навыки для настоящих инженеров. Прямо из моего каталога .agents.",
@@ -77,7 +77,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/addyosmani/agent-skills",
@@ -101,9 +101,9 @@
    "topic": "ai-skills",
    "topic_name": "AI-скиллы",
    "domain": "github.com",
-   "score": 778,
-   "source_score": 778,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "score": 779,
+   "source_score": 779,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "addyosmani/agent-skills",
    "summary_ru": "Инженерные навыки производственного уровня для агентов кодирования ИИ.",
    "description_ru": "Инженерные навыки производственного уровня для агентов кодирования ИИ.",
@@ -113,7 +113,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 99,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/google/skills",
@@ -139,7 +139,7 @@
    "domain": "github.com",
    "score": 481,
    "source_score": 481,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "google/skills",
    "summary_ru": "Навыки агента для продуктов и технологий Google",
    "description_ru": "Навыки агента для продуктов и технологий Google",
@@ -149,7 +149,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 92,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/goauthentik/authentik",
@@ -175,7 +175,7 @@
    "domain": "github.com",
    "score": 467,
    "source_score": 467,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "goauthentik/authentik",
    "summary_ru": "Клей для аутентификации, который вам нужен.",
    "description_ru": "Клей для аутентификации, который вам нужен.",
@@ -185,7 +185,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 92,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/denoland/celld",
@@ -211,7 +211,7 @@
    "domain": "github.com",
    "score": 432,
    "source_score": 432,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "denoland/celld",
    "summary_ru": "самостоятельные, распределенные устойчивые объекты",
    "description_ru": "самостоятельные, распределенные устойчивые объекты",
@@ -221,7 +221,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 91,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://simonwillison.net/2026/Aug/7/openai-timeline",
@@ -281,9 +281,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 126,
-   "source_score": 126,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "score": 153,
+   "source_score": 153,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "TauricResearch/TradingAgents",
    "summary_ru": "TradingAgents: мультиагентная система финансовой торговли LLM",
    "description_ru": "TradingAgents: мультиагентная система финансовой торговли LLM",
@@ -292,8 +292,8 @@
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 83,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "quality_score": 84,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/google/guava",
@@ -319,7 +319,7 @@
    "domain": "github.com",
    "score": 93,
    "source_score": 93,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "google/guava",
    "summary_ru": "Основные библиотеки Google для Java",
    "description_ru": "Основные библиотеки Google для Java",
@@ -329,43 +329,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 82,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
-  },
-  {
-   "url": "https://github.com/LadybirdBrowser/ladybird",
-   "url_key": "github.com/ladybirdbrowser/ladybird",
-   "canonical_url": "https://github.com/LadybirdBrowser/ladybird",
-   "title": "LadybirdBrowser/ladybird",
-   "title_original": "LadybirdBrowser/ladybird",
-   "description": "Truly independent web browser",
-   "image": "https://opengraph.githubassets.com/1/LadybirdBrowser/ladybird",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/LadybirdBrowser/ladybird"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 79,
-   "source_score": 79,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
-   "title_ru": "LadybirdBrowser/ladybird",
-   "summary_ru": "По-настоящему независимый веб-браузер",
-   "description_ru": "По-настоящему независимый веб-браузер",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 82,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/litu54/DevOps-Interview-Guide",
@@ -389,9 +353,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 59,
-   "source_score": 59,
-   "found_at": "2026-08-08T17:57:10.509228+00:00",
+   "score": 68,
+   "source_score": 68,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
    "title_ru": "litu54/DevOps-Interview-Guide",
    "summary_ru": "Руководство по собеседованию DevOps",
    "description_ru": "Руководство по собеседованию DevOps",
@@ -400,8 +364,224 @@
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
+   "quality_score": 82,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://github.com/LadybirdBrowser/ladybird",
+   "url_key": "github.com/ladybirdbrowser/ladybird",
+   "canonical_url": "https://github.com/LadybirdBrowser/ladybird",
+   "title": "LadybirdBrowser/ladybird",
+   "title_original": "LadybirdBrowser/ladybird",
+   "description": "Truly independent web browser",
+   "image": "https://opengraph.githubassets.com/1/LadybirdBrowser/ladybird",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/LadybirdBrowser/ladybird"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "other",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 48,
+   "source_score": 48,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "LadybirdBrowser/ladybird",
+   "summary_ru": "По-настоящему независимый веб-браузер",
+   "description_ru": "По-настоящему независимый веб-браузер",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
    "quality_score": 81,
-   "published_at": "2026-08-08T17:57:10.509228+00:00"
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://dev.to/lovestaco/teaching-your-ai-web-design-some-actual-taste-4p13",
+   "url_key": "dev.to/lovestaco/teaching-your-ai-web-design-some-actual-taste-4p13",
+   "canonical_url": "https://dev.to/lovestaco/teaching-your-ai-web-design-some-actual-taste-4p13",
+   "title": "Teaching Your AI Web Design Some Actual Taste",
+   "title_original": "Teaching Your AI Web Design Some Actual Taste",
+   "description": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
+   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F4a41sl73wmbyaiaqmrlv.png",
+   "media_kind": "image",
+   "source": "dev.to",
+   "sources": [
+    {
+     "name": "dev.to",
+     "url": "https://dev.to/lovestaco/teaching-your-ai-web-design-some-actual-taste-4p13"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "dev.to",
+   "score": 14,
+   "source_score": 14,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "Научите свой искусственный интеллект веб-дизайну реальному вкусу",
+   "summary_ru": "Привет, я Манешвар. Я создаю git-lrc, программу проверки кода Micro AI, которая запускается при каждом коммите. Это...",
+   "description_ru": "Привет, я Манешвар. Я создаю git-lrc, программу проверки кода Micro AI, которая запускается при каждом коммите. Это...",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 80,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://dev.to/ale3oula/frontend-system-design-interviews-are-weird-heres-how-i-now-approach-functional-requirements-3ea6",
+   "url_key": "dev.to/ale3oula/frontend-system-design-interviews-are-weird-heres-how-i-now-approach-functional-requirements-3ea6",
+   "canonical_url": "https://dev.to/ale3oula/frontend-system-design-interviews-are-weird-heres-how-i-now-approach-functional-requirements-3ea6",
+   "title": "Frontend system design interviews are weird. Here’s how I now approach functional requirements.",
+   "title_original": "Frontend system design interviews are weird. Here’s how I now approach functional requirements.",
+   "description": "One of the worst types of interviews for me is the system design. It feels overwhelming, even though...",
+   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8h8cz0ffy5dpmbj9m1mj.png",
+   "media_kind": "image",
+   "source": "dev.to",
+   "sources": [
+    {
+     "name": "dev.to",
+     "url": "https://dev.to/ale3oula/frontend-system-design-interviews-are-weird-heres-how-i-now-approach-functional-requirements-3ea6"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "design",
+   "topic": "ux-design",
+   "topic_name": "UX / веб-дизайн",
+   "domain": "dev.to",
+   "score": 5,
+   "source_score": 5,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "Собеседования по дизайну фронтенд-системы — это странно. Вот как я теперь подхожу к функциональным требованиям.",
+   "summary_ru": "Для меня один из худших типов собеседований — это проектирование системы. Это кажется подавляющим, хотя...",
+   "description_ru": "Для меня один из худших типов собеседований — это проектирование системы. Это кажется подавляющим, хотя...",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 80,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://dev.to/numbpill3d/surviving-the-ai-bubble-with-two-pieces-of-junk-from-amazon-5h1i",
+   "url_key": "dev.to/numbpill3d/surviving-the-ai-bubble-with-two-pieces-of-junk-from-amazon-5h1i",
+   "canonical_url": "https://dev.to/numbpill3d/surviving-the-ai-bubble-with-two-pieces-of-junk-from-amazon-5h1i",
+   "title": "Surviving the AI Bubble With Two Pieces of Junk From Amazon",
+   "title_original": "Surviving the AI Bubble With Two Pieces of Junk From Amazon",
+   "description": "Everyone is building agents. You should build escape hatches. We are living through the...",
+   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8cno0c5cwtu5lz6z46o7.png",
+   "media_kind": "image",
+   "source": "dev.to",
+   "sources": [
+    {
+     "name": "dev.to",
+     "url": "https://dev.to/numbpill3d/surviving-the-ai-bubble-with-two-pieces-of-junk-from-amazon-5h1i"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "3d",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "dev.to",
+   "score": 2,
+   "source_score": 2,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "Как выжить в пузыре искусственного интеллекта с помощью двух кусков мусора от Amazon",
+   "summary_ru": "Все создают агентов. Вам следует построить аварийные люки. Мы живем через...",
+   "description_ru": "Все создают агентов. Вам следует построить аварийные люки. Мы живем через...",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 80,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://dev.to/qingze_hu_c4c251c1b353ede/fable-5-plays-pokemon-sapphire-vision-only-notes-on-a-2000-decision-run-296k",
+   "url_key": "dev.to/qingze_hu_c4c251c1b353ede/fable-5-plays-pokemon-sapphire-vision-only-notes-on-a-2000-decision-run-296k",
+   "canonical_url": "https://dev.to/qingze_hu_c4c251c1b353ede/fable-5-plays-pokemon-sapphire-vision-only-notes-on-a-2000-decision-run-296k",
+   "title": "Fable 5 Plays Pokémon Sapphire Vision-Only: Notes on a 2,000-Decision Run",
+   "title_original": "Fable 5 Plays Pokémon Sapphire Vision-Only: Notes on a 2,000-Decision Run",
+   "description": "This run wasn't designed to discover anything new. It was collecting confirmations on three things:...",
+   "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6znwtwc71m5gr199mttj.png",
+   "media_kind": "image",
+   "source": "dev.to",
+   "sources": [
+    {
+     "name": "dev.to",
+     "url": "https://dev.to/qingze_hu_c4c251c1b353ede/fable-5-plays-pokemon-sapphire-vision-only-notes-on-a-2000-decision-run-296k"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "design",
+   "topic": "ux-design",
+   "topic_name": "UX / веб-дизайн",
+   "domain": "dev.to",
+   "score": 2,
+   "source_score": 2,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "Fable 5 играет в Pokémon Sapphire Vision Only: заметки о прохождении с 2000 решений",
+   "summary_ru": "Этот забег не был предназначен для открытия чего-то нового. Он собирал подтверждения по трем вещам:...",
+   "description_ru": "Этот забег не был предназначен для открытия чего-то нового. Он собирал подтверждения по трем вещам:...",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 80,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://dev.to/yureki_lab/how-i-used-claude-code-to-hunt-down-a-memory-leak-that-took-down-prod-2cpf",
+   "url_key": "dev.to/yureki_lab/how-i-used-claude-code-to-hunt-down-a-memory-leak-that-took-down-prod-2cpf",
+   "canonical_url": "https://dev.to/yureki_lab/how-i-used-claude-code-to-hunt-down-a-memory-leak-that-took-down-prod-2cpf",
+   "title": "How I Used Claude Code to Hunt Down a Memory Leak That Took Down Prod",
+   "title_original": "How I Used Claude Code to Hunt Down a Memory Leak That Took Down Prod",
+   "description": "TL;DR A slow memory leak took down one of my production services at 2am. I spent the first...",
+   "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F4c8a1sg80tozgkqmja2q.png",
+   "media_kind": "image",
+   "source": "dev.to",
+   "sources": [
+    {
+     "name": "dev.to",
+     "url": "https://dev.to/yureki_lab/how-i-used-claude-code-to-hunt-down-a-memory-leak-that-took-down-prod-2cpf"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "dev.to",
+   "score": 3,
+   "source_score": 3,
+   "found_at": "2026-08-09T07:44:21.802344+00:00",
+   "title_ru": "Как я использовал Claude Code, чтобы обнаружить утечку памяти, которая привела к сбою Prod",
+   "summary_ru": "TL;DR Медленная утечка памяти привела к отключению одной из моих производственных служб в 2 часа ночи. Я провел первое...",
+   "description_ru": "TL;DR Медленная утечка памяти привела к отключению одной из моих производственных служб в 2 часа ночи. Я провел первое...",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 80,
+   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://dev.to/lovestaco/ratatop-the-process-table-and-the-parentheses-that-ruin-everything-13fn",
@@ -825,84 +1005,6 @@
    "description_ru": "Источник: Документация GKE Agent Sandbox, kubernetes-sigs/agent-sandbox Итак, вот в чем дело. Мы...",
    "topic": "ai-agents",
    "topic_name": "AI / агенты"
-  },
-  {
-   "url": "https://dev.to/p0rt/i-found-two-bugs-in-zulip-the-maintainers-had-filed-both-two-weeks-earlier-4mom",
-   "url_key": "dev.to/p0rt/i-found-two-bugs-in-zulip-the-maintainers-had-filed-both-two-weeks-earlier-4mom",
-   "title": "I Found Two Bugs in Zulip. The Maintainers Had Filed Both Two Weeks Earlier.",
-   "description": "A Bug Smash hunting story: two rediscovered bugs, one claim-etiquette call, an unreported twin in the newest importer, and a disagreement with an AI about the right fix.",
-   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fcok5q8bdmf1phx76w558.png",
-   "source": "dev.to",
-   "type": "site",
-   "category": "vibecoding",
-   "domain": "dev.to",
-   "score": 9,
-   "found_at": "2026-08-08T07:39:44.961854+00:00",
-   "description_ru": "История охоты за ошибками: две обнаруженные заново ошибки, один вызов по этикету претензий, незарегистрированный двойник в новейшем импортере и разногласия с ИИ по поводу правильного исправления.",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты"
-  },
-  {
-   "url": "https://dev.to/aws-builders/how-kiro-crews-cron-jobs-replaced-4-hours-of-weekly-toil-37h",
-   "url_key": "dev.to/aws-builders/how-kiro-crews-cron-jobs-replaced-4-hours-of-weekly-toil-37h",
-   "title": "How Kiro Crew's Cron Jobs Replaced 4 Hours of Weekly Toil",
-   "description": "6-minute demo: AI agent sets up automated dependency scans, git hygiene checks, health reports, doc audits, and a Friday EOW summary. Cost: $2.10/week.",
-   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fimg.youtube.com%2Fvi%2FPMa9W-arkBQ%2Fmaxresdefault.jpg",
-   "source": "dev.to",
-   "type": "site",
-   "category": "vibecoding",
-   "domain": "dev.to",
-   "score": 8,
-   "found_at": "2026-08-08T07:39:44.961854+00:00",
-   "description_ru": "6-минутная демонстрация: агент ИИ настраивает автоматическое сканирование зависимостей, гигиенические проверки git, отчеты о состоянии, аудит документации и пятничный сводный отчет по окончанию работы. Стоимость: 2,10 доллара США в неделю.",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты"
-  },
-  {
-   "url": "https://dev.to/rawveg/aged-care-does-not-need-more-ai-59j5",
-   "url_key": "dev.to/rawveg/aged-care-does-not-need-more-ai-59j5",
-   "title": "Aged Care Does Not Need More AI",
-   "description": "The first thing the sensor sees is the ceiling. It is an unremarkable ceiling, white acoustic tile,...",
-   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fi.snap.as%2FUprFAoz0.png",
-   "source": "dev.to",
-   "type": "site",
-   "category": "vibecoding",
-   "domain": "dev.to",
-   "score": 7,
-   "found_at": "2026-08-08T07:39:44.961854+00:00",
-   "description_ru": "Первое, что видит датчик — это потолок. Ничем не примечательный потолок, белая акустическая плитка,...",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты"
-  },
-  {
-   "url": "https://dev.to/ijlee2/migrating-a-wordpress-blog-with-claude-code-1653",
-   "url_key": "dev.to/ijlee2/migrating-a-wordpress-blog-with-claude-code-1653",
-   "title": "Migrating a WordPress Blog with Claude Code",
-   "description": "With the help of Claude Code, I finished a task that I had pushed aside for years in two days: To...",
-   "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fmh0yct2nibw8n6rbratf.webp",
-   "source": "dev.to",
-   "type": "site",
-   "category": "vibecoding",
-   "domain": "dev.to",
-   "score": 0,
-   "found_at": "2026-08-08T07:39:44.961854+00:00",
-   "description_ru": "С помощью Клода Кода я за два дня выполнил задачу, которую откладывал годами:",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты"
-  },
-  {
-   "url": "https://github.com/Wyzer-Lang/wyzer",
-   "url_key": "github.com/wyzer-lang/wyzer",
-   "title": "Show HN: Wyzer Programming Language",
-   "description": "",
-   "source": "Hacker News",
-   "type": "github",
-   "category": "other",
-   "domain": "github.com",
-   "score": 72,
-   "found_at": "2026-08-07T15:47:16.896625+00:00",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки"
   }
  ]
 }
