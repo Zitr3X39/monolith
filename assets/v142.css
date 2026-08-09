@@ -1,0 +1,170 @@
+/* MONOLITH v14.2 — общая визуальная коррекция под характер skills.sh
+   + жёсткая фиксация верхней панели.
+
+   Правило: это НЕ новый дизайн (паспорт §8.1). Структура topbar, поиск,
+   кнопка «Добавить», вкладки, левая панель, сетка карточек и категории
+   остаются на месте. Здесь только: меньше «AI-glassmorphism», больше
+   инженерной строгости, сдержанные радиусы, точечный акцент и
+   гарантированно целая шестерёнка на всех масштабах.
+
+   Подключается последним, после styles.css / v141.css / news.css. */
+
+/* ==========================================================
+   1. Токены v14.2 (§8.3) — сдержанные радиусы, тонкие линии
+   ========================================================== */
+:root{
+  --radius:12px;
+  --radius-lg:14px;
+  --radius-control:8px;
+  --line-strong:rgba(255,255,255,.17);
+}
+
+/* ==========================================================
+   2. Верхняя панель: ничего не срезается (§8.4, §15.6)
+   ========================================================== */
+
+/* 2.1. Панель — одна строка, но каждый блок умеет сжиматься.
+   Без min-width:0 flex-элемент не может стать уже своего
+   min-content, панель распирает шире экрана и правый край
+   (шестерёнка) уходит под overflow-x:clip. */
+.topbar{gap:14px}
+.topbar>*{min-width:0}
+
+.brand{flex:0 0 auto}
+.brand-text{min-width:0}
+.brand-text strong{
+  font-size:15.5px;
+  letter-spacing:.16em;
+  white-space:nowrap;
+}
+.brand-text small{
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.1em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* 2.2. Поиск: разрешаем сжатие ниже intrinsic-ширины input.
+   type=search имеет собственную минимальную ширину (~177px),
+   из-за неё панель и переполнялась. */
+.search{flex:1 1 220px;min-width:0}
+.search input{min-width:0;border-radius:var(--radius-control)}
+
+/* 2.3. Лупа была почти невидима (--text-3 на тёмном стекле). */
+.search-icon{color:var(--text-2)}
+.search:focus-within .search-icon{color:var(--accent)}
+
+/* 2.4. Действия справа не сжимаются и не клипуются. */
+.topbar-actions{flex:0 0 auto;gap:8px}
+.topbar-actions>*{flex:0 0 auto}
+
+/* 2.5. Главное: .btn задаёт overflow:hidden (для ripple),
+   и у иконочных кнопок это срезало края SVG — особенно при
+   вращении шестерёнки на hover. */
+.btn-icon{overflow:visible;border-radius:var(--radius-control)}
+.btn-icon svg{display:block;overflow:visible}
+#btnSettings,#btnTheme{overflow:visible}
+#btnSettings svg{width:18px;height:18px}
+
+/* 2.6. Бесконечная крутилка выглядела как loading-spinner
+   и выносила зубцы за границу кнопки (§8.2.7). */
+#btnSettings:hover svg{
+  animation:none;
+  transform:rotate(45deg);
+  transition:transform .45s var(--ease);
+}
+#btnSettings:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* 2.7. Точки акцента съедают ~130px ширины панели.
+   Убираем их раньше, чем панель начнёт переполняться. */
+@media (max-width:1180px){.accent-pick{display:none}}
+
+/* 2.8. Перенос поиска на свою строку до появления обрезки. */
+@media (max-width:900px){
+  .topbar{flex-wrap:wrap;row-gap:10px}
+  .search{order:3;flex:1 1 100%;max-width:none}
+  .topbar-actions{margin-left:auto}
+}
+
+/* ==========================================================
+   3. Меньше «AI-glassmorphism» (§8.2.1)
+   ========================================================== */
+.aurora{opacity:.55}
+
+.card{
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  box-shadow:none;
+  border-color:var(--line);
+}
+.card:hover{border-color:var(--line-strong);box-shadow:none}
+
+.brand-mark{box-shadow:none}
+.btn-primary{box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.btn-primary:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.34)}
+.progress{box-shadow:none}
+
+/* ==========================================================
+   4. Инженерная строгость и моноширинные метаданные (§8.2.2)
+   ========================================================== */
+.stat-num,.count,.chip-num,.nav-item .num,.tab-badge{
+  font-family:var(--font-mono);
+  font-variant-numeric:tabular-nums;
+}
+.count{font-size:11.5px;letter-spacing:.04em;color:var(--text-3)}
+
+/* markdown-микрокопия: только на двух заголовках разделов,
+   не как декорация на каждом элементе (§8.2.6) */
+#viewTitle::before{
+  content:"# ";
+  font-family:var(--font-mono);
+  font-weight:500;
+  color:var(--text-3);
+}
+
+.hero-sub{color:var(--text-2)}
+.ver-line{font-family:var(--font-mono);letter-spacing:.06em}
+
+/* ==========================================================
+   5. Сдержанные радиусы (§8.2.3): pills только у переключателей
+   ========================================================== */
+.btn{border-radius:10px}
+.select,.chip,textarea,input[type="text"],input[type="password"]{border-radius:var(--radius-control)}
+.chip-toggle{border-radius:999px}
+.accent-pick{border-radius:999px}
+
+/* ==========================================================
+   6. Оборот карточки: скрытая сторона не перехватывает клики
+   (§7.2 — подстраховка поверх основного CSS)
+   ========================================================== */
+.flip-front{pointer-events:auto}
+.flip-back{pointer-events:none}
+.card.is-flipped .flip-front{pointer-events:none}
+.card.is-flipped .flip-back{pointer-events:auto}
+
+/* ==========================================================
+   7. Наклон карточек: 7/6 (§61.11.5 отменяет §15.4)
+   ========================================================== */
+/* fx.js выставляет --ry = x*2.5deg и --rx = -y*2deg (x,y ∈ [-1,1]).
+   Цель §61.11.5 — 7° по горизонтали и 6° по вертикали, поэтому
+   домножаем углы здесь: 2.5 × 2.8 = 7, 2 × 3 = 6. Сделано в CSS,
+   а не правкой двух чисел в fx.js, чтобы релиз не перезаписывал
+   весь 26-килобайтный fx.js. Если множители в fx.js когда-нибудь
+   поменяют — убрать calc() ниже. */
+#grid .card.tilt{
+  transform:perspective(1100px)
+    rotateX(calc(var(--rx,0deg) * 3))
+    rotateY(calc(var(--ry,0deg) * 2.8))
+    translate3d(0,-7px,0);
+}
+
+.card.is-flipped{transform:none !important}
+@media (prefers-reduced-motion:reduce){
+  .card,.card.tilt{transform:none !important;transition:none}
+  .aurora{display:none}
+}
+@media (hover:none){
+  .card,.card.tilt{transform:none !important}
+}
