@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-10T21:38:19.606Z",
+ "updated_at": "2026-08-10T21:44:02.246Z",
  "items": [
   {
    "url": "https://github.com/jray2123/zen-mcp-server",
@@ -22,7 +22,7 @@
    "url": "https://e2b.dev/docs/mcp",
    "url_key": "e2b.dev/docs/mcp",
    "title": "mcp",
-   "description": "",
+   "description": "Это больше для безопасности. Суть такова - твой агент получает изолированную среду для разработки, в которой он пишет, тестирует и исполняет сделанный код. А самое главное - все без вреда для твоего пк, ведь иишка даже не касается его.\n\nЕсли ты боишься за свои данные или еще за что-то, то это 100% вариант для тебя",
    "note": "",
    "domain": "e2b.dev",
    "category": "automation",
@@ -553,7 +553,7 @@
    "description": "Модификация для Minecraft, страница на CurseForge.",
    "note": "",
    "domain": "curseforge.com",
-   "category": "other",
+   "category": "gamedev",
    "type": "site",
    "source": "Вручную",
    "tags": [],
