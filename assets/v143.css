@@ -646,3 +646,288 @@ body.flow-swap .news-wrap {
   body.flow-swap .layout,
   body.flow-swap .news-wrap { animation: none !important; }
 }
+
+/* =========================================================
+   10. Галерея: инерция, живая полоска кадров и просмотр
+      на весь экран
+   ========================================================= */
+
+/* тонкая полоска под картинкой: видно, сколько кадров и где мы */
+.gal-prog {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 8px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .22s ease;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.news-gal:hover .gal-prog,
+.news-gal:focus-within .gal-prog,
+.gal-prog.is-live { opacity: 1; }
+
+.gal-prog i {
+  display: block;
+  height: 100%;
+  width: 50%;
+  border-radius: 3px;
+  background: #fff;
+  transition: transform .2s var(--flow-ease, cubic-bezier(.22, 1, .36, 1));
+  will-change: transform;
+}
+
+/* кнопка «на весь экран» */
+.gal-zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 11px;
+  background: rgba(8, 9, 12, 0.72);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .18s ease,
+              transform .18s var(--flow-ease, cubic-bezier(.22, 1, .36, 1)),
+              background .18s ease;
+  z-index: 4;
+}
+
+.news-gal:hover .gal-zoom,
+.gal-zoom:focus-visible { opacity: 1; transform: none; }
+.gal-zoom:hover { background: rgba(8, 9, 12, 0.94); }
+
+@media (hover: none) {
+  .gal-zoom { opacity: 1; transform: none; width: 44px; height: 44px; }
+}
+
+.news-rail:not(.is-drag) .news-slide img { cursor: zoom-in; }
+
+html.light .gal-zoom {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #111;
+}
+
+html.light .gal-prog { background: rgba(0, 0, 0, 0.16); }
+html.light .gal-prog i { background: #111; }
+
+/* ---- просмотр на весь экран ---- */
+html.gv-lock,
+html.gv-lock body { overflow: hidden; }
+
+.gv {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  background: rgba(4, 5, 7, 0.96);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  animation: gvIn .26s var(--flow-ease, cubic-bezier(.22, 1, .36, 1)) both;
+  transition: transform .24s var(--flow-ease, cubic-bezier(.22, 1, .36, 1)), opacity .24s ease;
+  will-change: transform, opacity;
+}
+
+.gv.is-grab { transition: none; }
+.gv.is-out { animation: gvOut .18s ease both; }
+
+@keyframes gvIn {
+  from { opacity: 0; transform: scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes gvOut { to { opacity: 0; } }
+
+.gv-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: calc(12px + env(safe-area-inset-top)) 14px 10px;
+}
+
+.gv-count {
+  flex: 0 0 auto;
+  font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .06em;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 9px;
+  padding: 9px 11px;
+}
+
+.gv-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font: 600 15px/1.35 Inter, system-ui, -apple-system, sans-serif;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gv-x,
+.gv-nav {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  transition: background .18s ease, transform .18s var(--flow-ease, cubic-bezier(.22, 1, .36, 1));
+}
+
+.gv-x:hover,
+.gv-nav:hover { background: rgba(255, 255, 255, 0.2); }
+.gv-x:active { transform: scale(.94); }
+
+.gv-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+}
+
+.gv-rail {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+  touch-action: pan-x pinch-zoom;
+}
+
+.gv-rail::-webkit-scrollbar { height: 0; }
+.gv-rail:focus { outline: none; }
+
+.gv-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: center;
+  display: grid;
+  place-items: center;
+  padding: 0 14px;
+}
+
+.gv-slide img {
+  max-width: min(100%, 1360px);
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.gv-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(8, 9, 12, 0.72);
+}
+
+.gv-nav.prev { left: 12px; }
+.gv-nav.next { right: 12px; }
+.gv-nav:active { transform: translateY(-50%) scale(.94); }
+
+.gv-foot {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  padding: 12px 14px calc(14px + env(safe-area-inset-bottom));
+}
+
+.gv-dots { display: flex; align-items: center; gap: 7px; }
+
+.gv-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: width .2s var(--flow-ease, cubic-bezier(.22, 1, .36, 1)), background .2s ease;
+}
+
+.gv-dots i.on { width: 22px; border-radius: 4px; background: #fff; }
+
+.gv-acts { display: flex; align-items: center; gap: 10px; }
+
+.gv-act {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font: 600 13px/1 Inter, system-ui, -apple-system, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .18s ease, transform .18s var(--flow-ease, cubic-bezier(.22, 1, .36, 1));
+}
+
+.gv-act:hover { background: rgba(255, 255, 255, 0.2); }
+.gv-act:active { transform: scale(.97); }
+.gv-act[aria-pressed="true"] { background: rgba(90, 169, 255, 0.22); border-color: rgba(90, 169, 255, 0.5); }
+
+.gv-hint {
+  font: 500 12px/1.4 Inter, system-ui, -apple-system, sans-serif;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .gv-title { font-size: 13px; }
+  .gv-nav { display: none; }
+  .gv-slide { padding: 0 8px; }
+  .gv-hint { flex: 1 0 100%; order: 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gv, .gv.is-out { animation: none !important; }
+  .gv-rail { scroll-behavior: auto; }
+  .gal-prog i { transition: none; }
+}
+
+/* ============================================================
+   11. КОЛЕСО МЫШИ НАД ГАЛЕРЕЕЙ КРУТИТ СТРАНИЦУ
+   Горизонтальная лента не должна перехватывать вертикальный жест:
+   браузер считает её вертикальным скроллером и съедает прокрутку
+   целиком — лента новостей замирала, пока курсор над картинкой.
+   ============================================================ */
+.news-rail { overflow-y: hidden; }
+.gv-rail { overflow-y: hidden; }
+
+/* доводка кадра после броска: магнит временно выключен */
+.news-rail.gal-settle { scroll-snap-type: none; }
