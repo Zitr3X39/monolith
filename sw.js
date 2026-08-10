@@ -1,24 +1,24 @@
-/* MONOLITH v14.5 — офлайн.
+/* MONOLITH v14.6 — офлайн.
    Оболочка и стили кладутся в кеш навсегда (cache-first),
    а данные — сначала из сети и только при обрыве из кеша,
    чтобы в метро или без сети хранилище всё равно открывалось. */
-var CACHE = "monolith-v145";
+var CACHE = "monolith-v146";
 var SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./assets/styles.css?v=24",
-  "./assets/v141.css?v=24",
-  "./assets/news.css?v=24",
-  "./assets/v142.css?v=24",
-  "./assets/v143.css?v=24",
-  "./assets/search.css?v=24",
-  "./assets/news.js?v=24",
-  "./assets/app.js?v=24",
-  "./assets/search.js?v=24",
-  "./assets/search-ui.js?v=24",
-  "./assets/flow.js?v=24",
-  "./assets/fx.js?v=24",
+  "./assets/styles.css?v=25",
+  "./assets/v141.css?v=25",
+  "./assets/news.css?v=25",
+  "./assets/v142.css?v=25",
+  "./assets/v143.css?v=25",
+  "./assets/search.css?v=25",
+  "./assets/news.js?v=25",
+  "./assets/app.js?v=25",
+  "./assets/search.js?v=25",
+  "./assets/search-ui.js?v=25",
+  "./assets/flow.js?v=25",
+  "./assets/fx.js?v=25",
   "./data/links.json",
   "./data/categories.json",
   "./data/feed.json"
