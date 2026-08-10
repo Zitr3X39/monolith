@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-08T08:27:00.518Z",
+ "updated_at": "2026-08-10T15:36:02.798Z",
  "items": [
+  {
+   "url": "https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md",
+   "url_key": "github.com/elder-plinius/cl4r1t4s/blob/main/anthropic/claude-fable-5.md",
+   "title": "elder-plinius/CL4R1T4S",
+   "description": "УТЕЧЕННАЯ СИСТЕМА ПРЕДЛАГАЕТ ЧАТГПТ, КЛОДА, БЛИЗНЕЦОВ, ГРОКА, PERPLEXITY, CURSOR, LOVABLE, REPLIT И МНОГОЕ ДРУГОЕ! - ПРОЗРАЧНОСТЬ СИСТЕМ ИИ ДЛЯ ВСЕХ! 👐",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 46832,
+   "enriched": true,
+   "added_at": "2026-08-10T15:36:01.119Z"
+  },
   {
    "url": "https://github.com/cloudflare/computer",
    "url_key": "github.com/cloudflare/computer",
@@ -41,7 +57,7 @@
    "description": "Простой инструмент для координации нескольких агентов ИИ. · Клоджур",
    "note": "",
    "domain": "github.com",
-   "category": "other",
+   "category": "vibecoding",
    "type": "github",
    "source": "Вручную",
    "tags": [],
