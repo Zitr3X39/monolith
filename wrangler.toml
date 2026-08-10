@@ -3,13 +3,17 @@
 # Почему файл в корне: Cloudflare собирает проект прямо из GitHub и по
 # умолчанию считает корневой папкой «/». Wrangler ищет настройки рядом с
 # собой, поэтому они лежат здесь и указывают на сам сервер в папке mcp.
-# Ручной деплой из папки mcp тоже работает — там лежит такой же файл.
 #
 # Деплой вручную из корня:  npx wrangler deploy
 # Как подключить к Notion — см. mcp/README.md
 
 name = "monolith-mcp"
-main = "mcp/worker.js"
+
+# Точка входа — mcp/entry.js. Он сначала отдаёт точки подключения (mcp/oauth.js),
+# без которых Notion писал «Failed to set up OAuth client registration», а всё
+# остальное передаёт самому серверу хранилища (mcp/worker.js).
+main = "mcp/entry.js"
+
 compatibility_date = "2025-06-01"
 workers_dev = true
 
@@ -22,6 +26,7 @@ WRITE_ENABLED = "0"
 # Секреты сюда НЕ пишутся. Их добавляют командами:
 #   npx wrangler secret put GITHUB_TOKEN   # нужен только для записи
 #   npx wrangler secret put AUTH_TOKEN     # пароль на сам сервер, по желанию
+#   npx wrangler secret put OAUTH_SECRET   # свой ключ подписи токенов, по желанию
 
 [observability]
 enabled = true
