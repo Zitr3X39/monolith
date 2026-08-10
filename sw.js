@@ -1,13 +1,15 @@
-/* MONOLITH v14.6 — офлайн.
+/* MONOLITH v14.7 — офлайн.
    Оболочка и стили кладутся в кеш навсегда (cache-first),
    а данные — сначала из сети и только при обрыве из кеша,
    чтобы в метро или без сети хранилище всё равно открывалось. */
-var CACHE = "monolith-v146";
+var CACHE = "monolith-v147";
 var SHELL = [
   "./",
   "./index.html",
+  "./mcp.html",
   "./manifest.webmanifest",
   "./assets/styles.css?v=25",
+  "./assets/mcp.css?v=25",
   "./assets/v141.css?v=25",
   "./assets/news.css?v=25",
   "./assets/v142.css?v=25",
