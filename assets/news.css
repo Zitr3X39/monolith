@@ -1,98 +1,458 @@
-/* MONOLITH v14.2 — новостная лента: редакционная сетка.
-   Грузится после v141.css и гасит полноэкранный scroll-snap. */
+/* MONOLITH v14.2 — раздел «Новости»: адаптация layout ADHD Planner.
 
-/* --- контейнер: обычный поток вместо экрана-слайдера --- */
-.feed-wrap{max-width:1320px;height:auto;min-height:0;display:block;padding:18px 24px 96px}
-.feed-grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:32px;align-items:start;flex:none;min-height:0}
-.feed-side{position:sticky;top:84px;max-height:none;overflow:visible;gap:12px}
-.feed-snap{overflow:visible;height:auto;min-height:0;scroll-snap-type:none;overscroll-behavior:auto;border-radius:0}
+   Отличия от v14.1:
+   — нет вложенного скролла и scroll-snap-type:y mandatory;
+   — документ прокручивается естественно;
+   — левая колонка sticky, справа — поток содержательных карточек;
+   — медиа компактное (≤320px), текст — главный вес карточки;
+   — никакого Ken Burns и mshots.
 
-/* --- сетка --- */
-.news-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
+   Визуальный язык остаётся MONOLITH + лёгкое влияние skills.sh:
+   моноширинные служебные подписи, 1px-линии, сдержанные радиусы.
+   Палитра Drift/ADHD Planner НЕ переносится. */
 
-.news-card{grid-column:span 4;position:relative;display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);overflow:hidden;transition:border-color .25s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease)}
-.news-card:hover{border-color:color-mix(in srgb,var(--cat,var(--accent)) 42%,var(--line));box-shadow:var(--shadow-1);transform:translateY(-2px)}
-.news-card:focus-within{border-color:color-mix(in srgb,var(--cat,var(--accent)) 55%,var(--line))}
-.news-card.is-major{grid-column:span 6}
-.news-card.is-lead{grid-column:span 12;flex-direction:row}
+.news-wrap{
+  padding:4px max(20px,calc((100% - 1560px) / 2)) 96px;
+}
 
-/* --- обложка: только настоящие og-картинки, никаких внешних скриншотов --- */
-.news-cover{position:relative;display:block;flex:0 0 auto;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--cat,var(--accent)) 20%,var(--ink-2)),var(--ink-2))}
-.news-card.is-lead .news-cover{flex:0 0 44%;aspect-ratio:auto;min-height:300px}
-.news-cover img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
-.news-card:hover .news-cover img{transform:scale(1.03)}
-.news-letter{position:absolute;inset:0;display:grid;place-items:center;font:700 64px/1 "Unbounded",sans-serif;color:color-mix(in srgb,var(--cat,var(--accent)) 45%,var(--text-3));opacity:.35;pointer-events:none}
+.news-layout{
+  display:grid;
+  grid-template-columns:minmax(250px,320px) minmax(0,1fr);
+  gap:clamp(32px,5vw,80px);
+  align-items:start;
+}
 
-/* --- тело --- */
-.news-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:11px;padding:18px 20px}
-.news-card.is-lead .news-body{padding:28px 30px;gap:14px;justify-content:center}
+/* ---------- Левая колонка: липкий контекст ---------- */
+.news-aside{
+  position:sticky;
+  top:88px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  min-width:0;
+}
 
-.news-kicker{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:600 10.5px/1 "JetBrains Mono",monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--text-3)}
-.news-topic{padding:4px 8px;border-radius:7px;white-space:nowrap;color:var(--cat,var(--accent));border:1px solid color-mix(in srgb,var(--cat,var(--accent)) 34%,transparent);background:color-mix(in srgb,var(--cat,var(--accent)) 10%,transparent)}
-.news-sep{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.6}
+.news-eyebrow{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--text-3);
+  margin:0;
+}
 
-.news-title{margin:0;font-size:16.5px;font-weight:600;line-height:1.3;letter-spacing:-.01em}
-.news-card.is-major .news-title{font-size:19px}
-.news-card.is-lead .news-title{font-size:clamp(22px,2.1vw,30px);line-height:1.18}
-.news-title a{color:inherit;text-decoration:none}
-.news-title a:hover{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;text-decoration-color:var(--cat,var(--accent))}
+.news-h1{
+  margin:0;
+  font-family:var(--font-display);
+  font-size:clamp(26px,2.6vw,38px);
+  line-height:1.08;
+  letter-spacing:-.01em;
+}
 
-.news-summary{margin:0;font-size:13.5px;line-height:1.6;color:var(--text-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.news-card.is-lead .news-summary{font-size:15px;-webkit-line-clamp:4;max-width:64ch}
+.news-promise{
+  margin:0;
+  font-size:13.5px;
+  line-height:1.55;
+  color:var(--text-2);
+  max-width:34ch;
+}
+
+.news-updated{
+  margin:0;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.03em;
+  color:var(--text-3);
+  font-variant-numeric:tabular-nums;
+}
+
+/* Темы — главный фильтр («о чём»), а не источники («откуда») */
+.news-topics{
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+  margin-top:6px;
+  border-top:1px solid var(--line);
+  padding-top:8px;
+}
+
+.news-topics .chip{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  padding:8px 10px;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+  color:var(--text-2);
+  font-size:13.5px;
+  text-align:left;
+  cursor:pointer;
+  transition:color .18s,background .18s;
+}
+.news-topics .chip::before{
+  content:"";
+  flex:0 0 auto;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--cat,var(--text-3));
+  opacity:.55;
+  transition:opacity .18s,transform .18s;
+}
+.news-topics .chip:hover{color:var(--text);background:color-mix(in srgb,var(--text) 5%,transparent)}
+.news-topics .chip.is-on{color:var(--text);background:color-mix(in srgb,var(--text) 7%,transparent)}
+.news-topics .chip.is-on::before{opacity:1;transform:scale(1.35)}
+.news-topics .chip.is-active-view{color:var(--text)}
+.news-topics .chip.is-active-view::before{opacity:1}
+.news-topics .chip:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+.news-topics .chip-num{
+  margin-left:auto;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  color:var(--text-3);
+  font-variant-numeric:tabular-nums;
+}
+
+/* Источники — вторичный, свёрнутый фильтр */
+.news-srcbox{margin-top:4px;border-top:1px solid var(--line);padding-top:8px}
+.news-srcbox>summary{
+  cursor:pointer;
+  list-style:none;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--text-3);
+  padding:4px 0;
+}
+.news-srcbox>summary::-webkit-details-marker{display:none}
+.news-srcbox>summary:hover{color:var(--text-2)}
+.news-srclist{display:flex;flex-wrap:wrap;gap:6px;padding:8px 0 2px}
+.news-srclist .chip{
+  padding:4px 9px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:transparent;
+  color:var(--text-3);
+  font-size:11.5px;
+  cursor:pointer;
+}
+.news-srclist .chip.is-on{color:var(--text);border-color:var(--line-2)}
+
+.news-hint{
+  margin:8px 0 0;
+  font-size:11px;
+  color:var(--text-3);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+}
+
+/* ---------- Правая колонка: поток находок ---------- */
+.news-stream{
+  min-width:0;
+  display:grid;
+  gap:22px;
+}
+
+.news-card{
+  position:relative;
+  display:grid;
+  gap:14px;
+  padding:20px 22px 18px;
+  border:1px solid var(--line);
+  border-radius:var(--radius,12px);
+  background:color-mix(in srgb,var(--ink-2,#0a0b0d) 72%,transparent);
+  transition:border-color .25s,opacity .5s var(--ease),transform .5s var(--ease);
+}
+.news-card:hover{border-color:var(--line-2)}
+.news-card:focus-within{border-color:var(--line-2)}
+
+/* тонкая цветная линия темы — акцент точечно, а не фоном */
+.news-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:16px;
+  bottom:16px;
+  width:2px;
+  border-radius:2px;
+  background:var(--cat,var(--accent));
+  opacity:.7;
+}
+
+/* reveal — один раз, очень мягко */
+.news-card.rv{opacity:0;transform:translateX(18px)}
+.news-card.rv.in{opacity:1;transform:none}
+
+.news-kicker{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--text-3);
+}
+.news-topic{color:var(--cat,var(--accent))}
+.news-sep{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.45}
+
+.news-title{
+  margin:0;
+  font-size:clamp(17px,1.5vw,21px);
+  line-height:1.25;
+  letter-spacing:-.005em;
+}
+.news-title a{color:var(--text);text-decoration:none}
+.news-title a:hover{color:var(--cat,var(--accent))}
+
+.news-summary{
+  margin:0;
+  font-size:14.5px;
+  line-height:1.62;
+  color:var(--text-2);
+}
 .news-summary.is-dim{color:var(--text-3);font-style:italic}
 
-/* --- раскрываемый разбор --- */
-.news-more{margin-top:auto;padding-top:11px;border-top:1px solid var(--line)}
-.news-more>summary{display:flex;align-items:center;gap:7px;cursor:pointer;list-style:none;font:600 12px/1.4 inherit;color:var(--text-2);transition:color .2s}
+/* Медиа: компактное, никогда не главный герой карточки */
+.news-cover{
+  position:relative;
+  display:block;
+  max-height:300px;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:9px;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(135deg,color-mix(in srgb,var(--cat,#888) 16%,transparent),transparent 60%),
+    var(--ink-3,#111318);
+}
+.news-cover img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.news-letter{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-family:var(--font-display);
+  font-size:52px;
+  font-weight:700;
+  color:color-mix(in srgb,var(--cat,#888) 40%,transparent);
+  letter-spacing:.02em;
+}
+.news-domain{
+  position:absolute;
+  left:10px;
+  bottom:8px;
+  font-family:var(--font-mono);
+  font-size:10px;
+  letter-spacing:.06em;
+  color:var(--text-3);
+}
+
+/* Разбор: раскрытие вниз, без 3D-флипа (§10.4) */
+.news-more{border-top:1px solid var(--line);padding-top:12px}
+.news-more>summary{
+  cursor:pointer;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--text-3);
+}
 .news-more>summary::-webkit-details-marker{display:none}
-.news-more>summary:hover{color:var(--text)}
-.news-more>summary:focus-visible{outline:2px solid var(--cat,var(--accent));outline-offset:3px;border-radius:6px}
-.news-more>summary::after{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-1px);transition:transform .25s var(--ease)}
-.news-more[open]>summary{color:var(--text);margin-bottom:11px}
-.news-more[open]>summary::after{transform:rotate(-135deg) translateY(-1px)}
-.news-more-in{display:flex;flex-direction:column;gap:13px;font-size:13px;line-height:1.62;color:var(--text-2);animation:newsIn .3s var(--ease)}
+.news-more>summary::after{content:"+";font-size:13px;line-height:1}
+.news-more[open]>summary::after{content:"\2212"}
+.news-more>summary:hover{color:var(--text-2)}
+.news-more>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.news-more-in{display:grid;gap:14px;padding-top:12px;animation:newsIn .28s var(--ease)}
 @keyframes newsIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
-.news-more-in p{margin:0}
-.news-sub{margin:0 0 6px;font:600 10.5px/1 "JetBrains Mono",monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3)}
-.news-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
-.news-list li{position:relative;padding-left:16px}
-.news-list li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--cat,var(--accent));opacity:.8}
-.news-list.is-warn li::before{border-radius:1px;transform:rotate(45deg);background:#FFB020}
+.news-more-in p{margin:0;font-size:14px;line-height:1.62;color:var(--text-2)}
 
-/* --- подвал --- */
-.news-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:12px}
-.news-more+.news-foot{margin-top:0}
-.news-metrics{display:flex;align-items:center;gap:8px;font:500 11px/1 "JetBrains Mono",monospace;color:var(--text-3)}
-.news-q{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:7px;border:1px solid var(--line-2)}
-.news-q i{display:block;width:5px;height:5px;border-radius:50%;background:var(--cat,var(--accent))}
-.news-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-.news-actions .btn{height:34px;padding:0 13px;font-size:12.5px}
-.news-actions .btn.is-done{opacity:.6}
+.news-sub{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--text-3);
+  margin:0 0 5px;
+}
 
-.news-note{grid-column:span 12;padding:44px 20px;text-align:center;font-size:13.5px;color:var(--text-3);border:1px dashed var(--line-2);border-radius:var(--radius-lg)}
+.news-list{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.news-list li{
+  position:relative;
+  padding-left:16px;
+  font-size:14px;
+  line-height:1.55;
+  color:var(--text-2);
+}
+.news-list li::before{
+  content:"\2022";
+  position:absolute;
+  left:2px;
+  color:var(--cat,var(--accent));
+}
+.news-list.is-warn li::before{content:"!";font-family:var(--font-mono);font-size:11px;color:var(--warn,#FFB020)}
 
-@media (max-width:1180px){
-  .news-card{grid-column:span 6}
-  .news-card.is-lead{flex-direction:column}
-  .news-card.is-lead .news-cover{flex:0 0 auto;aspect-ratio:16/9;min-height:0}
-  .news-card.is-lead .news-body{padding:22px}
+/* Сценарии применения — чипы */
+.news-tags{display:flex;flex-wrap:wrap;gap:6px}
+.news-tags span{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  letter-spacing:.05em;
+  padding:3px 8px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  color:var(--text-3);
 }
-@media (max-width:900px){
-  .feed-grid{grid-template-columns:1fr;gap:18px}
-  .feed-side{position:static;top:auto}
+
+.news-foot{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  border-top:1px solid var(--line);
+  padding-top:14px;
 }
-@media (max-width:720px){
-  .feed-wrap{padding:12px 16px 72px}
-  .news-grid{gap:16px}
-  .news-card,.news-card.is-major,.news-card.is-lead{grid-column:span 12}
-  .news-body{padding:16px}
-  .news-card.is-lead .news-body{padding:16px}
-  .news-actions{width:100%}
-  .news-actions .btn{flex:1 1 auto}
+.news-more+.news-foot{border-top:0;padding-top:0}
+
+.news-metrics{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--text-3);
+  font-variant-numeric:tabular-nums;
 }
+.news-q{display:inline-flex;align-items:center;gap:5px}
+.news-q i{width:5px;height:5px;border-radius:50%;background:var(--cat,var(--accent));display:block}
+
+/* Действия всегда видны, не только на hover (§17.3) */
+.news-actions{display:flex;align-items:center;gap:7px;margin-left:auto;flex-wrap:wrap}
+.news-actions .btn{height:34px;padding:0 13px;font-size:12.5px;border-radius:8px}
+.news-actions .btn.is-done{color:var(--ok,#22D3A7);border:1px solid color-mix(in srgb,var(--ok,#22D3A7) 35%,transparent);background:transparent;cursor:default}
+
+/* ---------- Вариант B: медиа сбоку, текст ведёт ---------- */
+.news-stream[data-variant="B"] .news-card{
+  grid-template-columns:minmax(0,1fr) 232px;
+  grid-template-areas:"body cover";
+  align-items:start;
+  column-gap:22px;
+}
+.news-stream[data-variant="B"] .news-body{grid-area:body;display:grid;gap:12px;min-width:0}
+.news-stream[data-variant="B"] .news-cover{grid-area:cover;aspect-ratio:4/3;max-height:180px}
+
+/* ---------- Вариант C: плотный список без медиа ---------- */
+.news-stream[data-variant="C"]{gap:0}
+.news-stream[data-variant="C"] .news-card{
+  border-radius:0;
+  border:0;
+  border-bottom:1px solid var(--line);
+  background:transparent;
+  padding:18px 0 18px 16px;
+  gap:10px;
+}
+.news-stream[data-variant="C"] .news-card::before{top:20px;bottom:20px}
+.news-stream[data-variant="C"] .news-cover{display:none}
+.news-stream[data-variant="C"] .news-title{font-size:17px}
+
+/* ---------- Skeleton и состояния ---------- */
+.news-skel{
+  display:grid;
+  gap:12px;
+  padding:20px 22px;
+  border:1px solid var(--line);
+  border-radius:var(--radius,12px);
+}
+.news-skel span{
+  display:block;
+  height:11px;
+  border-radius:6px;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--text) 7%,transparent),color-mix(in srgb,var(--text) 12%,transparent),color-mix(in srgb,var(--text) 7%,transparent));
+  background-size:200% 100%;
+  animation:newsSkel 1.4s linear infinite;
+}
+.news-skel span.w40{width:40%}
+.news-skel span.w70{width:70%}
+.news-skel span.w90{width:90%}
+.news-skel span.media{height:120px;border-radius:9px}
+@keyframes newsSkel{from{background-position:200% 0}to{background-position:-200% 0}}
+
+.news-note{
+  margin:0;
+  padding:28px 0;
+  font-size:14px;
+  color:var(--text-3);
+}
+.news-note .btn{margin-top:12px}
+
+.news-showmore{
+  display:flex;
+  justify-content:center;
+  padding-top:8px;
+}
+
+.news-empty{
+  padding:56px 0;
+  text-align:center;
+}
+.news-empty h3{margin:0 0 8px;font-size:19px}
+.news-empty p{margin:0;color:var(--text-3);font-size:14px;line-height:1.6}
+
+/* ---------- Tablet / mobile (§9.3) ---------- */
+@media (max-width:920px){
+  .news-wrap{padding:4px 16px 72px}
+  .news-layout{grid-template-columns:minmax(0,1fr);gap:22px}
+  .news-aside{position:static;top:auto;min-height:0;gap:10px}
+  .news-promise{max-width:none}
+
+  /* темы — горизонтальный scroll-row с видимым градиентным hint */
+  .news-topics{
+    flex-direction:row;
+    gap:6px;
+    overflow-x:auto;
+    scrollbar-width:thin;
+    padding-bottom:6px;
+    -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);
+    mask-image:linear-gradient(90deg,#000 88%,transparent);
+  }
+  .news-topics .chip{
+    width:auto;
+    flex:0 0 auto;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:6px 12px;
+  }
+  .news-topics .chip-num{margin-left:4px}
+
+  .news-card{padding:16px 16px 14px}
+  .news-stream[data-variant="B"] .news-card{grid-template-columns:minmax(0,1fr);grid-template-areas:"body" "cover"}
+  .news-stream[data-variant="B"] .news-cover{max-height:none;aspect-ratio:16/9}
+  .news-cover{max-height:min(32vh,320px)}
+  .news-actions{margin-left:0;width:100%}
+  .news-hint{display:none}
+}
+
 @media (prefers-reduced-motion:reduce){
-  .news-card,.news-cover img,.news-more>summary::after{transition:none}
-  .news-card:hover{transform:none}
-  .news-card:hover .news-cover img{transform:none}
+  .news-card,.news-card.rv{opacity:1 !important;transform:none !important;transition:none}
   .news-more-in{animation:none}
+  .news-skel span{animation:none}
 }
