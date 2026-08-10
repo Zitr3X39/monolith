@@ -1,0 +1,27 @@
+# MONOLITH MCP — настройки деплоя сервера на Cloudflare Workers.
+#
+# Почему файл в корне: Cloudflare собирает проект прямо из GitHub и по
+# умолчанию считает корневой папкой «/». Wrangler ищет настройки рядом с
+# собой, поэтому они лежат здесь и указывают на сам сервер в папке mcp.
+# Ручной деплой из папки mcp тоже работает — там лежит такой же файл.
+#
+# Деплой вручную из корня:  npx wrangler deploy
+# Как подключить к Notion — см. mcp/README.md
+
+name = "monolith-mcp"
+main = "mcp/worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+# Обычные настройки. Секретов здесь быть не должно.
+[vars]
+# "0" — сервер только читает хранилище. Так по умолчанию.
+# "1" — разрешить инструмент add_link (агент всё равно обязан спросить разрешение).
+WRITE_ENABLED = "0"
+
+# Секреты сюда НЕ пишутся. Их добавляют командами:
+#   npx wrangler secret put GITHUB_TOKEN   # нужен только для записи
+#   npx wrangler secret put AUTH_TOKEN     # пароль на сам сервер, по желанию
+
+[observability]
+enabled = true
