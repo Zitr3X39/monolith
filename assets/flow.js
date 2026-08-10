@@ -657,6 +657,8 @@
        чем fx.js успеет перезагрузить страницу */
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") {
+        /* открыт просмотр картинок — он закроется сам и съест это событие */
+        if (document.querySelector(".gv")) return;
         if (panelOpen()) {
           e.preventDefault();
           e.stopImmediatePropagation();
@@ -799,4 +801,483 @@
     refresh: refresh,
     about: wantAbout
   };
+})();
+
+/* ==========================================================
+   MONOLITH v14.6 — Glide.
+
+   Галерея в карточке: у мыши появляется инерция, снизу живая
+   полоска кадров, соседние картинки подгружаются заранее,
+   а по клику кадр открывается на весь экран — со свайпом и
+   привычным жестом «смахнуть вниз, чтобы закрыть».
+
+   news.js не переписываем: только дополняем его галерею.
+   ========================================================== */
+(function () {
+  "use strict";
+
+  var FLING = 0.32;      /* px/мс — с этой скорости считаем движение броском */
+  var CLOSE_DY = 110;    /* насколько смахнуть вниз, чтобы закрыть просмотр */
+
+  var reduce = false;
+  try { reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+
+  var EXPAND = '<svg viewBox="0 0 20 20" width="17" height="17" fill="none" aria-hidden="true">' +
+    '<path d="M12 3h5v5M8 17H3v-5M17 3l-6 6M3 17l6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var CROSS = '<svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true">' +
+    '<path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>';
+
+  function chev(dir) {
+    var d = dir < 0 ? "M12 4L6 10l6 6" : "M8 4l6 6-6 6";
+    return '<svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true">' +
+      '<path d="' + d + '" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function list(root, sel) {
+    return Array.prototype.slice.call((root || document).querySelectorAll(sel));
+  }
+
+  function idxOf(rail) {
+    var w = rail.clientWidth || 1;
+    return Math.round(rail.scrollLeft / w);
+  }
+
+  function goTo(rail, i, smooth) {
+    var n = rail.children.length || 1;
+    var w = rail.clientWidth || 1;
+    i = Math.max(0, Math.min(n - 1, i));
+    if (rail.scrollTo) rail.scrollTo({ left: i * w, behavior: smooth && !reduce ? "smooth" : "auto" });
+    else rail.scrollLeft = i * w;
+  }
+
+  /* ---------- 1. Галерея внутри карточки ---------- */
+
+  function preload(rail, i) {
+    var sl = rail.querySelectorAll(".news-slide");
+    [i - 1, i + 1, i + 2].forEach(function (k) {
+      if (k < 0 || k >= sl.length) return;
+      var im = sl[k].querySelector("img");
+      if (!im || im.__pre) return;
+      im.__pre = 1;
+      var pre = new Image();
+      pre.decoding = "async";
+      pre.src = im.getAttribute("src") || "";
+    });
+  }
+
+  function paint(gal) {
+    var rail = gal && gal.querySelector ? gal.querySelector(".news-rail") : null;
+    if (!rail) return;
+    var n = rail.querySelectorAll(".news-slide").length;
+    var bar = gal.querySelector(".gal-prog i");
+    if (bar && n > 1) {
+      var max = rail.scrollWidth - rail.clientWidth;
+      var p = max > 0 ? rail.scrollLeft / max : 0;
+      bar.style.width = (100 / n) + "%";
+      bar.style.transform = "translateX(" + (p * (n - 1) * 100) + "%)";
+    }
+    preload(rail, idxOf(rail));
+  }
+
+  function bind(gal, rail) {
+    var raf = 0, live = null;
+
+    rail.addEventListener("scroll", function () {
+      var prog = gal.querySelector(".gal-prog");
+      if (prog) {
+        prog.classList.add("is-live");
+        clearTimeout(live);
+        live = setTimeout(function () { prog.classList.remove("is-live"); }, 900);
+      }
+      if (raf) return;
+      raf = requestAnimationFrame(function () { raf = 0; paint(gal); });
+    }, { passive: true });
+
+    /* инерция для мыши: короткий бросок листает кадр, а не откатывает назад */
+    var drag = false, x0 = 0, lx = 0, lt = 0, vx = 0, moved = 0, sl0 = 0;
+
+    rail.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "touch") return;
+      drag = true; moved = 0; vx = 0;
+      x0 = lx = e.clientX;
+      sl0 = rail.scrollLeft;
+      lt = e.timeStamp || Date.now();
+    });
+
+    rail.addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      var t = e.timeStamp || Date.now();
+      var dt = t - lt;
+      if (dt > 0) vx = (e.clientX - lx) / dt;
+      lx = e.clientX;
+      lt = t;
+      moved = Math.max(moved, Math.abs(e.clientX - x0));
+    });
+
+    function release(e) {
+      if (!drag) return;
+      drag = false;
+      /* старый обработчик ленты тоже выравнивает кадр и спорит с броском —
+         перехватываем отпускание раньше него и ведём ленту сами */
+      if (e && e.stopPropagation) e.stopPropagation();
+      rail.classList.remove("is-drag");
+      var n = rail.querySelectorAll(".news-slide").length;
+      if (n < 2) { vx = 0; return; }
+      var w = rail.clientWidth || 1;
+      var pos = rail.scrollLeft / w;
+      var dxAll = lx - x0;
+      var frames = Math.abs(dxAll) / w;
+      var fast = Math.abs(vx) > FLING;
+      var far = frames > 0.12;
+      var to;
+      if (frames > 1) {
+        /* тянул далеко — остаёмся на ближайшем кадре */
+        to = Math.round(pos);
+      } else if (fast || far) {
+        /* короткий бросок или заметный сдвиг — ровно один кадр */
+        var dir = fast ? (vx < 0 ? 1 : -1) : (dxAll < 0 ? 1 : -1);
+        to = Math.round(sl0 / w) + dir;
+      } else {
+        to = Math.round(pos);
+      }
+      vx = 0;
+      /* пока едем к кадру, гасим магнит, иначе браузер вернёт ленту назад */
+      rail.classList.add("gal-settle");
+      goTo(rail, to, true);
+      requestAnimationFrame(function () { goTo(rail, to, true); });
+      setTimeout(function () { goTo(rail, to, true); }, 130);
+      setTimeout(function () { rail.classList.remove("gal-settle"); }, 380);
+    }
+
+    rail.addEventListener("pointerup", release, true);
+    rail.addEventListener("pointercancel", release, true);
+    rail.addEventListener("pointerleave", release, true);
+
+    /* горизонтальный жест трекпада листает кадры, вертикаль остаётся странице */
+    var wheelAt = 0;
+    rail.addEventListener("wheel", function (e) {
+      /* вертикаль всегда достаётся странице */
+      if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
+      if (Math.abs(e.deltaX) < 8) return;
+      var max = rail.scrollWidth - rail.clientWidth;
+      if (max <= 0) return;
+      if (e.cancelable) e.preventDefault();
+      /* трекпад шлёт десятки событий по инерции — листаем по одному кадру */
+      var now = e.timeStamp || Date.now();
+      if (now - wheelAt < 320) return;
+      wheelAt = now;
+      goTo(rail, idxOf(rail) + (e.deltaX > 0 ? 1 : -1), true);
+    }, { passive: false });
+
+    /* клик по кадру открывает просмотр, но не после перетаскивания */
+    rail.addEventListener("click", function (e) {
+      var im = e.target && e.target.closest ? e.target.closest("img") : null;
+      if (!im) return;
+      if (moved > 6) { moved = 0; return; }
+      e.preventDefault();
+      e.stopPropagation();
+      openViewer(gal, idxOf(rail));
+    });
+
+    rail.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        openViewer(gal, idxOf(rail));
+      }
+    });
+  }
+
+  function enhance(gal) {
+    var rail = gal.querySelector(".news-rail");
+    if (!rail) return;
+    var many = rail.querySelectorAll(".news-slide").length > 1;
+    var empty = gal.getAttribute("data-gal") === "empty";
+
+    if (many && !gal.querySelector(".gal-prog")) {
+      var prog = document.createElement("span");
+      prog.className = "gal-prog";
+      prog.innerHTML = "<i></i>";
+      gal.appendChild(prog);
+    }
+
+    if (!empty && !gal.querySelector(".gal-zoom")) {
+      var zoom = document.createElement("button");
+      zoom.type = "button";
+      zoom.className = "gal-zoom";
+      zoom.setAttribute("aria-label", "Смотреть картинки на весь экран");
+      zoom.innerHTML = EXPAND;
+      zoom.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openViewer(gal, idxOf(rail));
+      });
+      gal.appendChild(zoom);
+    }
+
+    paint(gal);
+
+    if (rail.__glide) return;
+    rail.__glide = true;
+    bind(gal, rail);
+  }
+
+  /* ---------- 2. Просмотр на весь экран ---------- */
+
+  var view = null;
+
+  function shotsOf(gal) {
+    return list(gal, ".news-slide img").map(function (im) {
+      return im.getAttribute("src") || "";
+    }).filter(function (s) { return !!s; });
+  }
+
+  function infoOf(gal) {
+    var card = gal.closest ? gal.closest(".news-card") : null;
+    var a = card ? card.querySelector(".news-title a[href]") : null;
+    return {
+      card: card,
+      title: a ? (a.textContent || "").trim() : "",
+      url: (card && card.getAttribute("data-url")) || (a ? a.getAttribute("href") : "")
+    };
+  }
+
+  function openViewer(gal, start) {
+    var shots = shotsOf(gal);
+    if (!shots.length) return;
+    closeViewer(true);
+
+    var info = infoOf(gal);
+    var many = shots.length > 1;
+    var from = Math.max(0, Math.min(shots.length - 1, start || 0));
+    var qBtn = info.card ? info.card.querySelector("[data-flowq]") : null;
+
+    var slides = shots.map(function (src) {
+      return '<div class="gv-slide"><img src="' + esc(src) + '" alt="" decoding="async" draggable="false" /></div>';
+    }).join("");
+
+    var dots = shots.map(function (_, i) {
+      return "<i" + (i === from ? ' class="on"' : "") + ' data-gvd="' + i + '"></i>';
+    }).join("");
+
+    var box = document.createElement("div");
+    box.className = "gv";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Картинки материала");
+    box.innerHTML =
+      '<div class="gv-head">' +
+        '<span class="gv-count" data-gvc>' + (from + 1) + " / " + shots.length + "</span>" +
+        '<span class="gv-title">' + esc(info.title) + "</span>" +
+        '<button type="button" class="gv-x" data-gvx aria-label="Закрыть · Esc">' + CROSS + "</button>" +
+      "</div>" +
+      '<div class="gv-stage">' +
+        '<div class="gv-rail" tabindex="0" role="group" aria-label="Кадры">' + slides + "</div>" +
+        (many ? '<button type="button" class="gv-nav prev" data-gvn="-1" aria-label="Назад">' + chev(-1) + "</button>" : "") +
+        (many ? '<button type="button" class="gv-nav next" data-gvn="1" aria-label="Вперёд">' + chev(1) + "</button>" : "") +
+      "</div>" +
+      '<div class="gv-foot">' +
+        (many ? '<div class="gv-dots" data-gvdots>' + dots + "</div>" : "") +
+        '<div class="gv-acts">' +
+          (info.url ? '<a class="gv-act" href="' + esc(info.url) + '" target="_blank" rel="noopener">Открыть оригинал</a>' : "") +
+          (qBtn ? '<button type="button" class="gv-act" data-gvq>Потом</button>' : "") +
+        "</div>" +
+        '<span class="gv-hint">' + (many ? "Свайп или ← → · " : "") + "смахни вниз, чтобы закрыть</span>" +
+      "</div>";
+
+    document.body.appendChild(box);
+    document.documentElement.classList.add("gv-lock");
+
+    var rail = box.querySelector(".gv-rail");
+    view = { box: box, rail: rail, prev: document.activeElement, onKey: null };
+
+    function sync() {
+      var i = idxOf(rail);
+      var c = box.querySelector("[data-gvc]");
+      if (c) c.textContent = (i + 1) + " / " + shots.length;
+      list(box, "[data-gvdots] i").forEach(function (d, k) {
+        d.className = k === i ? "on" : "";
+      });
+      var p = box.querySelector(".gv-nav.prev");
+      var nx = box.querySelector(".gv-nav.next");
+      if (p) p.style.visibility = i <= 0 ? "hidden" : "";
+      if (nx) nx.style.visibility = i >= shots.length - 1 ? "hidden" : "";
+    }
+
+    function paintQ() {
+      var b = box.querySelector("[data-gvq]");
+      if (!b || !qBtn) return;
+      var on = qBtn.getAttribute("aria-pressed") === "true";
+      b.textContent = on ? "В очереди" : "Потом";
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+
+    var raf = 0;
+    rail.addEventListener("scroll", function () {
+      if (raf) return;
+      raf = requestAnimationFrame(function () { raf = 0; sync(); });
+    }, { passive: true });
+
+    box.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!t || !t.closest) return;
+      if (t.closest("[data-gvx]")) { closeViewer(); return; }
+      var nav = t.closest("[data-gvn]");
+      if (nav) {
+        goTo(rail, idxOf(rail) + (Number(nav.getAttribute("data-gvn")) || 1), true);
+        return;
+      }
+      var dot = t.closest("[data-gvd]");
+      if (dot) {
+        goTo(rail, Number(dot.getAttribute("data-gvd")) || 0, true);
+        return;
+      }
+      if (t.closest("[data-gvq]")) {
+        e.preventDefault();
+        if (qBtn) { qBtn.click(); setTimeout(paintQ, 30); }
+        return;
+      }
+      if (t.closest(".gv-act") || t.closest(".gv-head") || t.tagName === "IMG") return;
+      closeViewer();
+    });
+
+    view.onKey = function (e) {
+      if (!view) return;
+      var k = e.key;
+      if (k === "Escape") {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        closeViewer();
+      } else if (k === "ArrowRight" || k === "ArrowLeft") {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        goTo(rail, idxOf(rail) + (k === "ArrowRight" ? 1 : -1), true);
+      } else if (k === "Home" || k === "End") {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        goTo(rail, k === "Home" ? 0 : shots.length - 1, true);
+      }
+    };
+    window.addEventListener("keydown", view.onKey, true);
+
+    /* смахнуть вниз — закрыть */
+    var ty = 0, y0 = 0, tx0 = 0, axis = "", track = false;
+
+    rail.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) return;
+      track = true; axis = ""; ty = 0;
+      y0 = e.touches[0].clientY;
+      tx0 = e.touches[0].clientX;
+    }, { passive: true });
+
+    rail.addEventListener("touchmove", function (e) {
+      if (!track || e.touches.length !== 1) return;
+      var dy = e.touches[0].clientY - y0;
+      var dx = e.touches[0].clientX - tx0;
+      if (!axis) {
+        if (Math.abs(dy) < 6 && Math.abs(dx) < 6) return;
+        axis = Math.abs(dy) > Math.abs(dx) + 4 ? "y" : "x";
+        if (axis === "y") box.classList.add("is-grab");
+      }
+      if (axis !== "y" || dy <= 0) return;
+      ty = dy;
+      if (e.cancelable) e.preventDefault();
+      box.style.transform = "translateY(" + ty + "px) scale(" + Math.max(0.88, 1 - ty / 1400) + ")";
+      box.style.opacity = String(Math.max(0.3, 1 - ty / 420));
+    }, { passive: false });
+
+    function endTouch() {
+      if (!track) return;
+      track = false;
+      box.classList.remove("is-grab");
+      if (ty > CLOSE_DY) { closeViewer(); return; }
+      box.style.transform = "";
+      box.style.opacity = "";
+      ty = 0;
+    }
+
+    rail.addEventListener("touchend", endTouch);
+    rail.addEventListener("touchcancel", endTouch);
+
+    paintQ();
+    requestAnimationFrame(function () {
+      rail.style.scrollBehavior = "auto";
+      rail.scrollLeft = (rail.clientWidth || 1) * from;
+      rail.style.scrollBehavior = "";
+      sync();
+      var x = box.querySelector("[data-gvx]");
+      if (x && x.focus) x.focus();
+    });
+  }
+
+  function closeViewer(instant) {
+    if (!view) return;
+    var v = view;
+    view = null;
+    if (v.onKey) window.removeEventListener("keydown", v.onKey, true);
+    document.documentElement.classList.remove("gv-lock");
+    if (instant || reduce) {
+      if (v.box.parentNode) v.box.parentNode.removeChild(v.box);
+    } else {
+      v.box.classList.add("is-out");
+      setTimeout(function () {
+        if (v.box.parentNode) v.box.parentNode.removeChild(v.box);
+      }, 200);
+    }
+    try { if (v.prev && v.prev.focus) v.prev.focus(); } catch (e) {}
+  }
+
+  /* ---------- 3. Следим за лентой ---------- */
+
+  function scan() {
+    list(document, ".news-gal").forEach(function (gal) {
+      try { enhance(gal); } catch (e) {}
+    });
+  }
+
+  var pending = 0;
+  function later() {
+    clearTimeout(pending);
+    pending = setTimeout(scan, 120);
+  }
+
+  function onMore(e) {
+    var t = e.target;
+    if (t && t.closest && t.closest("[data-more]")) setTimeout(scan, 1600);
+  }
+
+  var moWired = false, winWired = false;
+
+  function boot() {
+    scan();
+
+    var host = document.getElementById("feedList");
+    if (host && !moWired && window.MutationObserver) {
+      moWired = true;
+      new MutationObserver(later).observe(host, { childList: true });
+    }
+
+    if (!winWired) {
+      winWired = true;
+      window.addEventListener("resize", function () {
+        list(document, ".news-gal").forEach(function (gal) { paint(gal); });
+      }, { passive: true });
+      document.addEventListener("click", onMore, true);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+  setTimeout(boot, 900);
+  setTimeout(boot, 2200);
+
+  window.MONOLITH_GLIDE = { scan: scan, open: openViewer, close: closeViewer };
 })();
