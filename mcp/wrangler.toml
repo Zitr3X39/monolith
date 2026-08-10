@@ -3,7 +3,10 @@
 # Как подключить к Notion — см. README.md рядом.
 
 name = "monolith-mcp"
-main = "worker.js"
+
+# Точка входа — entry.js: сначала точки подключения (oauth.js), потом сам сервер (worker.js).
+main = "entry.js"
+
 compatibility_date = "2025-06-01"
 
 # Обычные настройки. Секретов здесь быть не должно.
@@ -15,6 +18,7 @@ WRITE_ENABLED = "0"
 # Секреты сюда НЕ пишутся. Их добавляют командами:
 #   npx wrangler secret put GITHUB_TOKEN   # нужен только для записи
 #   npx wrangler secret put AUTH_TOKEN     # пароль на сам сервер, по желанию
+#   npx wrangler secret put OAUTH_SECRET   # свой ключ подписи токенов, по желанию
 
 [observability]
 enabled = true
