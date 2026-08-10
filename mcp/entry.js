@@ -9,6 +9,7 @@
 
 import vault from "./worker.js";
 import { handleOAuth, checkAuth, CORS } from "./oauth.js";
+import { shrinkToolCall } from "./query.js";
 
 export default {
   async fetch(request, env, ctx) {
@@ -69,15 +70,18 @@ export default {
       );
     }
 
-    /* Если вошли по OAuth, а на сервере стоит статический пароль — подставляем его,
-       чтобы старая проверка внутри worker.js тоже пропустила. */
-    if (pass.via === "oauth" && env && env.AUTH_TOKEN) {
-      const headers = new Headers(request.headers);
-      headers.set("authorization", "Bearer " + String(env.AUTH_TOKEN));
-      const body = await request.text();
-      return await vault.fetch(new Request(request.url, { method: request.method, headers, body }), env, ctx);
-    }
+    if (request.method !== "POST") return await vault.fetch(request, env, ctx);
 
-    return await vault.fetch(request, env, ctx);
+    /* Тело читаем один раз. По пути ужимаем длинный человеческий вопрос для
+       поиска снаружи — иначе GitHub и npm вернут пустоту. И, если вошли по
+       кнопке Connect, а на сервере стоит статический пароль, подставляем его,
+       чтобы старая проверка внутри worker.js тоже пропустила. */
+    const headers = new Headers(request.headers);
+    headers.delete("content-length");
+    if (pass.via === "oauth" && env && env.AUTH_TOKEN) {
+      headers.set("authorization", "Bearer " + String(env.AUTH_TOKEN));
+    }
+    const body = shrinkToolCall(await request.text());
+    return await vault.fetch(new Request(request.url, { method: "POST", headers, body }), env, ctx);
   }
 };
