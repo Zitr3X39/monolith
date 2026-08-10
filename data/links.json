@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-10T21:45:00.000Z",
+ "updated_at": "2026-08-10T22:06:08.223Z",
  "items": [
   {
    "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
@@ -12,7 +12,15 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["скиллы", "геймдев", "unity", "godot", "unreal", "skill.md", "агенты"],
+   "tags": [
+    "скиллы",
+    "геймдев",
+    "unity",
+    "godot",
+    "unreal",
+    "skill.md",
+    "агенты"
+   ],
    "favorite": false,
    "stars": 463,
    "enriched": true,
@@ -28,7 +36,13 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["скиллы", "агенты", "геймдев", "claude code", "студия"],
+   "tags": [
+    "скиллы",
+    "агенты",
+    "геймдев",
+    "claude code",
+    "студия"
+   ],
    "favorite": false,
    "stars": 0,
    "enriched": false,
@@ -44,7 +58,13 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["скилл", "unity", "геймдев", "skill.md", "план игры"],
+   "tags": [
+    "скилл",
+    "unity",
+    "геймдев",
+    "skill.md",
+    "план игры"
+   ],
    "favorite": false,
    "stars": 0,
    "enriched": false,
@@ -60,7 +80,13 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["скиллы", "unity", "mcp", "геймдев", "cli"],
+   "tags": [
+    "скиллы",
+    "unity",
+    "mcp",
+    "геймдев",
+    "cli"
+   ],
    "favorite": false,
    "stars": 3859,
    "enriched": true,
@@ -76,7 +102,13 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["unity", "mcp", "геймдев", "claude", "cursor"],
+   "tags": [
+    "unity",
+    "mcp",
+    "геймдев",
+    "claude",
+    "cursor"
+   ],
    "favorite": false,
    "stars": 13310,
    "enriched": true,
@@ -92,7 +124,13 @@
    "category": "gamedev",
    "type": "github",
    "source": "Вручную",
-   "tags": ["геймдев", "ассеты", "3d", "озвучка", "awesome"],
+   "tags": [
+    "геймдев",
+    "ассеты",
+    "3d",
+    "озвучка",
+    "awesome"
+   ],
    "favorite": false,
    "stars": 1027,
    "enriched": true,
@@ -649,7 +687,7 @@
    "description": "Модификация для Minecraft, страница на CurseForge.",
    "note": "",
    "domain": "curseforge.com",
-   "category": "other",
+   "category": "gamedev",
    "type": "site",
    "source": "Вручную",
    "tags": [],
