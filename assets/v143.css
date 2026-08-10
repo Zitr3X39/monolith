@@ -1,0 +1,648 @@
+/* MONOLITH v14.5 — Signal Flow.
+   Добавка поверх news.css: карточка в две колонки (картинка слева,
+   большое описание справа), сжимающаяся шапка ленты, очередь «Потом»,
+   брифинг, режим чтения и пальцевые размеры кнопок на телефоне. */
+
+:root {
+  --flow-accent: #5aa9ff;
+  --flow-warm: #ffb020;
+  --flow-mint: #22d3a7;
+  --flow-r: 18px;
+  --flow-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* =========================================================
+   1. Шапка ленты: во всю ширину и сжимается при прокрутке
+   ========================================================= */
+.news-top {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transition: padding .26s var(--flow-ease), box-shadow .26s ease, background .26s ease;
+}
+
+.news-top-in {
+  transition: gap .26s var(--flow-ease);
+}
+
+.news-top .flow-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: transparent;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.news-top .flow-progress i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--flow-accent), var(--flow-mint));
+  transform-origin: 0 50%;
+  transition: width .12s linear;
+}
+
+/* сжатое состояние: остаются только название и фильтры */
+.news-top.is-min .news-eyebrow,
+.news-top.is-min .news-sub-line,
+.news-top.is-min .news-stats {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity .18s ease, max-height .26s var(--flow-ease), margin .26s var(--flow-ease);
+}
+
+.news-top.is-min .news-h1 {
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 0;
+  transition: font-size .26s var(--flow-ease);
+}
+
+.news-top.is-min .news-head {
+  margin-bottom: 8px;
+}
+
+.news-top.is-min {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .55);
+}
+
+.news-top.is-min .news-top-in {
+  gap: 8px;
+}
+
+.news-eyebrow,
+.news-sub-line,
+.news-stats,
+.news-h1 {
+  transition: opacity .2s ease, max-height .26s var(--flow-ease), font-size .26s var(--flow-ease);
+}
+
+/* =========================================================
+   2. Карточка: две колонки на широком экране
+   Картинка слева и не выше 360px, текст справа — тогда описание
+   видно сразу, а не после половины экрана прокрутки.
+   ========================================================= */
+@media (min-width: 1000px) {
+  .news-stream .news-card:has(.news-gal) {
+    display: grid;
+    grid-template-columns: minmax(0, 430px) minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto 1fr auto;
+    grid-template-areas:
+      "media kicker"
+      "media title"
+      "media lead"
+      "media about"
+      "media tags"
+      "read  read";
+    column-gap: 26px;
+    align-items: start;
+  }
+
+  .news-stream .news-card:has(.news-gal) > .news-kicker { grid-area: kicker; }
+  .news-stream .news-card:has(.news-gal) > .news-title { grid-area: title; }
+  .news-stream .news-card:has(.news-gal) > .news-lead { grid-area: lead; }
+  .news-stream .news-card:has(.news-gal) > .nc-about { grid-area: about; }
+  .news-stream .news-card:has(.news-gal) > .news-tags { grid-area: tags; align-self: end; }
+  .news-stream .news-card:has(.news-gal) > .news-gal { grid-area: media; margin: 0; }
+  .news-stream .news-card:has(.news-gal) > .news-foot { grid-area: read; }
+  .news-stream .news-card:has(.news-gal) > [data-readhost] { grid-area: read; }
+
+  /* футер и читалка идут один за другим внизу на всю ширину */
+  .news-stream .news-card:has(.news-gal) {
+    grid-template-areas:
+      "media kicker"
+      "media title"
+      "media lead"
+      "media about"
+      "media tags"
+      "foot  foot"
+      "read  read";
+    grid-template-rows: auto auto auto auto 1fr auto auto;
+  }
+
+  .news-stream .news-card:has(.news-gal) > .news-foot { grid-area: foot; }
+
+  .news-stream .news-card > .news-gal .news-rail {
+    aspect-ratio: 4 / 3;
+    max-height: 340px;
+  }
+
+  .news-stream .news-card > .news-lead {
+    max-width: 62ch;
+  }
+}
+
+/* картинка не должна быть выше чем надо ни на каком экране */
+@media (max-width: 999px) {
+  .news-stream .news-card > .news-gal .news-rail {
+    max-height: 62vh;
+  }
+}
+
+/* =========================================================
+   3. Большое описание — блок «О чём это»
+   ========================================================= */
+.nc-about {
+  margin: 12px 0 0;
+  display: block;
+}
+
+.nc-about-h {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-3, #858b9b);
+  margin: 0 0 6px;
+}
+
+.nc-about-h::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line, rgba(128, 128, 140, .18));
+}
+
+.nc-about-body {
+  font-size: 15.5px;
+  line-height: 1.68;
+  color: var(--text-2, #565c6b);
+  max-width: 66ch;
+}
+
+.nc-about-body p {
+  margin: 0 0 .62em;
+}
+
+.nc-about-body p:last-child {
+  margin-bottom: 0;
+}
+
+.nc-about-body strong {
+  color: var(--text, #14161c);
+  font-weight: 600;
+}
+
+.nc-about.is-clamped .nc-about-body {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nc-about-more {
+  appearance: none;
+  margin-top: 7px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--flow-accent);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.nc-about-more:hover {
+  text-decoration: underline;
+}
+
+.nc-about-more:focus-visible {
+  outline: 2px solid var(--flow-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* скелетон пока тянется текст из самого материала */
+.nc-about-skel span {
+  display: block;
+  height: 11px;
+  border-radius: 6px;
+  margin-bottom: 9px;
+  background: linear-gradient(90deg,
+      rgba(128, 128, 140, .10) 0%,
+      rgba(128, 128, 140, .20) 50%,
+      rgba(128, 128, 140, .10) 100%);
+  background-size: 220% 100%;
+  animation: ncShimmer 1.25s linear infinite;
+}
+
+.nc-about-skel span:nth-child(1) { width: 96%; }
+.nc-about-skel span:nth-child(2) { width: 88%; }
+.nc-about-skel span:nth-child(3) { width: 92%; }
+.nc-about-skel span:nth-child(4) { width: 64%; }
+
+@keyframes ncShimmer {
+  0% { background-position: 120% 0; }
+  100% { background-position: -120% 0; }
+}
+
+.nc-about-note {
+  font-size: 12.5px;
+  color: var(--text-3, #858b9b);
+  margin: 6px 0 0;
+}
+
+/* теги: чуть крупнее и с цветом темы */
+.news-tags .news-tag.is-topic {
+  border-color: color-mix(in srgb, var(--tc, #8b7cff) 45%, transparent);
+  color: var(--tc, #8b7cff);
+}
+
+/* =========================================================
+   4. Пальцевые размеры на телефоне (минимум 44px)
+   ========================================================= */
+@media (max-width: 760px) {
+  .news-sort button,
+  .news-srcbox summary,
+  .news-btn,
+  .nc-chip {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .smart-sw {
+    height: 44px !important;
+    min-width: 52px;
+  }
+
+  .news-gal-nav {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .news-top.is-min .news-h1 {
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   5. Очередь «Потом»
+   ========================================================= */
+.nc-chip {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 13px;
+  border: 1px solid var(--line, rgba(128, 128, 140, .2));
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-2, #565c6b);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.nc-chip:hover {
+  color: var(--text, #14161c);
+  border-color: var(--line-strong, rgba(128, 128, 140, .4));
+}
+
+.nc-chip:focus-visible {
+  outline: 2px solid var(--flow-accent);
+  outline-offset: 2px;
+}
+
+.nc-chip[aria-pressed="true"] {
+  color: #0b1220;
+  background: var(--flow-warm);
+  border-color: var(--flow-warm);
+  font-weight: 600;
+}
+
+.nc-chip svg { flex: 0 0 auto; }
+
+/* круглая кнопка очереди внизу справа */
+.flow-dock {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  gap: 9px;
+  height: 48px;
+  padding: 0 17px 0 15px;
+  border: 1px solid var(--line-strong, rgba(128, 128, 140, .35));
+  border-radius: 999px;
+  background: var(--ink-2, #14161c);
+  color: #f4f3f0;
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 18px 40px -22px rgba(0, 0, 0, .8);
+  transition: transform .2s var(--flow-ease), box-shadow .2s ease;
+}
+
+.flow-dock.is-on { display: inline-flex; }
+.flow-dock:hover { transform: translateY(-2px); }
+.flow-dock:focus-visible { outline: 2px solid var(--flow-accent); outline-offset: 3px; }
+
+.flow-dock b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--flow-warm);
+  color: #0b1220;
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .flow-dock { right: 12px; bottom: 12px; height: 52px; }
+}
+
+/* панель очереди */
+.flow-panel[hidden] { display: none; }
+
+.flow-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: end center;
+}
+
+.flow-panel-scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 5, 8, .62);
+  backdrop-filter: blur(3px);
+  animation: flowFade .18s ease;
+}
+
+.flow-panel-box {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: 82vh;
+  overflow: auto;
+  border: 1px solid var(--line, rgba(128, 128, 140, .2));
+  border-bottom: 0;
+  border-radius: 22px 22px 0 0;
+  background: var(--ink-2, #14161c);
+  color: #f4f3f0;
+  padding: 20px 22px 26px;
+  animation: flowUp .26s var(--flow-ease);
+}
+
+@keyframes flowFade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes flowUp { from { transform: translateY(26px); opacity: .4 } to { transform: none; opacity: 1 } }
+
+.flow-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.flow-panel-head h3 {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: -.01em;
+}
+
+.flow-panel-head button {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: #a8adbc;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.flow-panel-sub {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: #a8adbc;
+}
+
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.flow-row-main { flex: 1; min-width: 0; }
+
+.flow-row-main b {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flow-row-main span {
+  display: block;
+  font-size: 12px;
+  color: #6e7488;
+  margin-top: 2px;
+}
+
+.flow-row a,
+.flow-row button {
+  appearance: none;
+  flex: 0 0 auto;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 999px;
+  background: none;
+  color: #f4f3f0;
+  font: inherit;
+  font-size: 12.5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flow-row button.is-x { color: #ff8b7a; border-color: rgba(255, 139, 122, .3); }
+
+.flow-empty {
+  padding: 22px 0 6px;
+  color: #a8adbc;
+  font-size: 14px;
+}
+
+/* =========================================================
+   6. Утренний брифинг
+   ========================================================= */
+.flow-brief {
+  position: relative;
+  border: 1px solid var(--line, rgba(128, 128, 140, .2));
+  border-radius: var(--flow-r);
+  padding: 20px 22px;
+  margin-bottom: 26px;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(90, 169, 255, .10), transparent 58%),
+    radial-gradient(110% 130% at 100% 0%, rgba(34, 211, 167, .08), transparent 55%);
+  overflow: hidden;
+}
+
+.flow-brief::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--flow-accent), var(--flow-mint));
+}
+
+.flow-brief-eyebrow {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--flow-accent);
+  margin: 0 0 8px;
+}
+
+.flow-brief h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -.015em;
+}
+
+.flow-brief p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--text-2, #565c6b);
+  max-width: 74ch;
+}
+
+.flow-brief ol {
+  margin: 6px 0 14px;
+  padding-left: 20px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-2, #565c6b);
+}
+
+.flow-brief ol li { margin-bottom: 5px; }
+.flow-brief ol a { color: var(--text, #14161c); font-weight: 600; text-decoration: none; }
+.flow-brief ol a:hover { text-decoration: underline; }
+
+.flow-brief-acts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 4px;
+}
+
+.flow-brief-tape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.flow-brief-tape span {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  padding: 4px 9px;
+  border: 1px solid var(--line, rgba(128, 128, 140, .2));
+  border-radius: 999px;
+  color: var(--text-3, #858b9b);
+}
+
+/* =========================================================
+   7. Режим чтения: всё лишнее гаснет
+   ========================================================= */
+body.flow-focus .news-card { transition: opacity .28s ease, filter .28s ease; }
+body.flow-focus .news-card:not(.is-focus) { opacity: .16; filter: saturate(.5); }
+body.flow-focus .news-top { opacity: .25; }
+body.flow-focus .news-top:hover { opacity: 1; }
+body.flow-focus .flow-brief { opacity: .12; }
+
+.flow-focus-tip {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  z-index: 45;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong, rgba(128, 128, 140, .35));
+  background: var(--ink-2, #14161c);
+  color: #f4f3f0;
+  font-size: 12.5px;
+  box-shadow: 0 16px 36px -20px rgba(0, 0, 0, .8);
+}
+
+.flow-focus-tip[hidden] { display: none; }
+
+/* =========================================================
+   8. Мелочи
+   ========================================================= */
+.news-card.is-sel { scroll-margin-top: 130px; }
+
+.flow-new-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--flow-mint);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-top, .news-top-in, .news-eyebrow, .news-sub-line, .news-stats, .news-h1,
+  .nc-chip, .flow-dock, .flow-panel-box, .flow-panel-scrim, .nc-about-skel span,
+  body.flow-focus .news-card {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media print {
+  .flow-dock, .flow-panel, .news-top, .news-hint-row, .flow-focus-tip { display: none !important; }
+  .news-card { break-inside: avoid; }
+}
+
+/* =========================================================
+   9. Плавная смена разделов Хранилище ↔ Новости
+   ========================================================= */
+body.flow-swap .layout,
+body.flow-swap .news-wrap {
+  animation: flowSwap .32s var(--flow-ease) both;
+}
+
+@keyframes flowSwap {
+  from { opacity: 0; transform: translateY(10px) scale(.995); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.flow-swap .layout,
+  body.flow-swap .news-wrap { animation: none !important; }
+}
