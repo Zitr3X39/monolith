@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-10T19:28:29.306Z",
+ "updated_at": "2026-08-10T19:28:32.500Z",
  "items": [
+  {
+   "url": "https://playphrase.me/",
+   "url_key": "playphrase.me/",
+   "title": "PlayPhrase.me: Site for cinema archaeologists.",
+   "description": "Наберите любую цитату, посмотрите сцены. Ищите миллионы видеороликов для изучения языка и исследования кино.",
+   "note": "",
+   "domain": "playphrase.me",
+   "category": "other",
+   "type": "site",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": true,
+   "added_at": "2026-08-10T19:28:31.725Z"
+  },
   {
    "url": "https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md",
    "url_key": "github.com/elder-plinius/cl4r1t4s/blob/main/anthropic/claude-fable-5.md",
