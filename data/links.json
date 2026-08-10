@@ -1,12 +1,12 @@
 {
  "version": 1,
- "updated_at": "2026-08-10T21:44:02.246Z",
+ "updated_at": "2026-08-10T21:44:12.152Z",
  "items": [
   {
    "url": "https://github.com/jray2123/zen-mcp-server",
    "url_key": "github.com/jray2123/zen-mcp-server",
    "title": "jray2123/zen-mcp-server",
-   "description": "Сервер Zen MCP с расширенными функциями совместной работы с использованием искусственного интеллекта · Python",
+   "description": "Ставишь в claude code и у агента появляется возможность вызывать другие модели для помощи в конкретных задачах. Самое интересное: \n\n> Когда вызывается новая модель - контекст сессии сбрасывается/компактится.\n\n> Самое главное - для этого всего нужны API других моделей, но это того стоит",
    "note": "",
    "domain": "github.com",
    "category": "automation",
