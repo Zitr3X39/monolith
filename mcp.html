@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>MONOLITH MCP — подключить хранилище к любому ИИ</title>
+<meta name="description" content="MCP-сервер MONOLITH: один адрес, чтобы Notion, Claude, Cursor или ChatGPT искали по твоему хранилищу по смыслу, читали материалы целиком и находили новое снаружи." />
+<meta name="theme-color" content="#0A0B0E" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230A0B0E'/%3E%3Crect x='19' y='9' width='26' height='46' rx='6' fill='none' stroke='%23F4F5F7' stroke-width='4.2'/%3E%3Crect x='27' y='20' width='10' height='4' rx='2' fill='%23F4F5F7'/%3E%3Crect x='27' y='30' width='10' height='4' rx='2' fill='%23F4F5F7'/%3E%3Crect x='27' y='40' width='6' height='4' rx='2' fill='%23F4F5F7'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="assets/mcp.css?v=25" />
+<script>(function(){try{var t=localStorage.getItem("lv.theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;else if(matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.dataset.theme="light";}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="mtop">
+  <a class="mback" href="index.html">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Хранилище
+  </a>
+  <span class="mname" translate="no">MONOLITH <b>MCP</b></span>
+  <button class="mtheme" id="btnTheme" type="button" aria-label="Сменить тему" title="Сменить тему">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 12.4A7 7 0 0 1 7.6 4a6.6 6.6 0 1 0 8.4 8.4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+  </button>
+</header>
+
+<main class="wrap" id="main">
+
+  <section class="hero">
+    <p class="eyebrow">MCP-сервер</p>
+    <h1>Хранилище как инструмент<br />для любого ИИ</h1>
+    <p class="sub">Один адрес — и Notion, Claude, Cursor, VS Code или ChatGPT смогут искать по твоим ссылкам <b>по смыслу</b>, открывать материалы и читать их целиком, а ещё находить снаружи то, чего у тебя ещё нет. Ничего ставить не надо: сервер уже работает в облаке.</p>
+
+    <div class="urlbar">
+      <code id="srv">https://monolith-mcp.slavin5511.workers.dev</code>
+      <button class="btn" type="button" data-copy="#srv">Скопировать адрес</button>
+      <a class="btn ghost" href="https://monolith-mcp.slavin5511.workers.dev/health" target="_blank" rel="noopener">Проверить</a>
+    </div>
+
+    <div class="status" id="status"><i></i><span>проверяю сервер…</span></div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Подключение</p>
+    <h2>Выбери, куда подключаешь</h2>
+    <p class="hint">Везде одно и то же: скопировал команду — вставил. Сервер общий, подключать можно сразу везде и с любого устройства.</p>
+
+    <div class="seg" role="tablist" aria-label="Клиенты">
+      <button role="tab" type="button" data-tab="notion" aria-selected="true">Notion</button>
+      <button role="tab" type="button" data-tab="claude" aria-selected="false">Claude Code</button>
+      <button role="tab" type="button" data-tab="cursor" aria-selected="false">Cursor</button>
+      <button role="tab" type="button" data-tab="vscode" aria-selected="false">VS Code</button>
+      <button role="tab" type="button" data-tab="desktop" aria-selected="false">Claude Desktop</button>
+      <button role="tab" type="button" data-tab="other" aria-selected="false">Другое</button>
+    </div>
+
+    <div class="panel" data-panel="notion">
+      <h2>Notion</h2>
+      <p class="where">Настройки → Connections → Add MCP server. Или прямо в чате: «подключи MCP-сервер».</p>
+      <div class="warnline">
+        <b>Важно</b>
+        <span>В окне подключения по умолчанию стоит <b>Authentication: OAuth</b> — с ним будет ошибка «Failed to set up OAuth client registration». Открой этот список и выбери <b>None</b>. Сервер открыт на чтение, пароль ему не нужен.</span>
+      </div>
+      <ol class="steps">
+        <li>В поле <b>MCP server URL</b> вставь адрес сверху.</li>
+        <li><b>Name</b> — любое, например <b>MONOLITH</b>.</li>
+        <li><b>Authentication</b> → <b>None</b>.</li>
+        <li>Нажми <b>Connect</b>.</li>
+      </ol>
+      <p class="hint">Если в списке нет варианта None — выбери <b>Bearer Token</b> и впиши в поле любое слово. Сервер его проигнорирует, пока ты сам не поставишь пароль (см. ниже «Пароль на сервер»).</p>
+    </div>
+
+    <div class="panel" data-panel="claude" hidden>
+      <h2>Claude Code</h2>
+      <p class="where">Одна команда в терминале — и всё.</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">терминал</span><button class="copy" type="button" data-copy="#c-claude">Копировать</button></div>
+        <pre id="c-claude">claude mcp add --transport http monolith https://monolith-mcp.slavin5511.workers.dev</pre>
+      </div>
+      <p class="hint">Проверить, что подключился: <code>claude mcp list</code>. Убрать: <code>claude mcp remove monolith</code>.</p>
+    </div>
+
+    <div class="panel" data-panel="cursor" hidden>
+      <h2>Cursor</h2>
+      <p class="where">Файл <b>~/.cursor/mcp.json</b> (на Windows — <b>%USERPROFILE%\.cursor\mcp.json</b>). Если файла нет — создай.</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">~/.cursor/mcp.json</span><button class="copy" type="button" data-copy="#c-cursor">Копировать</button></div>
+        <pre id="c-cursor">{
+  "mcpServers": {
+    "monolith": {
+      "url": "https://monolith-mcp.slavin5511.workers.dev"
+    }
+  }
+}</pre>
+      </div>
+      <p class="hint">Дальше Settings → MCP: сервер <b>monolith</b> должен загореться зелёным и показать пять инструментов.</p>
+    </div>
+
+    <div class="panel" data-panel="vscode" hidden>
+      <h2>VS Code · Copilot</h2>
+      <p class="where">Одна команда в терминале.</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">терминал</span><button class="copy" type="button" data-copy="#c-vscode">Копировать</button></div>
+        <pre id="c-vscode">code --add-mcp "{\"name\":\"monolith\",\"type\":\"http\",\"url\":\"https://monolith-mcp.slavin5511.workers.dev\"}"</pre>
+      </div>
+      <p class="hint">Либо вручную: <b>.vscode/mcp.json</b> в проекте, внутри <code>"servers": { "monolith": { "type": "http", "url": "…" } }</code>.</p>
+    </div>
+
+    <div class="panel" data-panel="desktop" hidden>
+      <h2>Claude Desktop и другие без HTTP</h2>
+      <p class="where">Файл <b>claude_desktop_config.json</b>: Windows — <b>%APPDATA%\Claude\</b>, macOS — <b>~/Library/Application Support/Claude/</b>. Нужен установленный Node.</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">claude_desktop_config.json</span><button class="copy" type="button" data-copy="#c-desktop">Копировать</button></div>
+        <pre id="c-desktop">{
+  "mcpServers": {
+    "monolith": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://monolith-mcp.slavin5511.workers.dev"]
+    }
+  }
+}</pre>
+      </div>
+      <p class="hint">После правки файла перезапусти программу полностью, иначе сервер не появится.</p>
+    </div>
+
+    <div class="panel" data-panel="other" hidden>
+      <h2>Любой другой клиент</h2>
+      <p class="where">Это обычный MCP по HTTP (протокол 2025-06-18, транспорт Streamable HTTP). Где просят адрес — вставляй его, где просят JSON — вот он.</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">общий вид конфига</span><button class="copy" type="button" data-copy="#c-other">Копировать</button></div>
+        <pre id="c-other">{
+  "mcpServers": {
+    "monolith": {
+      "type": "http",
+      "url": "https://monolith-mcp.slavin5511.workers.dev"
+    }
+  }
+}</pre>
+      </div>
+      <p class="hint">Проверить вручную, без всяких клиентов — одна команда в терминале:</p>
+      <div class="code">
+        <div class="code-top"><span class="code-name">список инструментов</span><button class="copy" type="button" data-copy="#c-curl">Копировать</button></div>
+        <pre id="c-curl">curl -s -X POST https://monolith-mcp.slavin5511.workers.dev -H "content-type: application/json" -d "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/list\"}"</pre>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Что умеет</p>
+    <h2>Пять инструментов</h2>
+    <p class="hint">ИИ сам выбирает нужный — тебе достаточно просто попросить своими словами.</p>
+    <div class="tools">
+      <div class="tool">
+        <p class="nm">search_vault</p>
+        <h3>Найти в хранилище</h3>
+        <p>Ищет по смыслу, а не по названию: по тегам, категориям, твоим заметкам и доменам. Понимает русские и английские слова, синонимы, транслит и опечатки.</p>
+      </div>
+      <div class="tool">
+        <p class="nm">get_item</p>
+        <h3>Прочитать целиком</h3>
+        <p>Открывает материал и достаёт текст: для GitHub — README, для сайтов — читаемую статью без рекламы и бейджиков.</p>
+      </div>
+      <div class="tool">
+        <p class="nm">list_topics</p>
+        <h3>Обзор хранилища</h3>
+        <p>Категории, теги, размер и что где лежит — чтобы ИИ понимал, с чем имеет дело, прежде чем искать.</p>
+      </div>
+      <div class="tool">
+        <p class="nm">find_external</p>
+        <h3>Найти снаружи</h3>
+        <p>Ищет то, чего у тебя нет: репозитории, скиллы, пакеты, сайты. Мусор отсекается: форки, архивы и заброшенное не показываются. В ответе всегда видно, где твоё, а где находка.</p>
+      </div>
+      <div class="tool is-off">
+        <p class="nm">add_link · выключен</p>
+        <h3>Добавить себе</h3>
+        <p>Кладёт найденное в хранилище. Сейчас выключен: сервер работает только на чтение. Как включить — ниже.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Как пользоваться</p>
+    <h2>Просто скажи своими словами</h2>
+    <p class="hint">После подключения в любом чате работают такие фразы:</p>
+    <div class="says">
+      <p class="say"><span>—</span>Посмотри в моём хранилище, что есть про оффлайн и кеш</p>
+      <p class="say"><span>—</span>Открой prime-agent и расскажи своими словами, что он умеет</p>
+      <p class="say"><span>—</span>Найди снаружи скиллы для агентов, которых у меня ещё нет</p>
+      <p class="say"><span>—</span>Я делаю сайт на чистом JS — подбери из моего хранилища всё, что пригодится</p>
+      <p class="say"><span>—</span>Какие у меня категории и чего в них больше всего</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Если нужно больше</p>
+    <h2>Тонкие настройки</h2>
+    <p class="hint">Всё необязательно — сервер работает и так.</p>
+
+    <details class="adv">
+      <summary>Разрешить ИИ добавлять ссылки</summary>
+      <div class="in">
+        <p>По умолчанию сервер только читает. Чтобы он мог класть найденное в хранилище:</p>
+        <ol class="steps">
+          <li>Cloudflare → Workers &amp; Pages → <b>monolith-mcp</b> → Settings → Variables.</li>
+          <li>Переменная <b>WRITE_ENABLED</b> = <b>1</b>.</li>
+          <li>Секрет <b>GITHUB_TOKEN</b> — токен с правом на запись в репозиторий.</li>
+        </ol>
+        <p>Даже после этого ИИ обязан спросить разрешение перед каждым добавлением.</p>
+      </div>
+    </details>
+
+    <details class="adv">
+      <summary>Пароль на сервер</summary>
+      <div class="in">
+        <p>Адрес сервера — вещь непубличная, но если хочется закрыть его совсем: добавь в том же разделе Variables секрет <b>AUTH_TOKEN</b> с любым длинным словом. После этого в клиенте выбирай <b>Bearer Token</b> и вставляй то же слово.</p>
+      </div>
+    </details>
+
+    <details class="adv">
+      <summary>Как это устроено</summary>
+      <div class="in">
+        <p>Сервер — один файл на Cloudflare Workers, без баз и зависимостей. Данные он берёт прямо из репозитория сайта, поэтому хранилище везде одно и то же: что на сайте, то и у ИИ. Логика поиска та же, что в умном поиске сайта. Обновляется сам при каждом изменении репозитория.</p>
+      </div>
+    </details>
+  </section>
+
+  <div class="foot">
+    <span>MONOLITH MCP · протокол 2025-06-18</span>
+    <a href="index.html">Хранилище</a>
+    <a href="https://github.com/Zitr3X39/monolith/blob/main/mcp/README.md" target="_blank" rel="noopener">Исходник сервера</a>
+  </div>
+</main>
+
+<script>
+(function () {
+  var SRV = "https://monolith-mcp.slavin5511.workers.dev";
+
+  /* тема — та же, что на сайте */
+  var btnTheme = document.getElementById("btnTheme");
+  if (btnTheme) {
+    btnTheme.addEventListener("click", function () {
+      var now = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+      document.documentElement.dataset.theme = now;
+      try { localStorage.setItem("lv.theme", now); } catch (e) {}
+    });
+  }
+
+  /* копирование */
+  function copyText(text, btn) {
+    var done = function () {
+      var old = btn.textContent;
+      btn.textContent = "Скопировано";
+      btn.classList.add("is-done");
+      setTimeout(function () { btn.textContent = old; btn.classList.remove("is-done"); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallback(text, done); });
+    } else {
+      fallback(text, done);
+    }
+  }
+
+  function fallback(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-copy]");
+    if (!btn) return;
+    var src = document.querySelector(btn.getAttribute("data-copy"));
+    if (!src) return;
+    copyText(src.textContent.trim(), btn);
+  });
+
+  /* вкладки клиентов */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".seg [data-tab]"));
+  var panels = Array.prototype.slice.call(document.querySelectorAll("[data-panel]"));
+
+  function show(name) {
+    tabs.forEach(function (t) { t.setAttribute("aria-selected", String(t.dataset.tab === name)); });
+    panels.forEach(function (p) { p.hidden = p.dataset.panel !== name; });
+    try { history.replaceState(null, "", "#" + name); } catch (e) {}
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () { show(t.dataset.tab); });
+    t.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      e.preventDefault();
+      var i = tabs.indexOf(t) + (e.key === "ArrowRight" ? 1 : -1);
+      var next = tabs[(i + tabs.length) % tabs.length];
+      next.focus();
+      show(next.dataset.tab);
+    });
+  });
+
+  var start = (location.hash || "").replace("#", "");
+  if (start && tabs.some(function (t) { return t.dataset.tab === start; })) show(start);
+
+  /* живой статус сервера */
+  var box = document.getElementById("status");
+  var line = box ? box.querySelector("span") : null;
+
+  function num(n, one, few, many) {
+    var a = Math.abs(n) % 100, b = a % 10;
+    if (a > 10 && a < 20) return many;
+    if (b > 1 && b < 5) return few;
+    if (b === 1) return one;
+    return many;
+  }
+
+  if (box && line) {
+    var ctl = null;
+    try { ctl = new AbortController(); setTimeout(function () { ctl.abort(); }, 7000); } catch (e) {}
+    fetch(SRV + "/health", { cache: "no-store", signal: ctl ? ctl.signal : undefined })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d || !d.ok) throw new Error("bad");
+        box.classList.add("is-ok");
+        line.textContent = "Сервер работает · " + d.links + " " + num(d.links, "ссылка", "ссылки", "ссылок") + " · " + d.categories + " " + num(d.categories, "категория", "категории", "категорий");
+      })
+      .catch(function () {
+        box.classList.add("is-bad");
+        line.textContent = "Не смог достучаться — проверь сеть или открой адрес вручную";
+      });
+  }
+})();
+</script>
+</body>
+</html>
