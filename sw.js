@@ -1,8 +1,21 @@
-/* MONOLITH v14.8 — офлайн.
-   Оболочка и стили кладутся в кеш навсегда (cache-first),
-   а данные — сначала из сети и только при обрыве из кеша,
-   чтобы в метро или без сети хранилище всё равно открывалось. */
-var CACHE = "monolith-v148";
+/* MONOLITH v14.9 — офлайн без залипания старой версии.
+
+   Почему файл переписан 12.08. Здесь было cache-first: страница получала
+   копию из кеша, а свежий файл догружался в фоне и ложился в кеш «на
+   следующий раз». Из-за этого браузер стабильно показывал прошлую версию
+   кода: правки уезжали в репозиторий, обновление страницы ничего не
+   меняло, а часть файлов иногда успевала обновиться, часть нет — и одна и
+   та же страница выглядела то так, то этак. Вдобавок caches.match стоял с
+   ignoreSearch:true, из-за чего смена ?v=25 на ?v=26 не дала бы ничего:
+   параметр в ключе просто игнорировался.
+
+   Теперь наоборот: сначала сеть, кеш — страховка на случай обрыва. Офлайн
+   работает как работал: оболочка и данные лежат в кеше и отдаются, когда
+   сети нет.
+
+   И ещё: при смене версии воркер сам перезагружает открытые вкладки,
+   иначе свежий код доезжал бы только со второго обновления. */
+var CACHE = "monolith-v149";
 var SHELL = [
   "./",
   "./index.html",
@@ -38,7 +51,14 @@ self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (k) { return k === CACHE ? null : caches.delete(k); }));
-    }).then(function () { return self.clients.claim(); })
+    }).then(function () {
+      return self.clients.claim();
+    }).then(function () {
+      return self.clients.matchAll({ type: "window" });
+    }).then(function (list) {
+      /* новая версия воркера — сразу показываем новый код, без второго обновления */
+      list.forEach(function (c) { try { c.navigate(c.url); } catch (err) {} });
+    }).catch(function () {})
   );
 });
 
@@ -46,48 +66,40 @@ function sameOrigin(url) {
   try { return new URL(url).origin === self.location.origin; } catch (e) { return false; }
 }
 
+function offline(text) {
+  return new Response(text, { status: 503, headers: { "content-type": "text/plain; charset=utf-8" } });
+}
+
+function keep(req, res) {
+  if (res && res.ok && res.type !== "opaque") {
+    var copy = res.clone();
+    caches.open(CACHE).then(function (c) { c.put(req, copy); }).catch(function () {});
+  }
+  return res;
+}
+
 self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;
   if (!sameOrigin(req.url)) return;               /* чужие домены не трогаем */
 
-  var isData = /\/data\/[^/]+\.json/.test(req.url);
-
-  if (isData) {
-    e.respondWith(
-      fetch(req).then(function (res) {
-        if (res && res.ok) {
-          var copy = res.clone();
-          caches.open(CACHE).then(function (c) { c.put(req, copy); });
-        }
-        return res;
-      }).catch(function () {
-        return caches.match(req, { ignoreSearch: true }).then(function (hit) {
-          return hit || new Response('{"items":[]}', { headers: { "content-type": "application/json" } });
-        });
-      })
-    );
-    return;
-  }
-
+  /* cache:"no-cache" — спросить сервер, а не молча отдать из HTTP-кеша.
+     Если файл не менялся, придёт лёгкий 304, а не весь файл заново. */
   e.respondWith(
-    caches.match(req, { ignoreSearch: true }).then(function (hit) {
-      if (hit) {
-        fetch(req).then(function (res) {
-          if (res && res.ok) caches.open(CACHE).then(function (c) { c.put(req, res.clone()); });
-        }).catch(function () {});
-        return hit;
-      }
-      return fetch(req).then(function (res) {
-        if (res && res.ok) {
-          var copy = res.clone();
-          caches.open(CACHE).then(function (c) { c.put(req, copy); });
+    fetch(req, { cache: "no-cache" }).then(function (res) {
+      return keep(req, res);
+    }).catch(function () {
+      return caches.match(req, { ignoreSearch: true }).then(function (hit) {
+        if (hit) return hit;
+        if (req.mode === "navigate") {
+          return caches.match("./index.html", { ignoreSearch: true }).then(function (idx) {
+            return idx || offline("Нет сети и кеша пока тоже нет.");
+          });
         }
-        return res;
-      }).catch(function () {
-        return caches.match("./index.html").then(function (idx) {
-          return idx || new Response("Нет сети и кеша пока тоже нет.", { status: 503, headers: { "content-type": "text/plain; charset=utf-8" } });
-        });
+        if (/\/data\/[^/]+\.json/.test(req.url)) {
+          return new Response('{"items":[]}', { headers: { "content-type": "application/json" } });
+        }
+        return offline("Нет сети и кеша пока тоже нет.");
       });
     })
   );
