@@ -23,6 +23,10 @@
   - если собрать не удалось ничего — файл ленты не перезаписывается.
 
 Ссылки, которые уже есть в хранилище (data/links.json), пропускаются.
+
+v2.1: перед сбором ленты дотягиваем названия и описания для ссылок самого
+хранилища: сайт, бот и MCP кладут ссылку без описания, а vl.enrich() до сихпор
+вызывался только в ручных скриптах импорта, которые ночью не запускаются.
 """
 import json
 import os
@@ -42,6 +46,19 @@ MAX_ITEMS = 35
 MAX_OG_FETCH = 22  # сколько страниц максимум обходим за запуск за og-данными
 MIN_QUALITY = 45   # порог публикации
 TRACK = re.compile(r"^(utm_|fbclid|gclid|yclid|igshid|si$|ref$|ref_src)", re.IGNORECASE)
+
+# хранилище: сколько ссылок обходим за ночь и что считаем пустым описанием
+DESC_MIN = 24
+MAX_VAULT_ENRICH = 40
+VAULT_TRIES = 3
+
+# vaultlib лежит рядом; при запуске «python3 sync/feed.py» каталог sync уже в sys.path
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import vaultlib as vl
+except Exception as _e:  # без библиотеки лента всё равно собирается
+    print("vaultlib недоступна, хранилище не обогащаю:", _e)
+    vl = None
 
 # ---------- темы владельца (главный фильтр «о чём») ----------
 # Новость без совпадения хотя бы с одной темой не публикуется.
@@ -272,7 +289,7 @@ AI_SYS_PROMPT = (
     "Ты редактор личной ленты полезных инструментов MONOLITH. "
     "На входе: оригинальный заголовок, описание, домен, категория и извлечённый текст. "
     "Верни только JSON. Пиши естественно по-русски, без дословной кальки. "
-    "Не переводь имена продуктов, репозиториев и технологий. "
+    "Не переводи имена продуктов, репозиториев и технологий. "
     "title_ru: понятный русский заголовок (имя продукта сохраняется). "
     "summary_ru: 1-2 предложения, что это такое. "
     "why_it_matters_ru: 2-4 предложения, чем это полезно человеку, который сохраняет "
@@ -330,6 +347,65 @@ def ai_enrich(it):
 def http_text_req(req, timeout=40):
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
+
+
+# ---------- описания для ссылок хранилища ----------
+
+def vault_needs(it):
+    """Ссылке нужно описание, если его нет и попытки ещё не исчерпаны."""
+    desc = (it.get("description") or "").strip()
+    if len(desc) >= DESC_MIN:
+        return False
+    if not it.get("enriched"):
+        return True
+    return int(it.get("desc_tries") or 0) < VAULT_TRIES
+
+
+def enrich_vault():
+    """Дотягивает название, описание и картинку для ссылок из data/links.json.
+
+    Ссылки, добавленные с сайта, из бота и через MCP, попадают в хранилище
+    с пустым описанием: vl.enrich() вызывался только в ручных скриптах
+    импорта. Ночью Actions запускает только этот файл, поэтому обогащение
+    хранилища живёт здесь и идёт первым шагом.
+    """
+    if vl is None:
+        return 0
+    data = vl.load_links()
+    items = data.get("items") or []
+    todo = [i for i in items if vault_needs(i)][:MAX_VAULT_ENRICH]
+    if not todo:
+        print("Хранилище: описания на месте у всех ссылок")
+        return 0
+
+    for i in todo:
+        i["desc_tries"] = int(i.get("desc_tries") or 0) + 1
+        i["enriched"] = False  # чтобы vl.enrich() взял ссылку в работу
+
+    try:
+        vl.enrich(todo)
+    except Exception as e:
+        print("vaultlib.enrich не отработала:", e)
+
+    # запасной путь: og-обход силами feed.py там, где vaultlib ничего не вытащила
+    for i in todo:
+        if (i.get("description") or "").strip():
+            continue
+        og = og_fetch(i.get("url") or "")
+        if og.get("description"):
+            i["description"] = og["description"][:300]
+            i["enriched"] = True
+        if og.get("image") and not (i.get("image") or ""):
+            i["image"] = og["image"]
+
+    filled = sum(1 for i in todo if (i.get("description") or "").strip())
+    try:
+        vl.save_links(data)
+    except Exception as e:
+        print("Хранилище не сохранилось:", e)
+        return 0
+    print("Хранилище: обошли %d ссылок, описание есть у %d" % (len(todo), filled))
+    return filled
 
 
 # ---------- collectors ----------
@@ -527,6 +603,13 @@ def publishable(it):
 def main():
     now = datetime.now(timezone.utc)
     now_iso = now.isoformat()
+
+    # шаг 0: у ссылок хранилища часто нет описания — дотягиваем его первым делом,
+    # чтобы правка доезжала до сайта даже если лента сегодня не соберётся
+    try:
+        enrich_vault()
+    except Exception as e:
+        print("Обогащение хранилища не удалось:", e)
 
     # что уже лежит в хранилище — не предлагать повторно
     vault_keys = set()
