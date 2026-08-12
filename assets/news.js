@@ -1,4 +1,4 @@
-/* MONOLITH v14.4 — раздел «Новости»: Signal Reader.
+/* MONOLITH v14.5 — раздел «Новости»: Signal Reader + режим «Шортсы».
 
    Контракт с app.js (не ломать):
      window.MONOLITH_NEWS.render({ items, updatedAt, filter, query, known })
@@ -18,7 +18,13 @@
      4. Факты из материала (установка, разделы, стек) — только то, что реально
         найдено в тексте. Ничего не выдумываем.
      5. «Похожее у тебя» — связь с хранилищем через движок Радара.
-     6. Метка «новое» — что появилось с прошлого захода. */
+     6. Метка «новое» — что появилось с прошлого захода.
+
+   Что добавила v14.5:
+     7. Режим «Шортсы»: одна карточка на весь экран, один щелчок колеса
+        или стрелка вниз — один плавный перелёт, как в YouTube Shorts.
+     8. Шапка ленты больше не дёргается при прокрутке.
+     9. Строка статуса и рабочий прогресс-бар вместо разъехавшейся линии. */
 (function () {
   "use strict";
 
@@ -26,6 +32,7 @@
   var READ_CLAMP = 520;
   var SEEN_KEY = "monolith.news.seen";
   var SORT_KEY = "monolith.news.sort";
+  var SHORTS_KEY = "monolith.news.shorts";
 
   var TOPICS = [
     { id: "ai-agents",    name: "AI и агенты",       color: "#8B7CFF" },
@@ -59,11 +66,20 @@
   var keysBound = false;
   var io = null;
 
+  /* состояние режима «Шортсы» */
+  var shorts = false;
+  var curIdx = 0;
+  var lastFlip = 0;
+  var shChrome = null;
+  var shBound = false;
+  var modeBound = false;
+
   try {
     var s = localStorage.getItem(SORT_KEY);
     if (s === "new" || s === "hot") sortMode = s;
     var v = Number(localStorage.getItem(SEEN_KEY) || 0);
     if (v > 0) seenAt = v;
+    shorts = localStorage.getItem(SHORTS_KEY) === "1";
   } catch (e) {}
 
   /* ---------- утилиты ---------- */
@@ -182,6 +198,121 @@
     return String(Math.round(n));
   }
 
+  /* ---------- собственный CSS раздела ---------- */
+
+  /* Стили шортсов и правка шапки живут здесь, а не в news.css.
+     Так режим автономен: не нужно подключать новый файл в index.html,
+     дописывать его в precache sw.js и гонять версию кэша. */
+  function injectCss() {
+    if (document.getElementById("news-v145-css")) return;
+    var css = [
+      /* — 1. Шапка ленты: больше не дёргается —
+         Причин было три: (а) .news-top висела на top:0 ровно там же,
+         где глобальный .topbar; (б) фон был градиентом в прозрачность
+         на 62%, и контент просвечивал сквозь нижнюю треть;
+         (в) внутри липкого блока стояла своя горизонтальная прокрутка
+         с scroll-snap, которую браузер пересчитывал на каждом кадре. */
+      ".news-top{top:var(--news-stick,0px)!important;",
+      "background:var(--ink)!important;backdrop-filter:none!important;",
+      "-webkit-backdrop-filter:none!important;box-shadow:0 1px 0 var(--line)}",
+      ".news-topics{scroll-snap-type:none!important;scrollbar-width:none}",
+      ".news-topics::-webkit-scrollbar{width:0;height:0}",
+
+      /* — 2. Строка статуса и прогресс-бар — */
+      "#feedMeta{display:block!important;width:100%}",
+      ".nm-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;",
+      "font-family:var(--font-mono,var(--mono,monospace));font-size:11.5px;",
+      "letter-spacing:.03em;color:var(--text-3)}",
+      ".nm-fresh{display:inline-flex;align-items:center;gap:6px;height:22px;",
+      "padding:0 9px;border-radius:999px;background:rgba(90,169,255,.14);",
+      "color:var(--news-accent,#5aa9ff);font-weight:600}",
+      ".nm-fresh i{width:5px;height:5px;border-radius:50%;background:currentColor}",
+      ".nm-count{font-variant-numeric:tabular-nums;color:var(--text-2)}",
+      ".nm-gap{flex:1 1 auto;min-width:8px}",
+      ".nm-mode{display:inline-flex;align-items:center;gap:6px;height:26px;",
+      "padding:0 11px;border-radius:999px;border:1px solid var(--line);",
+      "background:transparent;color:var(--text-2);font:inherit;cursor:pointer;",
+      "transition:background .18s ease,color .18s ease,border-color .18s ease}",
+      ".nm-mode:hover{color:var(--text);border-color:var(--line-strong,rgba(255,255,255,.17))}",
+      ".nm-mode:focus-visible{outline:2px solid var(--news-accent,#5aa9ff);outline-offset:2px}",
+      '.nm-mode[aria-pressed="true"]{background:var(--news-accent,#5aa9ff);',
+      "border-color:var(--news-accent,#5aa9ff);color:#0b1220;font-weight:600}",
+      ".nm-bar{position:relative;height:2px;margin-top:10px;border-radius:2px;",
+      "background:var(--line);overflow:hidden}",
+      ".nm-bar i{position:absolute;left:0;top:0;bottom:0;display:block;border-radius:2px;",
+      "background:var(--news-accent,#5aa9ff);transition:width .32s cubic-bezier(.22,.61,.36,1)}",
+
+      /* — 3. Режим «Шортсы» —
+         Карточки становятся слоями в одном фиксированном контейнере.
+         Следующая ждёт снизу, прошлая уходит вверх — ровно как в Shorts. */
+      "html.is-shorts,body.is-shorts{overflow:hidden!important}",
+      "#feedList.is-shorts{position:fixed;inset:0;z-index:120;margin:0;padding:0;",
+      "display:block;background:var(--ink);overflow:hidden;overscroll-behavior:contain}",
+      "#feedList.is-shorts>.news-note{display:none}",
+      "#feedList.is-shorts>.news-card{position:absolute;left:50%;top:0;",
+      "width:min(760px,100%);max-width:none;height:100vh;height:100svh;margin:0;",
+      "border-radius:0;border-top:none;border-bottom:none;overflow-y:auto;",
+      "overscroll-behavior:contain;touch-action:pan-y;",
+      "padding:64px 22px calc(72px + env(safe-area-inset-bottom,0px));",
+      "opacity:0;pointer-events:none;transform:translate3d(-50%,100%,0);",
+      "transition:transform .48s cubic-bezier(.22,.61,.36,1),opacity .3s ease;",
+      "will-change:transform}",
+      "#feedList.is-shorts>.news-card::-webkit-scrollbar{width:0}",
+      "#feedList.is-shorts>.news-card.is-prev{transform:translate3d(-50%,-100%,0);opacity:0}",
+      "#feedList.is-shorts>.news-card.is-cur{transform:translate3d(-50%,0,0);opacity:1;",
+      "pointer-events:auto}",
+      "#feedList.is-shorts .news-gal{max-height:46svh}",
+
+      /* — 4. Обвязка шортсов: выход, счётчик, вертикальный прогресс — */
+      ".sh-chrome{position:fixed;inset:0;z-index:121;display:none;pointer-events:none}",
+      ".sh-chrome.on{display:block}",
+      ".sh-top{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;",
+      "gap:12px;padding:12px 16px;pointer-events:auto;",
+      "background:linear-gradient(180deg,rgba(5,6,7,.94),rgba(5,6,7,0))}",
+      ".sh-exit{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;",
+      "border:1px solid var(--line);background:rgba(13,15,18,.85);color:var(--text-2);",
+      "cursor:pointer;padding:0}",
+      ".sh-exit:hover{color:var(--text)}",
+      ".sh-exit:focus-visible{outline:2px solid var(--news-accent,#5aa9ff);outline-offset:2px}",
+      ".sh-num{margin-left:auto;font-family:var(--font-mono,var(--mono,monospace));",
+      "font-variant-numeric:tabular-nums;font-size:12px;color:var(--text-2);",
+      "background:rgba(13,15,18,.85);border:1px solid var(--line);border-radius:999px;",
+      "padding:5px 11px}",
+      ".sh-rail{position:absolute;right:10px;top:66px;bottom:66px;width:3px;",
+      "border-radius:3px;background:rgba(255,255,255,.09);overflow:hidden}",
+      ".sh-rail i{position:absolute;left:0;right:0;top:0;display:block;border-radius:3px;",
+      "background:var(--news-accent,#5aa9ff);transition:height .34s cubic-bezier(.22,.61,.36,1)}",
+      ".sh-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);",
+      "font-family:var(--font-mono,var(--mono,monospace));font-size:11px;letter-spacing:.04em;",
+      "color:var(--text-3);background:rgba(13,15,18,.82);border:1px solid var(--line);",
+      "border-radius:999px;padding:6px 13px;white-space:nowrap}",
+
+      /* — 5. Уважаем prefers-reduced-motion (ux-guidelines: Motion Sensitivity) — */
+      "@media (prefers-reduced-motion:reduce){",
+      "#feedList.is-shorts>.news-card{transition:none}",
+      ".nm-bar i,.sh-rail i{transition:none}}",
+      "@media (max-width:560px){.sh-hint{display:none}}"
+    ].join("");
+    var st = document.createElement("style");
+    st.id = "news-v145-css";
+    st.textContent = css;
+    (document.head || document.documentElement).appendChild(st);
+  }
+
+  /* Шапка ленты должна липнуть ПОД глобальной панелью, а не в ту же точку.
+     Высоту берём замером, а не константой: панель переносится на две строки
+     на узких экранах (v142.css §2.8). Если панель не липкая — отступ 0. */
+  function stickTop() {
+    var tb = document.querySelector(".topbar");
+    var h = 0;
+    if (tb) {
+      var pos = "";
+      try { pos = getComputedStyle(tb).position; } catch (e) {}
+      if (pos === "fixed" || pos === "sticky") h = Math.round(tb.getBoundingClientRect().height);
+    }
+    document.documentElement.style.setProperty("--news-stick", h + "px");
+  }
+
   /* ---------- картинки из самого материала ---------- */
 
   /* README и статьи почти всегда несут скриншоты — именно их и хочется
@@ -257,8 +388,8 @@
     return '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>';
   }
 
-  /* Листание: scroll-snap + тянуть мышью/пальцем. Колесо не перехватываем:
-     вертикальный скролл страницы должен оставаться предсказуемым. */
+  /* Листание галереи: scroll-snap + тянуть мышью/пальцем. Колесо здесь
+     не перехватываем: вертикальная навигация принадлежит шортсам. */
   function wireGal(gal) {
     if (!gal || gal.__wired) return;
     gal.__wired = true;
@@ -570,7 +701,10 @@
     add: '<path d="M12 5v14M5 12h14"/>',
     ok: '<path d="M20 6L9 17l-5-5"/>',
     link: '<path d="M10 13a5 5 0 007 0l2-2a5 5 0 00-7-7l-1 1"/><path d="M14 11a5 5 0 00-7 0l-2 2a5 5 0 007 7l1-1"/>',
-    out: '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h4"/>'
+    out: '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h4"/>',
+    play: '<path d="M7 4.5l12 7.5-12 7.5v-15z"/>',
+    rows: '<path d="M4 6h16M4 12h16M4 18h16"/>',
+    close: '<path d="M6 6l12 12M18 6L6 18"/>'
   };
 
   function icon(name) {
@@ -729,7 +863,9 @@
 
   function observe(list) {
     var cards = list.querySelectorAll(".news-card");
-    if (!("IntersectionObserver" in window)) {
+    /* В шортсах карточки лежат вне экрана по устройству режима,
+       поэтому наблюдатель никогда бы их не показал. */
+    if (shorts || !("IntersectionObserver" in window)) {
       cards.forEach(function (c) { c.classList.add("in"); });
       return;
     }
@@ -749,278 +885,147 @@
     });
   }
 
-  /* ---------- клавиатура ---------- */
+  /* ---------- режим «Шортсы» ---------- */
 
-  function feedVisible() {
-    var w = document.getElementById("feedWrap");
-    return !!w && !w.hidden;
-  }
-
-  function busy() {
-    var a = document.activeElement;
-    if (a && (a.tagName === "INPUT" || a.tagName === "TEXTAREA" || a.isContentEditable)) return true;
-    if (document.querySelector("dialog[open]")) return true;
-    var r = document.getElementById("radar");
-    if (r && !r.hidden) return true;
-    return false;
-  }
-
-  function cards() {
+  function shSlides() {
     var list = document.getElementById("feedList");
-    return list ? Array.prototype.slice.call(list.querySelectorAll(".news-card")) : [];
-  }
-
-  function select(i, scroll) {
-    var cs = cards();
-    if (!cs.length) return;
-    if (i < 0) i = 0;
-    if (i > cs.length - 1) i = cs.length - 1;
-    selIdx = i;
-    cs.forEach(function (c, k) { c.classList.toggle("is-sel", k === i); });
-    if (scroll !== false) {
-      var top = cs[i].getBoundingClientRect().top + window.scrollY - 118;
-      window.scrollTo({ top: top, behavior: "smooth" });
-    }
-  }
-
-  function bindKeys() {
-    if (keysBound) return;
-    keysBound = true;
-    document.addEventListener("keydown", function (e) {
-      if (!feedVisible() || busy()) return;
-      if (e.metaKey || e.ctrlKey || e.altKey) return;
-      var k = e.key;
-      var lower = k.length === 1 ? k.toLowerCase() : k;
-
-      if (lower === "j" || lower === "\u043e") { e.preventDefault(); select(selIdx < 0 ? 0 : selIdx + 1); return; }
-      if (lower === "k" || lower === "\u043b") { e.preventDefault(); select(selIdx <= 0 ? 0 : selIdx - 1); return; }
-
-      var cs = cards();
-      var cur = selIdx >= 0 ? cs[selIdx] : null;
-      if (!cur) return;
-
-      if (k === "ArrowRight" || k === "ArrowLeft") {
-        var gal = cur.querySelector(".news-gal");
-        if (gal && gal.__go) {
-          e.preventDefault();
-          gal.__go(k === "ArrowRight" ? 1 : -1);
-        }
-        return;
-      }
-      if (lower === "r" || lower === "\u043a") {
-        e.preventDefault();
-        var btn = cur.querySelector("[data-read]");
-        if (btn) btn.click();
-        return;
-      }
-      if (lower === "o" || lower === "\u0449") {
-        var a = cur.querySelector(".news-title a");
-        if (a) { e.preventDefault(); window.open(a.href, "_blank", "noopener"); }
-      }
+    if (!list) return [];
+    return Array.prototype.filter.call(list.children, function (el) {
+      return el.classList && el.classList.contains("news-card");
     });
   }
 
-  /* ---------- делегация внутри ленты ---------- */
+  function buildChrome() {
+    if (shChrome && shChrome.isConnected) return shChrome;
+    shChrome = document.createElement("div");
+    shChrome.className = "sh-chrome";
+    shChrome.innerHTML =
+      '<div class="sh-top">' +
+        '<button type="button" class="sh-exit" data-sh-exit aria-label="Выйти из шортсов">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+          ICONS.close + "</svg></button>" +
+        '<span class="sh-num" data-sh-num aria-live="polite">1 / 1</span>' +
+      "</div>" +
+      '<div class="sh-rail"><i data-sh-rail></i></div>' +
+      '<div class="sh-hint">колесо · стрелки · свайп — одна карточка за раз · Esc — выход</div>';
+    document.body.appendChild(shChrome);
+    shChrome.addEventListener("click", function (e) {
+      if (e.target.closest("[data-sh-exit]")) setShorts(false);
+    });
+    return shChrome;
+  }
 
-  function wireList(list) {
-    if (list.__wired) return;
-    list.__wired = true;
+  function paintShorts() {
+    var cs = shSlides();
+    var n = cs.length;
+    if (!n) return;
+    if (curIdx > n - 1) curIdx = n - 1;
+    if (curIdx < 0) curIdx = 0;
 
-    list.addEventListener("click", function (e) {
-      var card = e.target.closest(".news-card");
-      if (card) {
-        var idx = Number(card.getAttribute("data-idx"));
-        if (!isNaN(idx)) {
-          var cs = cards();
-          var pos = cs.indexOf(card);
-          if (pos >= 0 && pos !== selIdx) select(pos, false);
-        }
-      }
+    cs.forEach(function (c, k) {
+      c.classList.add("in");
+      c.classList.toggle("is-cur", k === curIdx);
+      c.classList.toggle("is-prev", k < curIdx);
+      if (k !== curIdx && c.scrollTop) c.scrollTop = 0;
+    });
 
-      var more = e.target.closest("[data-more]");
-      if (more && card) {
-        e.preventDefault();
-        var it = itemOf(card);
-        if (!it) return;
-        more.disabled = true;
-        more.textContent = "ищу картинки…";
-        var job = readCache[it.url] ? Promise.resolve(readCache[it.url])
-          : fetchText(it.url).then(function (r) { readCache[it.url] = r; return r; });
-        job.then(function (res) {
-          var pics = imagesFromText(res.text || "", it.url);
-          imgCache[it.url] = pics;
-          var gal = card.querySelector(".news-gal");
-          var n = gal ? addSlides(gal, pics) : 0;
-          if (n) more.remove();
-          else { more.disabled = false; more.textContent = "больше картинок нет"; }
-        }).catch(function () {
-          more.disabled = false;
-          more.textContent = "не дотянулся";
-        });
-        return;
-      }
+    var ch = buildChrome();
+    var numEl = ch.querySelector("[data-sh-num]");
+    if (numEl) numEl.textContent = (curIdx + 1) + " / " + n;
+    var rail = ch.querySelector("[data-sh-rail]");
+    if (rail) rail.style.height = Math.round(((curIdx + 1) / n) * 100) + "%";
 
-      var rd = e.target.closest("[data-read]");
-      if (rd && card) {
-        e.preventDefault();
-        var item = itemOf(card);
-        if (item) openRead(card, item);
-        return;
-      }
+    selIdx = curIdx;
+  }
 
-      var ex = e.target.closest("[data-expand]");
-      if (ex) {
-        e.preventDefault();
-        var body = ex.parentNode.querySelector("[data-body]");
-        if (body) body.classList.remove("news-read-fade");
-        ex.remove();
-        return;
-      }
+  function go(dir) {
+    var cs = shSlides();
+    if (!cs.length) return;
+    var next = curIdx + dir;
 
-      var reset = e.target.closest("[data-news-reset]");
-      if (reset) {
-        e.preventDefault();
-        if (lastCtx) {
-          lastCtx.filter = "";
-          shownCount = PAGE;
-          render(lastCtx);
-        }
-      }
+    if (next < 0) { curIdx = 0; paintShorts(); return; }
 
-      var showMore = e.target.closest("[data-more-cards]");
-      if (showMore) {
-        e.preventDefault();
+    if (next > cs.length - 1) {
+      /* дошли до конца порции — тихо подгружаем следующую */
+      var before = cs.length;
+      if (lastCtx) {
         shownCount += PAGE;
         render(lastCtx);
+        if (shSlides().length > before) { curIdx = before; paintShorts(); }
       }
-    });
-  }
-
-  function itemOf(card) {
-    if (!lastCtx || !lastCtx.items) return null;
-    var url = card.getAttribute("data-url");
-    for (var i = 0; i < lastCtx.items.length; i++) {
-      if (lastCtx.items[i].url === url) return lastCtx.items[i];
-    }
-    return null;
-  }
-
-  function wireTop() {
-    var box = document.getElementById("feedChips");
-    if (!box || box.__wiredSort) return;
-    box.__wiredSort = true;
-    box.addEventListener("click", function (e) {
-      var b = e.target.closest("[data-sort]");
-      if (!b) return;
-      sortMode = b.getAttribute("data-sort") === "new" ? "new" : "hot";
-      try { localStorage.setItem(SORT_KEY, sortMode); } catch (err) {}
-      shownCount = PAGE;
-      if (lastCtx) render(lastCtx);
-    });
-    var srcbox = box.querySelector(".news-srcbox");
-    if (srcbox) {
-      box.addEventListener("click", function (e) {
-        if (e.target.closest(".news-srclist .chip")) srcbox.open = false;
-      });
-      document.addEventListener("click", function (e) {
-        if (srcbox.open && !srcbox.contains(e.target)) srcbox.open = false;
-      });
-    }
-  }
-
-  /* ---------- главный вход ---------- */
-
-  function render(ctx) {
-    ctx = ctx || {};
-    var prevKey = lastCtx ? (txt(lastCtx.filter) + "|" + txt(lastCtx.query)) : null;
-    lastCtx = ctx;
-    var nowKey = txt(ctx.filter) + "|" + txt(ctx.query);
-    if (prevKey !== null && prevKey !== nowKey) shownCount = PAGE;
-
-    var list = document.getElementById("feedList");
-    var empty = document.getElementById("feedEmpty");
-    var meta = document.getElementById("feedMeta");
-    if (!list) return;
-
-    var all = (ctx.items || []).filter(function (it) { return it && txt(it.url); });
-    var q = txt(ctx.query).toLowerCase();
-    var pool = q ? all.filter(function (it) { return matchQuery(it, q); }) : all;
-
-    var pf = parseFilter(ctx.filter);
-    if (pf.kind === "topic" && !pool.some(function (it) { return topicOf(it).id === pf.value; })) pf = { kind: "all", value: "" };
-    if (pf.kind === "src" && !pool.some(function (it) { return txt(it.source) === pf.value; })) pf = { kind: "all", value: "" };
-
-    var rows = pool.filter(function (it) {
-      if (pf.kind === "topic") return topicOf(it).id === pf.value;
-      if (pf.kind === "src") return txt(it.source) === pf.value;
-      return true;
-    });
-
-    rows.sort(sortMode === "new"
-      ? function (a, b) { return stamp(b) - stamp(a) || Number(b.score || 0) - Number(a.score || 0); }
-      : function (a, b) { return Number(b.score || 0) - Number(a.score || 0) || stamp(b) - stamp(a); });
-
-    renderFilters(pool, pf);
-    wireTop();
-
-    var fresh = all.filter(function (it) { return seenAt > 0 && stamp(it) > seenAt; }).length;
-    if (meta) {
-      var upd = "";
-      if (ctx.updatedAt) {
-        var d = new Date(ctx.updatedAt);
-        if (!isNaN(d.getTime())) {
-          try {
-            upd = new Intl.DateTimeFormat("ru-RU", {
-              day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit"
-            }).format(d);
-          } catch (e) {}
-        }
-      }
-      meta.innerHTML =
-        (fresh ? '<span class="news-fresh"><i></i>' + fresh + " новых с твоего захода</span>" : "") +
-        "<span>" + rows.length + " из " + all.length + "</span>" +
-        (upd ? '<span class="news-sep"></span><span>обновлено ' + esc(upd) + "</span>" : "");
-    }
-
-    var badge = document.getElementById("feedBadge");
-    if (badge) badge.textContent = all.length ? String(all.length) : "";
-
-    if (!rows.length) {
-      list.innerHTML = q
-        ? '<div class="news-note">По запросу <b>' + esc(ctx.query) + "</b> в ленте ничего нет.<br/>Включи тумблер «Умный» у поиска — посмотрю снаружи.</div>"
-        : '<div class="news-note">Здесь пусто.<br/><button type="button" class="news-btn news-btn-ghost" data-news-reset="1">Показать всё</button></div>';
-      if (empty) empty.hidden = true;
-      wireList(list);
       return;
     }
 
-    if (empty) empty.hidden = true;
-    var vis = rows.slice(0, shownCount);
-    var html = vis.map(function (it, i) { return cardHtml(it, i, ctx.known); }).join("");
-    if (rows.length > vis.length) {
-      html += '<div class="news-note"><button type="button" class="news-btn news-btn-ghost" data-more-cards="1">' +
-        "Показать ещё " + Math.min(PAGE, rows.length - vis.length) + " из " + (rows.length - vis.length) + "</button></div>";
-    }
-    list.innerHTML = html;
+    curIdx = next;
+    paintShorts();
+  }
 
-    list.querySelectorAll('.news-card[data-new="1"]').forEach(function (c) { c.classList.add("is-new"); });
-    list.querySelectorAll(".news-gal").forEach(wireGal);
-    observe(list);
-    wireList(list);
-    bindKeys();
-    selIdx = -1;
-
-    /* отметка посещения — один раз за сеанс, чтобы «новое» не гасло при фильтрации */
-    if (!render.__stamped) {
-      render.__stamped = true;
-      try { localStorage.setItem(SEEN_KEY, String(Date.now())); } catch (e) {}
+  function setShorts(on) {
+    shorts = !!on;
+    try { localStorage.setItem(SHORTS_KEY, shorts ? "1" : "0"); } catch (e) {}
+    if (shorts && curIdx < 0) curIdx = 0;
+    applyShorts();
+    if (!shorts) {
+      /* вышли из шортсов — вернём анимацию появления обычной ленты */
+      var list = document.getElementById("feedList");
+      if (list) observe(list);
     }
   }
 
-  window.MONOLITH_NEWS = {
-    render: render,
-    topics: TOPICS,
-    facts: factsFrom,
-    images: imagesFromText
-  };
-})();
+  function applyShorts() {
+    var list = document.getElementById("feedList");
+    if (!list) return;
+    var root = document.documentElement;
+    var ch = buildChrome();
+    var can = shorts && feedVisible() && shSlides().length > 0;
+
+    if (can) {
+      list.classList.add("is-shorts");
+      ch.classList.add("on");
+      root.classList.add("is-shorts");
+      document.body.classList.add("is-shorts");
+      bindShorts(list);
+      paintShorts();
+    } else {
+      list.classList.remove("is-shorts");
+      ch.classList.remove("on");
+      root.classList.remove("is-shorts");
+      document.body.classList.remove("is-shorts");
+      shSlides().forEach(function (c) {
+        c.classList.remove("is-cur");
+        c.classList.remove("is-prev");
+      });
+    }
+
+    var btn = document.querySelector("[data-shorts-toggle]");
+    if (btn) btn.setAttribute("aria-pressed", String(shorts));
+  }
+
+  /* Край карточки: длинный материал сначала дочитывается внутри,
+     и только потом жест перелистывает на следующую. */
+  function atEdge(card, dir) {
+    if (!card) return true;
+    if (card.scrollHeight - card.clientHeight <= 24) return true;
+    if (dir > 0) return card.scrollTop + card.clientHeight >= card.scrollHeight - 2;
+    return card.scrollTop <= 2;
+  }
+
+  function bindShorts(list) {
+    if (shBound) return;
+    shBound = true;
+
+    /* Колесо: один жест — одна карточка. Обычной прокрутки страницы нет. */
+    list.addEventListener("wheel", function (e) {
+      if (!shorts) return;
+      e.preventDefault();
+      var d = e.deltaY;
+      if (Math.abs(d) < 4) return;
+      var cur = shSlides()[curIdx];
+      if (!atEdge(cur, d)) { cur.scrollTop += d; return; }
+      var now = Date.now();
+      if (now - lastFlip < 560) return;
+      lastFlip = now;
+      go(d > 0 ? 1 : -1);
+    }, { passive: false });
+
+    /* Свайп п
