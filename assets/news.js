@@ -10,26 +10,12 @@
      "topic:ai-agents"     — по теме
      "src:GitHub Trending" — по источнику
 
-   Что здесь нового по сравнению с v14.2:
-     1. Описание — главный текст карточки, а не серая подпись.
-     2. Галерея: обложка + картинки из самого материала, листается
-        свайпом/стрелками/точками — колёсиком ничего крутить не надо.
-     3. Чтение целиком внутри карточки (README/статья) без ухода с сайта.
-     4. Факты из материала (установка, разделы, стек) — только то, что реально
-        найдено в тексте. Ничего не выдумываем.
-     5. «Похожее у тебя» — связь с хранилищем через движок Радара.
-     6. Метка «новое» — что появилось с прошлого захода.
-
-   Что добавила v14.5:
-     7. Режим «Шортсы»: одна карточка на весь экран, один щелчок колеса
-        или стрелка вниз — один плавный перелёт, как в YouTube Shorts.
-     8. Шапка ленты больше не дёргается при прокрутке.
-     9. Строка статуса и рабочий прогресс-бар вместо разъехавшейся линии. */
+   v14.5 добавила: режим «Шортсы» (одна карточка на экран, один жест —
+   один перелёт), неподвижную шапку ленты и рабочий прогресс-бар. */
 (function () {
   "use strict";
 
   var PAGE = 12;
-  var READ_CLAMP = 520;
   var SEEN_KEY = "monolith.news.seen";
   var SORT_KEY = "monolith.news.sort";
   var SHORTS_KEY = "monolith.news.shorts";
@@ -75,10 +61,10 @@
   var modeBound = false;
 
   try {
-    var s = localStorage.getItem(SORT_KEY);
-    if (s === "new" || s === "hot") sortMode = s;
-    var v = Number(localStorage.getItem(SEEN_KEY) || 0);
-    if (v > 0) seenAt = v;
+    var s0 = localStorage.getItem(SORT_KEY);
+    if (s0 === "new" || s0 === "hot") sortMode = s0;
+    var v0 = Number(localStorage.getItem(SEEN_KEY) || 0);
+    if (v0 > 0) seenAt = v0;
     shorts = localStorage.getItem(SHORTS_KEY) === "1";
   } catch (e) {}
 
@@ -92,7 +78,7 @@
 
   function txt(v) { return typeof v === "string" ? v.trim() : ""; }
 
-  function hasCyr(s) { return /[\u0430-\u044f\u0451]/i.test(s || ""); }
+  function hasCyr(s) { return /[а-яё]/i.test(s || ""); }
 
   /* Клиентский quality gate: явный мусор не показываем ни в каком виде. */
   function junk(s) {
@@ -103,7 +89,7 @@
     return s.trim().length < 3;
   }
 
-  /* §10.2: скриншотные прокси дают «Generating Preview…» вместо картинки */
+  /* Скриншотные прокси отдают «Generating Preview…» вместо картинки. */
   function badImage(u) {
     if (!u) return true;
     if (!/^https?:\/\//i.test(u)) return true;
@@ -119,8 +105,8 @@
     } else {
       var s = txt(v);
       if (s && !junk(s)) {
-        s.split(/\s*(?:\u2022|\n|;)\s*/).forEach(function (p) {
-          p = p.trim().replace(/^[-\u2013\u2014*]\s*/, "");
+        s.split(/\s*(?:•|\n|;)\s*/).forEach(function (p) {
+          p = p.trim().replace(/^[-–—*]\s*/, "");
           if (p.length > 2) out.push(p);
         });
       }
@@ -146,8 +132,8 @@
     return txt(it.title) || txt(it.domain) || "Без названия";
   }
 
-  /* Сначала разбор, потом перевод, потом оригинал. Если русского нет —
-     помечаем карточку как оригинал EN, а не выбрасываем. */
+  /* Сначала разбор, потом перевод, потом оригинал. Нет русского — помечаем
+     карточку как оригинал EN, а не выбрасываем. */
   function leadOf(it) {
     var cands = [it.summary_ru, it.description_ru, it.description];
     for (var i = 0; i < cands.length; i++) {
@@ -198,27 +184,25 @@
     return String(Math.round(n));
   }
 
-  /* ---------- собственный CSS раздела ---------- */
+  /* ---------- собственный CSS раздела ----------
+     Стили шортсов и правка шапки живут здесь, а не в news.css: так режим
+     автономен — не нужно подключать новый файл в index.html, дописывать его
+     в precache sw.js и гонять версию кэша. */
 
-  /* Стили шортсов и правка шапки живут здесь, а не в news.css.
-     Так режим автономен: не нужно подключать новый файл в index.html,
-     дописывать его в precache sw.js и гонять версию кэша. */
   function injectCss() {
     if (document.getElementById("news-v145-css")) return;
     var css = [
-      /* — 1. Шапка ленты: больше не дёргается —
-         Причин было три: (а) .news-top висела на top:0 ровно там же,
-         где глобальный .topbar; (б) фон был градиентом в прозрачность
-         на 62%, и контент просвечивал сквозь нижнюю треть;
-         (в) внутри липкого блока стояла своя горизонтальная прокрутка
-         с scroll-snap, которую браузер пересчитывал на каждом кадре. */
+      /* 1. Шапка ленты. Причин тряски было три: .news-top висела на top:0 ровно
+         там же, где глобальный .topbar; фон был градиентом в прозрачность и
+         контент просвечивал насквозь; внутри липкого блока стояла своя
+         прокрутка со scroll-snap, которую браузер пересчитывал каждый кадр. */
       ".news-top{top:var(--news-stick,0px)!important;",
       "background:var(--ink)!important;backdrop-filter:none!important;",
       "-webkit-backdrop-filter:none!important;box-shadow:0 1px 0 var(--line)}",
       ".news-topics{scroll-snap-type:none!important;scrollbar-width:none}",
       ".news-topics::-webkit-scrollbar{width:0;height:0}",
 
-      /* — 2. Строка статуса и прогресс-бар — */
+      /* 2. Строка статуса и прогресс-бар. */
       "#feedMeta{display:block!important;width:100%}",
       ".nm-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;",
       "font-family:var(--font-mono,var(--mono,monospace));font-size:11.5px;",
@@ -242,17 +226,15 @@
       ".nm-bar i{position:absolute;left:0;top:0;bottom:0;display:block;border-radius:2px;",
       "background:var(--news-accent,#5aa9ff);transition:width .32s cubic-bezier(.22,.61,.36,1)}",
 
-      /* — 3. Режим «Шортсы» —
-         Карточки становятся слоями в одном фиксированном контейнере.
-         Следующая ждёт снизу, прошлая уходит вверх — ровно как в Shorts. */
+      /* 3. Режим «Шортсы»: карточки становятся слоями в одном фиксированном
+         контейнере. Следующая ждёт снизу, прошлая уходит вверх. */
       "html.is-shorts,body.is-shorts{overflow:hidden!important}",
       "#feedList.is-shorts{position:fixed;inset:0;z-index:120;margin:0;padding:0;",
       "display:block;background:var(--ink);overflow:hidden;overscroll-behavior:contain}",
       "#feedList.is-shorts>.news-note{display:none}",
       "#feedList.is-shorts>.news-card{position:absolute;left:50%;top:0;",
       "width:min(760px,100%);max-width:none;height:100vh;height:100svh;margin:0;",
-      "border-radius:0;border-top:none;border-bottom:none;overflow-y:auto;",
-      "overscroll-behavior:contain;touch-action:pan-y;",
+      "border-radius:0;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;",
       "padding:64px 22px calc(72px + env(safe-area-inset-bottom,0px));",
       "opacity:0;pointer-events:none;transform:translate3d(-50%,100%,0);",
       "transition:transform .48s cubic-bezier(.22,.61,.36,1),opacity .3s ease;",
@@ -263,7 +245,7 @@
       "pointer-events:auto}",
       "#feedList.is-shorts .news-gal{max-height:46svh}",
 
-      /* — 4. Обвязка шортсов: выход, счётчик, вертикальный прогресс — */
+      /* 4. Обвязка шортсов: выход, счётчик, вертикальный индикатор. */
       ".sh-chrome{position:fixed;inset:0;z-index:121;display:none;pointer-events:none}",
       ".sh-chrome.on{display:block}",
       ".sh-top{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;",
@@ -287,7 +269,7 @@
       "color:var(--text-3);background:rgba(13,15,18,.82);border:1px solid var(--line);",
       "border-radius:999px;padding:6px 13px;white-space:nowrap}",
 
-      /* — 5. Уважаем prefers-reduced-motion (ux-guidelines: Motion Sensitivity) — */
+      /* 5. Уважаем prefers-reduced-motion. */
       "@media (prefers-reduced-motion:reduce){",
       "#feedList.is-shorts>.news-card{transition:none}",
       ".nm-bar i,.sh-rail i{transition:none}}",
@@ -300,8 +282,7 @@
   }
 
   /* Шапка ленты должна липнуть ПОД глобальной панелью, а не в ту же точку.
-     Высоту берём замером, а не константой: панель переносится на две строки
-     на узких экранах (v142.css §2.8). Если панель не липкая — отступ 0. */
+     Высоту берём замером: панель переносится на две строки на узких экранах. */
   function stickTop() {
     var tb = document.querySelector(".topbar");
     var h = 0;
@@ -315,8 +296,6 @@
 
   /* ---------- картинки из самого материала ---------- */
 
-  /* README и статьи почти всегда несут скриншоты — именно их и хочется
-     листать. Собираем до того, как движок Радара вырежет картинки из текста. */
   function imagesFromText(text, url) {
     var out = [], seen = {}, m;
     var gh = ghSlug(url);
@@ -362,9 +341,14 @@
       "</div>";
   }
 
+  function arrow(dir) {
+    var d = dir < 0 ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7";
+    return '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>';
+  }
+
   function galHtml(it, srcs) {
     if (!srcs.length) {
-      var letter = (titleOf(it).replace(/[^0-9A-Za-z\u0410-\u044f]/g, "").charAt(0) || "M").toUpperCase();
+      var letter = (titleOf(it).replace(/[^0-9A-Za-zА-яа-я]/g, "").charAt(0) || "M").toUpperCase();
       return '<div class="news-gal" data-gal="empty">' +
         '<div class="news-rail"><div class="news-slide"><span class="news-letter">' + esc(letter) + "</span></div></div>" +
         '<span class="news-gal-meta">' + esc(domainOf(it)) + "</span>" +
@@ -383,13 +367,8 @@
       "</div>";
   }
 
-  function arrow(dir) {
-    var d = dir < 0 ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7";
-    return '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>';
-  }
-
-  /* Листание галереи: scroll-snap + тянуть мышью/пальцем. Колесо здесь
-     не перехватываем: вертикальная навигация принадлежит шортсам. */
+  /* Листание галереи: scroll-snap + тянуть мышью/пальцем. Колесо здесь не
+     перехватываем: вертикальная навигация принадлежит шортсам. */
   function wireGal(gal) {
     if (!gal || gal.__wired) return;
     gal.__wired = true;
@@ -433,7 +412,6 @@
       t = setTimeout(function () { t = null; sync(); }, 60);
     }, { passive: true });
 
-    /* тянем мышью — на телефоне свайп и так работает сам */
     var down = false, x0 = 0, l0 = 0, moved = 0;
     rail.addEventListener("pointerdown", function (e) {
       if (e.pointerType === "touch") return;
@@ -464,7 +442,6 @@
       else if (e.key === "ArrowRight") { e.preventDefault(); gal.__go(1); }
     });
 
-    /* битая картинка не должна оставлять пустой кадр */
     rail.addEventListener("error", function (e) {
       var img = e.target;
       if (!img || img.tagName !== "IMG") return;
@@ -494,6 +471,7 @@
   }
 
   function addSlides(gal, srcs) {
+    if (!gal) return 0;
     var rail = gal.querySelector(".news-rail");
     if (!rail || !srcs.length) return 0;
     var have = {};
@@ -522,10 +500,10 @@
     return added;
   }
 
-  /* ---------- факты из текста материала ---------- */
+  /* ---------- факты из текста материала ----------
+     Всё, что показываем в блоке фактов, реально взято из текста. Ничего не
+     додумываем — иначе информации нельзя верить. */
 
-  /* Важно: всё, что показываем в блоке фактов, реально взято из текста.
-     Ничего не додумываем и не генерируем — иначе информации нельзя верить. */
   function factsFrom(text) {
     var out = { install: "", parts: [], stack: [] };
     if (!text) return out;
@@ -594,7 +572,6 @@
     var R = radar();
     if (R) return R.read(url);
 
-    /* автономный запасной путь, если движок Радара не загрузился */
     var gh = ghSlug(url);
     if (gh) {
       return fetch("https://api.github.com/repos/" + gh.owner + "/" + gh.repo + "/readme",
@@ -620,7 +597,7 @@
     if (!R || typeof R.searchLocal !== "function") return Promise.resolve([]);
     var start = R.db && R.db().ready ? Promise.resolve() :
       (typeof R.load === "function" ? Promise.resolve(R.load()) : Promise.resolve());
-    var q = titleOf(it).replace(/[^0-9A-Za-z\u0410-\u044f\u0430-\u044f\s-]/g, " ").trim().slice(0, 60);
+    var q = titleOf(it).replace(/[^0-9A-Za-zА-яа-я\s-]/g, " ").trim().slice(0, 60);
     return start.then(function () {
       var res = R.searchLocal(q);
       var hits = (res && res.all ? res.all : []).slice(0, 3);
@@ -691,7 +668,7 @@
     });
   }
 
-  /* ---------- иконки (SVG, не эмодзи — §4 стилевых правил) ---------- */
+  /* ---------- иконки (SVG, не эмодзи) ---------- */
 
   var ICONS = {
     book: '<path d="M4 5.5A1.5 1.5 0 015.5 4H10a2 2 0 012 2v12a2 2 0 00-2-2H4V5.5z"/><path d="M20 5.5A1.5 1.5 0 0018.5 4H14a2 2 0 00-2 2v12a2 2 0 012-2h6V5.5z"/>',
@@ -703,7 +680,6 @@
     link: '<path d="M10 13a5 5 0 007 0l2-2a5 5 0 00-7-7l-1 1"/><path d="M14 11a5 5 0 00-7 0l-2 2a5 5 0 007 7l1-1"/>',
     out: '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h4"/>',
     play: '<path d="M7 4.5l12 7.5-12 7.5v-15z"/>',
-    rows: '<path d="M4 6h16M4 12h16M4 18h16"/>',
     close: '<path d="M6 6l12 12M18 6L6 18"/>'
   };
 
@@ -862,11 +838,11 @@
   /* ---------- появление карточек ---------- */
 
   function observe(list) {
-    var cards = list.querySelectorAll(".news-card");
-    /* В шортсах карточки лежат вне экрана по устройству режима,
-       поэтому наблюдатель никогда бы их не показал. */
+    var cs = list.querySelectorAll(".news-card");
+    /* В шортсах карточки по устройству режима лежат вне экрана, поэтому
+       наблюдатель никогда бы их не показал. */
     if (shorts || !("IntersectionObserver" in window)) {
-      cards.forEach(function (c) { c.classList.add("in"); });
+      cs.forEach(function (c) { c.classList.add("in"); });
       return;
     }
     if (io) io.disconnect();
@@ -879,7 +855,7 @@
       });
     }, { rootMargin: "0px 0px -5% 0px", threshold: 0.06 });
 
-    cards.forEach(function (c, i) {
+    cs.forEach(function (c, i) {
       if (i < 3) c.classList.add("in");
       else io.observe(c);
     });
@@ -966,7 +942,6 @@
     if (shorts && curIdx < 0) curIdx = 0;
     applyShorts();
     if (!shorts) {
-      /* вышли из шортсов — вернём анимацию появления обычной ленты */
       var list = document.getElementById("feedList");
       if (list) observe(list);
     }
@@ -1001,8 +976,8 @@
     if (btn) btn.setAttribute("aria-pressed", String(shorts));
   }
 
-  /* Край карточки: длинный материал сначала дочитывается внутри,
-     и только потом жест перелистывает на следующую. */
+  /* Край карточки: длинный материал сначала дочитывается внутри и только на
+     краю жест перелистывает на следующую. */
   function atEdge(card, dir) {
     if (!card) return true;
     if (card.scrollHeight - card.clientHeight <= 24) return true;
@@ -1028,4 +1003,319 @@
       go(d > 0 ? 1 : -1);
     }, { passive: false });
 
-    /* Свайп п
+    /* Свайп пальцем — тот же шаг в одну карточку. */
+    var ty = 0, tt = 0;
+    list.addEventListener("touchstart", function (e) {
+      if (!shorts || !e.touches[0]) return;
+      ty = e.touches[0].clientY;
+      tt = Date.now();
+    }, { passive: true });
+    list.addEventListener("touchend", function (e) {
+      if (!shorts || !e.changedTouches[0]) return;
+      var dy = ty - e.changedTouches[0].clientY;
+      if (Date.now() - tt > 900 || Math.abs(dy) < 48) return;
+      var cur = shSlides()[curIdx];
+      if (!atEdge(cur, dy)) return;
+      var now = Date.now();
+      if (now - lastFlip < 400) return;
+      lastFlip = now;
+      go(dy > 0 ? 1 : -1);
+    }, { passive: true });
+  }
+
+  function bindMode() {
+    if (modeBound) return;
+    modeBound = true;
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-shorts-toggle]");
+      if (!b) return;
+      e.preventDefault();
+      setShorts(!shorts);
+    });
+  }
+
+  /* Ушли с вкладки «Новости» — фиксированный слой обязан исчезнуть. */
+  function watchWrap() {
+    var w = document.getElementById("feedWrap");
+    if (!w || w.__shWatch || !("MutationObserver" in window)) return;
+    w.__shWatch = true;
+    new MutationObserver(function () { applyShorts(); })
+      .observe(w, { attributes: true, attributeFilter: ["hidden"] });
+  }
+
+  /* ---------- клавиши, выделение, клики ---------- */
+
+  function feedVisible() {
+    var w = document.getElementById("feedWrap");
+    return !!w && !w.hidden;
+  }
+
+  function busy() {
+    var a = document.activeElement;
+    if (a && (a.tagName === "INPUT" || a.tagName === "TEXTAREA" || a.isContentEditable)) return true;
+    if (document.querySelector("dialog[open]")) return true;
+    var r = document.getElementById("radar");
+    if (r && !r.hidden) return true;
+    return false;
+  }
+
+  function cards() { return document.querySelectorAll("#feedList .news-card"); }
+
+  function select(i, scroll) {
+    var cs = cards();
+    if (!cs.length) return;
+    if (i < 0) i = 0;
+    if (i > cs.length - 1) i = cs.length - 1;
+    cs.forEach(function (c, k) { c.classList.toggle("is-sel", k === i); });
+    selIdx = i;
+    if (scroll !== false && !shorts) {
+      window.scrollTo({
+        top: cs[i].getBoundingClientRect().top + window.scrollY - 118,
+        behavior: "smooth"
+      });
+    }
+  }
+
+  function itemOf(card) {
+    var i = Number(card.getAttribute("data-idx"));
+    var arr = (lastCtx && lastCtx.__rows) || [];
+    return arr[i] || { url: card.getAttribute("data-url") };
+  }
+
+  function bindKeys() {
+    if (keysBound) return;
+    keysBound = true;
+    document.addEventListener("keydown", function (e) {
+      if (!feedVisible() || busy()) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var k = e.key;
+
+      if (shorts) {
+        if (k === "Escape") { e.preventDefault(); setShorts(false); return; }
+        if (k === "ArrowDown" || k === "PageDown" || k === " " || k === "Spacebar" || k === "j" || k === "о") {
+          e.preventDefault(); go(1); return;
+        }
+        if (k === "ArrowUp" || k === "PageUp" || k === "k" || k === "л") {
+          e.preventDefault(); go(-1); return;
+        }
+      } else {
+        if (k === "j" || k === "о") { e.preventDefault(); select(selIdx + 1); return; }
+        if (k === "k" || k === "л") { e.preventDefault(); select(selIdx - 1); return; }
+      }
+
+      var cur = cards()[selIdx < 0 ? 0 : selIdx];
+      if (!cur) return;
+
+      if (k === "ArrowLeft" || k === "ArrowRight") {
+        var gal = cur.querySelector(".news-gal");
+        if (gal && gal.__go) { e.preventDefault(); gal.__go(k === "ArrowLeft" ? -1 : 1); }
+        return;
+      }
+      if (k === "r" || k === "к") { e.preventDefault(); openRead(cur, itemOf(cur)); return; }
+      if (k === "o" || k === "щ") {
+        var u = cur.getAttribute("data-url");
+        if (u) { e.preventDefault(); window.open(u, "_blank", "noopener"); }
+      }
+    });
+  }
+
+  function wireList(list) {
+    if (list.__wired) return;
+    list.__wired = true;
+
+    list.addEventListener("click", function (e) {
+      var card = e.target.closest(".news-card");
+
+      if (card && e.target.closest("[data-read]")) {
+        e.preventDefault();
+        openRead(card, itemOf(card));
+        return;
+      }
+
+      var exp = e.target.closest("[data-expand]");
+      if (card && exp) {
+        e.preventDefault();
+        var body = card.querySelector("[data-body]");
+        if (body) body.classList.remove("news-read-fade");
+        exp.remove();
+        return;
+      }
+
+      var more = e.target.closest("[data-more]");
+      if (card && more) {
+        e.preventDefault();
+        var it = itemOf(card);
+        var gal = card.querySelector(".news-gal");
+        more.disabled = true;
+        more.textContent = "ищу картинки…";
+        var key = it.url;
+        var job = readCache[key] ? Promise.resolve(readCache[key]) :
+          fetchText(it.url).then(function (res) { readCache[key] = res; return res; });
+        job.then(function (res) {
+          var pics = imagesFromText(res.text || "", it.url);
+          imgCache[key] = pics;
+          var n = addSlides(gal, pics);
+          more.disabled = false;
+          more.textContent = n ? "Ещё из материала" : "Больше картинок нет";
+        }).catch(function () {
+          more.disabled = false;
+          more.textContent = "Источник не ответил";
+        });
+        return;
+      }
+
+      if (e.target.closest("[data-more-cards]")) {
+        e.preventDefault();
+        shownCount += PAGE;
+        if (lastCtx) render(lastCtx);
+        return;
+      }
+
+      if (e.target.closest("[data-news-reset]")) {
+        e.preventDefault();
+        var all = document.querySelector('#feedChips [data-value=""]');
+        if (all) all.click();
+        return;
+      }
+
+      if (card && !e.target.closest("a") && !e.target.closest("button")) {
+        select(Number(card.getAttribute("data-idx")), false);
+      }
+    });
+  }
+
+  function wireTop() {
+    var box = document.getElementById("feedChips");
+    if (!box || box.__wiredSort) return;
+    box.__wiredSort = true;
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-sort]");
+      if (!b) return;
+      e.preventDefault();
+      sortMode = b.getAttribute("data-sort") === "new" ? "new" : "hot";
+      try { localStorage.setItem(SORT_KEY, sortMode); } catch (err) {}
+      shownCount = PAGE;
+      curIdx = 0;
+      if (lastCtx) render(lastCtx);
+    });
+  }
+
+  /* ---------- сборка ---------- */
+
+  function render(ctx) {
+    ctx = ctx || {};
+    lastCtx = ctx;
+    injectCss();
+    stickTop();
+
+    var list = document.getElementById("feedList");
+    if (!list) return;
+    var empty = document.getElementById("feedEmpty");
+    var meta = document.getElementById("feedMeta");
+    var badge = document.getElementById("feedBadge");
+
+    var all = Array.isArray(ctx.items) ? ctx.items.slice() : [];
+    var known = ctx.known;
+    var pf = parseFilter(ctx.filter);
+    var q = txt(ctx.query).toLowerCase();
+
+    renderFilters(all, pf);
+
+    var rows = all.filter(function (it) {
+      if (!txt(it.url)) return false;
+      if (pf.kind === "topic" && topicOf(it).id !== pf.value) return false;
+      if (pf.kind === "src" && txt(it.source) !== pf.value) return false;
+      return matchQuery(it, q);
+    });
+
+    rows.sort(function (a, b) {
+      if (sortMode === "new") return stamp(b) - stamp(a);
+      var qa = Number(a.quality_score || 0), qb = Number(b.quality_score || 0);
+      if (qb !== qa) return qb - qa;
+      return stamp(b) - stamp(a);
+    });
+
+    /* Сменился фильтр или сортировка — начинаем ленту заново. */
+    var key = pf.kind + "|" + pf.value + "|" + q + "|" + sortMode;
+    if (render.__key !== key) {
+      render.__key = key;
+      shownCount = PAGE;
+      curIdx = 0;
+    }
+
+    var shown = rows.slice(0, shownCount);
+    ctx.__rows = shown;
+
+    if (badge) badge.textContent = all.length ? String(all.length) : "";
+
+    var fresh = all.filter(function (it) { return seenAt > 0 && stamp(it) > seenAt; }).length;
+    var upd = txt(ctx.updatedAt);
+    var pct = rows.length ? Math.round((shown.length / rows.length) * 100) : 0;
+
+    if (meta) {
+      meta.innerHTML =
+        '<div class="nm-row">' +
+          (fresh ? '<span class="nm-fresh"><i></i>' + fresh + " новых с твоего захода</span>" : "") +
+          '<span class="nm-count">' + shown.length + " из " + rows.length + "</span>" +
+          '<span class="nm-gap"></span>' +
+          (upd ? '<span class="nm-upd">обновлено ' + esc(upd) + "</span>" : "") +
+          '<button type="button" class="nm-mode" data-shorts-toggle aria-pressed="' + shorts + '">' +
+            icon("play") + "Шортсы</button>" +
+        "</div>" +
+        '<div class="nm-bar"><i style="width:' + pct + '%"></i></div>';
+    }
+
+    bindMode();
+    watchWrap();
+
+    if (!rows.length) {
+      list.innerHTML = "";
+      if (empty) empty.hidden = false;
+      applyShorts();
+      return;
+    }
+    if (empty) empty.hidden = true;
+
+    var html = shown.map(function (it, i) { return cardHtml(it, i, known); }).join("");
+    if (shown.length < rows.length) {
+      html += '<div class="news-note"><button type="button" class="news-btn" data-more-cards="1">Показать ещё ' +
+        Math.min(PAGE, rows.length - shown.length) + "</button></div>";
+    }
+    list.innerHTML = html;
+
+    list.querySelectorAll(".news-gal").forEach(wireGal);
+    observe(list);
+    wireList(list);
+    wireTop();
+    bindKeys();
+    selIdx = -1;
+    applyShorts();
+
+    if (!render.__stamped) {
+      render.__stamped = true;
+      try { localStorage.setItem(SEEN_KEY, String(Date.now())); } catch (e) {}
+    }
+  }
+
+  /* ---------- старт ---------- */
+
+  injectCss();
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", stickTop);
+  } else {
+    stickTop();
+  }
+  var rt = 0;
+  window.addEventListener("resize", function () {
+    if (rt) return;
+    rt = requestAnimationFrame(function () { rt = 0; stickTop(); });
+  });
+
+  window.MONOLITH_NEWS = {
+    render: render,
+    topics: TOPICS,
+    facts: factsFrom,
+    images: imagesFromText,
+    shorts: setShorts
+  };
+})();
