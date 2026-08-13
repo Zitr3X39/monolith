@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-13T08:10:42+00:00",
+ "updated_at": "2026-08-13T16:43:18.831Z",
  "items": [
+  {
+   "url": "https://animeclips.online/",
+   "url_key": "animeclips.online/",
+   "title": "animeclips.online",
+   "description": "",
+   "note": "",
+   "domain": "animeclips.online",
+   "category": "tools",
+   "type": "site",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-08-13T16:42:29.933Z"
+  },
   {
    "url": "https://github.com/amaancoderx/npxskillui",
    "url_key": "github.com/amaancoderx/npxskillui",
