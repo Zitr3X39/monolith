@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-15T07:21:27.141146+00:00",
+ "updated_at": "2026-08-16T07:22:14.249094+00:00",
  "meta": {
-  "fresh": 22,
-  "rejected": 12,
+  "fresh": 19,
+  "rejected": 13,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 3646,
-   "source_score": 3646,
-   "found_at": "2026-08-15T07:21:27.141146+00:00",
+   "score": 1607,
+   "source_score": 1607,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
    "title_ru": "cathrynlavery/diagram-design",
    "summary_ru": "29 типов редакционных диаграмм для Claude Code. Автономный HTML + SVG. Ни теней, ни русалочьих помоев.",
    "description_ru": "29 типов редакционных диаграмм для Claude Code. Автономный HTML + SVG. Ни теней, ни русалочьих помоев.",
@@ -41,7 +41,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-08-15T07:21:27.141146+00:00"
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/github/spec-kit",
@@ -65,9 +65,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 1160,
-   "source_score": 1160,
-   "found_at": "2026-08-15T07:21:27.141146+00:00",
+   "score": 892,
+   "source_score": 892,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
    "title_ru": "github/spec-kit",
    "summary_ru": "💫 Набор инструментов, который поможет вам начать разработку на основе спецификаций.",
    "description_ru": "💫 Набор инструментов, который поможет вам начать разработку на основе спецификаций.",
@@ -77,7 +77,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-08-15T07:21:27.141146+00:00"
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/semantica-agi/semantica",
@@ -440,40 +440,40 @@
    "published_at": "2026-08-15T07:21:27.141146+00:00"
   },
   {
-   "url": "https://github.com/cactus-compute/needle",
-   "url_key": "github.com/cactus-compute/needle",
-   "canonical_url": "https://github.com/cactus-compute/needle",
-   "title": "cactus-compute/needle",
-   "title_original": "cactus-compute/needle",
-   "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-   "image": "https://opengraph.githubassets.com/1/cactus-compute/needle",
+   "url": "https://github.com/cordiverse/cordis",
+   "url_key": "github.com/cordiverse/cordis",
+   "canonical_url": "https://github.com/cordiverse/cordis",
+   "title": "cordiverse/cordis",
+   "title_original": "cordiverse/cordis",
+   "description": "Meta-Framework of Spatiotemporal Composability",
+   "image": "https://opengraph.githubassets.com/1/cordiverse/cordis",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/cactus-compute/needle"
+     "url": "https://github.com/cordiverse/cordis"
     }
    ],
    "source_count": 1,
    "type": "github",
-   "category": "automation",
+   "category": "vibecoding",
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 662,
-   "source_score": 662,
-   "found_at": "2026-08-15T07:21:27.141146+00:00",
-   "title_ru": "cactus-compute/needle",
-   "summary_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
-   "description_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
+   "score": 599,
+   "source_score": 599,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "cordiverse/cordis",
+   "summary_ru": "Метаструктура пространственно-временной компоновки",
+   "description_ru": "Метаструктура пространственно-временной компоновки",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 97,
-   "published_at": "2026-08-15T07:21:27.141146+00:00"
+   "quality_score": 95,
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
@@ -546,6 +546,114 @@
    "content_status": "ready",
    "quality_score": 95,
    "published_at": "2026-08-13T08:10:39.866850+00:00"
+  },
+  {
+   "url": "https://github.com/cactus-compute/needle",
+   "url_key": "github.com/cactus-compute/needle",
+   "canonical_url": "https://github.com/cactus-compute/needle",
+   "title": "cactus-compute/needle",
+   "title_original": "cactus-compute/needle",
+   "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+   "image": "https://opengraph.githubassets.com/1/cactus-compute/needle",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/cactus-compute/needle"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "automation",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 547,
+   "source_score": 547,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "cactus-compute/needle",
+   "summary_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
+   "description_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
+  },
+  {
+   "url": "https://github.com/ToolJet/ToolJet",
+   "url_key": "github.com/tooljet/tooljet",
+   "canonical_url": "https://github.com/ToolJet/ToolJet",
+   "title": "ToolJet/ToolJet",
+   "title_original": "ToolJet/ToolJet",
+   "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+   "image": "https://opengraph.githubassets.com/1/ToolJet/ToolJet",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/ToolJet/ToolJet"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 544,
+   "source_score": 544,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "ToolJet/ToolJet",
+   "summary_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
+   "description_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
+  },
+  {
+   "url": "https://github.com/citrolabs/ego-lite",
+   "url_key": "github.com/citrolabs/ego-lite",
+   "canonical_url": "https://github.com/citrolabs/ego-lite",
+   "title": "citrolabs/ego-lite",
+   "title_original": "citrolabs/ego-lite",
+   "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+   "image": "https://opengraph.githubassets.com/1/citrolabs/ego-lite",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/citrolabs/ego-lite"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 545,
+   "source_score": 545,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "citrolabs/ego-lite",
+   "summary_ru": "Самый быстрый браузер для агентов ИИ, позволяющий запускать автоматизацию браузера, созданный для того, чтобы делиться состоянием вашего входа в браузер с вашими ИИ-агентами, такими как Codex или Claude Code, не беспокоя вас. Нулевая стоимость, нулевая конфигурация.",
+   "description_ru": "Самый быстрый браузер для агентов ИИ, позволяющий запускать автоматизацию браузера, созданный для того, чтобы делиться состоянием вашего входа в браузер с вашими ИИ-агентами, такими как Codex или Claude Code, не беспокоя вас. Нулевая стоимо",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/lightningpixel/modly",
@@ -764,40 +872,40 @@
    "published_at": "2026-08-13T08:10:39.866850+00:00"
   },
   {
-   "url": "https://github.com/megadose/holehe",
-   "url_key": "github.com/megadose/holehe",
-   "canonical_url": "https://github.com/megadose/holehe",
-   "title": "megadose/holehe",
-   "title_original": "megadose/holehe",
-   "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-   "image": "https://opengraph.githubassets.com/1/megadose/holehe",
+   "url": "https://github.com/unslothai/unsloth",
+   "url_key": "github.com/unslothai/unsloth",
+   "canonical_url": "https://github.com/unslothai/unsloth",
+   "title": "unslothai/unsloth",
+   "title_original": "unslothai/unsloth",
+   "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+   "image": "https://opengraph.githubassets.com/1/unslothai/unsloth",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/megadose/holehe"
+     "url": "https://github.com/unslothai/unsloth"
     }
    ],
    "source_count": 1,
    "type": "github",
-   "category": "social",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 427,
-   "source_score": 427,
-   "found_at": "2026-08-15T07:21:27.141146+00:00",
-   "title_ru": "megadose/holehe",
-   "summary_ru": "HoleHe позволяет проверить, используется ли почта на разных сайтах, таких как твиттер, инстаграм, а также получит информацию на сайтах с функцией забытого пароля.",
-   "description_ru": "HoleHe позволяет проверить, используется ли почта на разных сайтах, таких как твиттер, инстаграм, а также получит информацию на сайтах с функцией забытого пароля.",
+   "score": 434,
+   "source_score": 434,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "unslothai/unsloth",
+   "summary_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
+   "description_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 91,
-   "published_at": "2026-08-15T07:21:27.141146+00:00"
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/macro-inc/macro",
@@ -870,6 +978,42 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-08-09T07:44:21.802344+00:00"
+  },
+  {
+   "url": "https://github.com/megadose/holehe",
+   "url_key": "github.com/megadose/holehe",
+   "canonical_url": "https://github.com/megadose/holehe",
+   "title": "megadose/holehe",
+   "title_original": "megadose/holehe",
+   "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+   "image": "https://opengraph.githubassets.com/1/megadose/holehe",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/megadose/holehe"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "social",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 382,
+   "source_score": 382,
+   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "title_ru": "megadose/holehe",
+   "summary_ru": "HoleHe позволяет проверить, используется ли почта на разных сайтах, таких как твиттер, инстаграм, а также получит информацию на сайтах с функцией забытого пароля.",
+   "description_ru": "HoleHe позволяет проверить, используется ли почта на разных сайтах, таких как твиттер, инстаграм, а также получит информацию на сайтах с функцией забытого пароля.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 90,
+   "published_at": "2026-08-16T07:22:14.249094+00:00"
   },
   {
    "url": "https://github.com/NVIDIA-NeMo/Switchyard",
@@ -1088,42 +1232,6 @@
    "published_at": "2026-08-14T08:06:45.162763+00:00"
   },
   {
-   "url": "https://github.com/unslothai/unsloth",
-   "url_key": "github.com/unslothai/unsloth",
-   "canonical_url": "https://github.com/unslothai/unsloth",
-   "title": "unslothai/unsloth",
-   "title_original": "unslothai/unsloth",
-   "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-   "image": "https://opengraph.githubassets.com/1/unslothai/unsloth",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/unslothai/unsloth"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 328,
-   "source_score": 328,
-   "found_at": "2026-08-14T08:06:45.162763+00:00",
-   "title_ru": "unslothai/unsloth",
-   "summary_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
-   "description_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-08-14T08:06:45.162763+00:00"
-  },
-  {
    "url": "https://docs.mistral.ai/models/ocr-4-1",
    "url_key": "docs.mistral.ai/models/ocr-4-1",
    "canonical_url": "https://docs.mistral.ai/models/ocr-4-1",
@@ -1158,114 +1266,6 @@
    "content_status": "ready",
    "quality_score": 88,
    "published_at": "2026-08-14T08:06:45.162763+00:00"
-  },
-  {
-   "url": "https://github.com/danielmiessler/LifeOS",
-   "url_key": "github.com/danielmiessler/lifeos",
-   "canonical_url": "https://github.com/danielmiessler/LifeOS",
-   "title": "danielmiessler/LifeOS",
-   "title_original": "danielmiessler/LifeOS",
-   "description": "⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.",
-   "image": "https://opengraph.githubassets.com/1/danielmiessler/LifeOS",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/danielmiessler/LifeOS"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 315,
-   "source_score": 315,
-   "found_at": "2026-08-11T08:02:41.855140+00:00",
-   "title_ru": "danielmiessler/LifeOS",
-   "summary_ru": "⛰️Общая система искусственного интеллекта для скалолазания, которая поможет вам перейти от текущего состояния к идеальному как в жизни, так и на работе.",
-   "description_ru": "⛰️Общая система искусственного интеллекта для скалолазания, которая поможет вам перейти от текущего состояния к идеальному как в жизни, так и на работе.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-08-11T08:02:41.855140+00:00"
-  },
-  {
-   "url": "https://github.com/google-deepmind/weathernext",
-   "url_key": "github.com/google-deepmind/weathernext",
-   "canonical_url": "https://github.com/google-deepmind/weathernext",
-   "title": "google-deepmind/weathernext",
-   "title_original": "google-deepmind/weathernext",
-   "description": "Contribute to google-deepmind/weathernext development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/google-deepmind/weathernext",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/google-deepmind/weathernext"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 325,
-   "source_score": 325,
-   "found_at": "2026-08-11T08:02:41.855140+00:00",
-   "title_ru": "google-deepmind/weathernext",
-   "summary_ru": "Внесите свой вклад в разработку google-deepmind/weathernext, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в разработку google-deepmind/weathernext, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-08-11T08:02:41.855140+00:00"
-  },
-  {
-   "url": "https://cactuscompute.com/needle",
-   "url_key": "cactuscompute.com/needle",
-   "canonical_url": "https://cactuscompute.com/needle",
-   "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-   "title_original": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-   "description": "An open 45M-parameter model for tool calling, device use, and structured extraction. Needle 2 runs as a 14 MB binary in 28 MB of session RAM.",
-   "image": "https://cactuscompute.com/opengraph-image?9df76a35fe8276e2",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://cactuscompute.com/needle"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "cactuscompute.com",
-   "score": 302,
-   "source_score": 302,
-   "found_at": "2026-08-11T08:02:41.855140+00:00",
-   "title_ru": "Show HN: Needle2: агентный LLM объемом 14 МБ для телефонов, носимых устройств, умного дома и роботов.",
-   "summary_ru": "Открытая модель с 45 млн параметров для вызова инструментов, использования устройств и структурированного извлечения данных. Needle 2 работает как двоичный файл размером 14 МБ в 28 МБ сессионной оперативной памяти.",
-   "description_ru": "Открытая модель с 45 млн параметров для вызова инструментов, использования устройств и структурированного извлечения данных. Needle 2 работает как двоичный файл размером 14 МБ в 28 МБ сессионной оперативной памяти.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-08-11T08:02:41.855140+00:00"
   }
  ]
 }
