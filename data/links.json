@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-15T07:21:28+00:00",
+ "updated_at": "2026-08-17T08:02:45.202Z",
  "items": [
+  {
+   "url": "https://github.com/Jeffallan/claude-skills",
+   "url_key": "github.com/jeffallan/claude-skills",
+   "title": "Jeffallan/claude-skills",
+   "description": "66 специальных навыков для Full-Stack разработчиков. Превратите Клода Кода в своего опытного парного программиста. · Питон",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 11040,
+   "enriched": true,
+   "added_at": "2026-08-17T08:02:41.915Z"
+  },
   {
    "url": "https://github.com/ginobefun/deep-reading-analyst-skill",
    "url_key": "github.com/ginobefun/deep-reading-analyst-skill",
