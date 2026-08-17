@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-16T07:22:14.249094+00:00",
+ "updated_at": "2026-08-17T07:42:37.703104+00:00",
  "meta": {
-  "fresh": 19,
-  "rejected": 13,
+  "fresh": 11,
+  "rejected": 15,
   "ai": 0
  },
  "items": [
@@ -461,9 +461,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 599,
-   "source_score": 599,
-   "found_at": "2026-08-16T07:22:14.249094+00:00",
+   "score": 720,
+   "source_score": 720,
+   "found_at": "2026-08-17T07:42:37.703104+00:00",
    "title_ru": "cordiverse/cordis",
    "summary_ru": "Метаструктура пространственно-временной компоновки",
    "description_ru": "Метаструктура пространственно-временной компоновки",
@@ -472,8 +472,8 @@
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 95,
-   "published_at": "2026-08-16T07:22:14.249094+00:00"
+   "quality_score": 98,
+   "published_at": "2026-08-17T07:42:37.703104+00:00"
   },
   {
    "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
@@ -548,55 +548,19 @@
    "published_at": "2026-08-13T08:10:39.866850+00:00"
   },
   {
-   "url": "https://github.com/cactus-compute/needle",
-   "url_key": "github.com/cactus-compute/needle",
-   "canonical_url": "https://github.com/cactus-compute/needle",
-   "title": "cactus-compute/needle",
-   "title_original": "cactus-compute/needle",
-   "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-   "image": "https://opengraph.githubassets.com/1/cactus-compute/needle",
+   "url": "https://github.com/unslothai/unsloth",
+   "url_key": "github.com/unslothai/unsloth",
+   "canonical_url": "https://github.com/unslothai/unsloth",
+   "title": "unslothai/unsloth",
+   "title_original": "unslothai/unsloth",
+   "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+   "image": "https://opengraph.githubassets.com/1/unslothai/unsloth",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/cactus-compute/needle"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "automation",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 547,
-   "source_score": 547,
-   "found_at": "2026-08-16T07:22:14.249094+00:00",
-   "title_ru": "cactus-compute/needle",
-   "summary_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
-   "description_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 94,
-   "published_at": "2026-08-16T07:22:14.249094+00:00"
-  },
-  {
-   "url": "https://github.com/ToolJet/ToolJet",
-   "url_key": "github.com/tooljet/tooljet",
-   "canonical_url": "https://github.com/ToolJet/ToolJet",
-   "title": "ToolJet/ToolJet",
-   "title_original": "ToolJet/ToolJet",
-   "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
-   "image": "https://opengraph.githubassets.com/1/ToolJet/ToolJet",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/ToolJet/ToolJet"
+     "url": "https://github.com/unslothai/unsloth"
     }
    ],
    "source_count": 1,
@@ -605,19 +569,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 544,
-   "source_score": 544,
-   "found_at": "2026-08-16T07:22:14.249094+00:00",
-   "title_ru": "ToolJet/ToolJet",
-   "summary_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
-   "description_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
+   "score": 572,
+   "source_score": 572,
+   "found_at": "2026-08-17T07:42:37.703104+00:00",
+   "title_ru": "unslothai/unsloth",
+   "summary_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и моделей распространения, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и другие.",
+   "description_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и моделей распространения, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и другие.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 94,
-   "published_at": "2026-08-16T07:22:14.249094+00:00"
+   "published_at": "2026-08-17T07:42:37.703104+00:00"
   },
   {
    "url": "https://github.com/citrolabs/ego-lite",
@@ -872,19 +836,19 @@
    "published_at": "2026-08-13T08:10:39.866850+00:00"
   },
   {
-   "url": "https://github.com/unslothai/unsloth",
-   "url_key": "github.com/unslothai/unsloth",
-   "canonical_url": "https://github.com/unslothai/unsloth",
-   "title": "unslothai/unsloth",
-   "title_original": "unslothai/unsloth",
-   "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-   "image": "https://opengraph.githubassets.com/1/unslothai/unsloth",
+   "url": "https://github.com/ToolJet/ToolJet",
+   "url_key": "github.com/tooljet/tooljet",
+   "canonical_url": "https://github.com/ToolJet/ToolJet",
+   "title": "ToolJet/ToolJet",
+   "title_original": "ToolJet/ToolJet",
+   "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+   "image": "https://opengraph.githubassets.com/1/ToolJet/ToolJet",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/unslothai/unsloth"
+     "url": "https://github.com/ToolJet/ToolJet"
     }
    ],
    "source_count": 1,
@@ -893,19 +857,55 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 434,
-   "source_score": 434,
-   "found_at": "2026-08-16T07:22:14.249094+00:00",
-   "title_ru": "unslothai/unsloth",
-   "summary_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
-   "description_ru": "Локальный пользовательский интерфейс для запуска и обучения LLM и диффузионных моделей, включая Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX и других.",
+   "score": 452,
+   "source_score": 452,
+   "found_at": "2026-08-17T07:42:37.703104+00:00",
+   "title_ru": "ToolJet/ToolJet",
+   "summary_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
+   "description_ru": "ToolJet — это основа с открытым исходным кодом ToolJet AI — платформы создания корпоративных приложений для создания внутренних инструментов, информационных панелей, бизнес-приложений, рабочих процессов и агентов искусственного интеллекта 🚀",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 91,
-   "published_at": "2026-08-16T07:22:14.249094+00:00"
+   "published_at": "2026-08-17T07:42:37.703104+00:00"
+  },
+  {
+   "url": "https://github.com/cactus-compute/needle",
+   "url_key": "github.com/cactus-compute/needle",
+   "canonical_url": "https://github.com/cactus-compute/needle",
+   "title": "cactus-compute/needle",
+   "title_original": "cactus-compute/needle",
+   "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+   "image": "https://opengraph.githubassets.com/1/cactus-compute/needle",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/cactus-compute/needle"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "automation",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 443,
+   "source_score": 443,
+   "found_at": "2026-08-17T07:42:37.703104+00:00",
+   "title_ru": "cactus-compute/needle",
+   "summary_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
+   "description_ru": "Базовая модель объемом 14 МБ для миниатюрных устройств; телефоны, носимые устройства, умный дом и роботы.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 91,
+   "published_at": "2026-08-17T07:42:37.703104+00:00"
   },
   {
    "url": "https://github.com/macro-inc/macro",
@@ -942,42 +942,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-08-15T07:21:27.141146+00:00"
-  },
-  {
-   "url": "https://github.com/denoland/celld",
-   "url_key": "github.com/denoland/celld",
-   "canonical_url": "https://github.com/denoland/celld",
-   "title": "denoland/celld",
-   "title_original": "denoland/celld",
-   "description": "self-hosted, distributed Durable Objects",
-   "image": "https://opengraph.githubassets.com/1/denoland/celld",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/denoland/celld"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 432,
-   "source_score": 432,
-   "found_at": "2026-08-09T07:44:21.802344+00:00",
-   "title_ru": "denoland/celld",
-   "summary_ru": "самостоятельные, распределенные устойчивые объекты",
-   "description_ru": "самостоятельные, распределенные устойчивые объекты",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-08-09T07:44:21.802344+00:00"
   },
   {
    "url": "https://github.com/megadose/holehe",
@@ -1086,6 +1050,42 @@
    "content_status": "ready",
    "quality_score": 90,
    "published_at": "2026-08-11T08:02:41.855140+00:00"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "url_key": "simonwillison.net/2026/aug/16/qwen-38-27b",
+   "canonical_url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+   "title_original": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+   "description": "Friday’s big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba’s Qwen research lab. I’ve been looking forward to this one: 27B is an …",
+   "image": "https://static.simonwillison.net/static/2026/qwen-thinking-bicycle-27b.jpg",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "other",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "simonwillison.net",
+   "score": 364,
+   "source_score": 364,
+   "found_at": "2026-08-17T07:42:37.703104+00:00",
+   "title_ru": "Qwen 3.8 27B великолепен, но по умолчанию он слишком много думает",
+   "summary_ru": "Большим релизом пятницы стал Qwen 3.8 27B, лицензированный Apache 2 LLM с возможностью машинного зрения с параметрами 27B от исследовательской лаборатории Alibaba Qwen. Я с нетерпением ждал этого: 27B — это…",
+   "description_ru": "Большим релизом пятницы стал Qwen 3.8 27B, лицензированный Apache 2 LLM с возможностью машинного зрения с параметрами 27B от исследовательской лаборатории Alibaba Qwen. Я с нетерпением ждал этого: 27B — это…",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 89,
+   "published_at": "2026-08-17T07:42:37.703104+00:00"
   },
   {
    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
