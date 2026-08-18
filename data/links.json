@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-17T08:02:45.202Z",
+ "updated_at": "2026-08-18T18:57:04.557Z",
  "items": [
   {
    "url": "https://github.com/Jeffallan/claude-skills",
@@ -29,7 +29,7 @@
    "type": "github",
    "source": "Вручную",
    "tags": [],
-   "favorite": false,
+   "favorite": true,
    "stars": 346,
    "enriched": true,
    "added_at": "2026-08-13T21:04:13.655Z"
