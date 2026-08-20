@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-20T14:16:24.646Z",
+ "updated_at": "2026-08-20T18:10:14.999Z",
  "items": [
+  {
+   "url": "https://cut-it-out.vercel.app/",
+   "url_key": "cut-it-out.vercel.app/",
+   "title": "cut-it-out.vercel.app",
+   "description": "",
+   "note": "",
+   "domain": "cut-it-out.vercel.app",
+   "category": "other",
+   "type": "site",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-08-20T18:09:51.600Z"
+  },
   {
    "url": "https://youtube.com/watch?v=wSY1kHXSap0",
    "url_key": "youtube.com/watch?v=wsy1khxsap0",
