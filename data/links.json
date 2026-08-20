@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-18T18:57:04.557Z",
+ "updated_at": "2026-08-20T14:16:24.646Z",
  "items": [
+  {
+   "url": "https://youtube.com/watch?v=wSY1kHXSap0",
+   "url_key": "youtube.com/watch?v=wsy1khxsap0",
+   "title": "Claude + Blender Is Insane Now — Full Free Setup",
+   "description": "Стефан 3D AI",
+   "note": "",
+   "domain": "youtube.com",
+   "category": "video",
+   "type": "youtube",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": true,
+   "added_at": "2026-08-20T14:16:20.565Z"
+  },
   {
    "url": "https://github.com/Jeffallan/claude-skills",
    "url_key": "github.com/jeffallan/claude-skills",
