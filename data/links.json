@@ -1,22 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-20T18:10:14.999Z",
+ "updated_at": "2026-08-21T07:34:30+00:00",
  "items": [
   {
    "url": "https://cut-it-out.vercel.app/",
    "url_key": "cut-it-out.vercel.app/",
-   "title": "cut-it-out.vercel.app",
-   "description": "",
+   "title": "CutItOut - Free AI Background Remover",
+   "description": "Remove image backgrounds instantly and for free. 100% private, running entirely in your browser.",
    "note": "",
    "domain": "cut-it-out.vercel.app",
-   "category": "other",
+   "category": "vibecoding",
    "type": "site",
    "source": "Вручную",
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-08-20T18:09:51.600Z"
+   "enriched": true,
+   "added_at": "2026-08-20T18:09:51.600Z",
+   "desc_tries": 1
   },
   {
    "url": "https://youtube.com/watch?v=wSY1kHXSap0",
@@ -32,7 +33,8 @@
    "favorite": false,
    "stars": 0,
    "enriched": true,
-   "added_at": "2026-08-20T14:16:20.565Z"
+   "added_at": "2026-08-20T14:16:20.565Z",
+   "desc_tries": 1
   },
   {
    "url": "https://github.com/Jeffallan/claude-skills",
