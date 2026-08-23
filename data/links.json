@@ -1,12 +1,12 @@
 {
  "version": 1,
- "updated_at": "2026-08-22T18:48:04.404Z",
+ "updated_at": "2026-08-23T07:24:37+00:00",
  "items": [
   {
    "url": "https://zapsplat.com/sound-effect-category/sound-design",
    "url_key": "zapsplat.com/sound-effect-category/sound-design",
    "title": "Sound Design Sound Effects | Download FREE Sound Design sounds | Zapsplat",
-   "description": "",
+   "description": "Download our free sound design sound effects. Production elements such as sweeps and transitions to cinematic sounds ideal for movie trailers and more! Professionally recorded.",
    "note": "",
    "domain": "zapsplat.com",
    "category": "design",
@@ -16,7 +16,8 @@
    "favorite": false,
    "stars": 0,
    "enriched": true,
-   "added_at": "2026-08-22T18:47:52.424Z"
+   "added_at": "2026-08-22T18:47:52.424Z",
+   "desc_tries": 1
   },
   {
    "url": "https://cut-it-out.vercel.app/",
@@ -50,7 +51,7 @@
    "stars": 0,
    "enriched": true,
    "added_at": "2026-08-20T14:16:20.565Z",
-   "desc_tries": 2
+   "desc_tries": 3
   },
   {
    "url": "https://github.com/Jeffallan/claude-skills",
