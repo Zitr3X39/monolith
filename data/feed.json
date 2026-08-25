@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-24T07:49:23.934010+00:00",
+ "updated_at": "2026-08-25T07:35:30.130720+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 31,
+  "rejected": 33,
   "ai": 0
  },
  "items": [
@@ -116,42 +116,6 @@
    "published_at": "2026-08-20T07:32:22.562739+00:00"
   },
   {
-   "url": "https://github.com/cordiverse/cordis",
-   "url_key": "github.com/cordiverse/cordis",
-   "canonical_url": "https://github.com/cordiverse/cordis",
-   "title": "cordiverse/cordis",
-   "title_original": "cordiverse/cordis",
-   "description": "Meta-Framework of Spatiotemporal Composability",
-   "image": "https://opengraph.githubassets.com/1/cordiverse/cordis",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/cordiverse/cordis"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 957,
-   "source_score": 957,
-   "found_at": "2026-08-18T07:29:07.779894+00:00",
-   "title_ru": "cordiverse/cordis",
-   "summary_ru": "Метаструктура пространственно-временной компоновки",
-   "description_ru": "Метаструктура пространственно-временной компоновки",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-08-18T07:29:07.779894+00:00"
-  },
-  {
    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
    "url_key": "github.com/mukul975/anthropic-cybersecurity-skills",
    "canonical_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
@@ -222,42 +186,6 @@
    "content_status": "ready",
    "quality_score": 95,
    "published_at": "2026-08-19T07:29:25.812276+00:00"
-  },
-  {
-   "url": "https://github.com/usestrix/strix",
-   "url_key": "github.com/usestrix/strix",
-   "canonical_url": "https://github.com/usestrix/strix",
-   "title": "usestrix/strix",
-   "title_original": "usestrix/strix",
-   "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-   "image": "https://opengraph.githubassets.com/1/usestrix/strix",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/usestrix/strix"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 598,
-   "source_score": 598,
-   "found_at": "2026-08-18T07:29:07.779894+00:00",
-   "title_ru": "usestrix/strix",
-   "summary_ru": "Инструмент тестирования на проникновение искусственного интеллекта с открытым исходным кодом для поиска и устранения уязвимостей вашего приложения.",
-   "description_ru": "Инструмент тестирования на проникновение искусственного интеллекта с открытым исходным кодом для поиска и устранения уязвимостей вашего приложения.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 95,
-   "published_at": "2026-08-18T07:29:07.779894+00:00"
   },
   {
    "url": "https://bandarlabs.github.io/Cobalt",
@@ -473,42 +401,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 90,
-   "published_at": "2026-08-22T07:22:52.969662+00:00"
-  },
-  {
-   "url": "https://github.com/PostHog/posthog",
-   "url_key": "github.com/posthog/posthog",
-   "canonical_url": "https://github.com/PostHog/posthog",
-   "title": "PostHog/posthog",
-   "title_original": "PostHog/posthog",
-   "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
-   "image": "https://opengraph.githubassets.com/1/PostHog/posthog",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/PostHog/posthog"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 335,
-   "source_score": 335,
-   "found_at": "2026-08-22T07:22:52.969662+00:00",
-   "title_ru": "PostHog/posthog",
-   "summary_ru": "🦔 PostHog — ведущая платформа для создания продуктов для самостоятельного вождения. Наши инструменты разработчика — наблюдение за искусственным интеллектом, аналитика, воспроизведение сеансов, флаги, эксперименты, отслеживание ошибок, журналы и многое другое — собирают всю контекстную информацию, необходимую агентам для диагностики проблем, выявления возможностей и внесения исправлений. Управляйте всем этим из Slack, через Интернет, с настольного компьютера или из MCP.",
-   "description_ru": "🦔 PostHog — ведущая платформа для создания продуктов для самостоятельного вождения. Наши инструменты разработчика — наблюдение за искусственным интеллектом, аналитика, воспроизведение сеансов, флаги, эксперименты, отслеживание ошибок, журна",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
    "published_at": "2026-08-22T07:22:52.969662+00:00"
   },
   {
