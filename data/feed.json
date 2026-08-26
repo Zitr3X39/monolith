@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-25T07:35:30.130720+00:00",
+ "updated_at": "2026-08-26T07:37:04.192092+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 33,
+  "rejected": 34,
   "ai": 0
  },
  "items": [
@@ -150,42 +150,6 @@
    "content_status": "ready",
    "quality_score": 99,
    "published_at": "2026-08-20T07:32:22.562739+00:00"
-  },
-  {
-   "url": "https://github.com/agalwood/Motrix",
-   "url_key": "github.com/agalwood/motrix",
-   "canonical_url": "https://github.com/agalwood/Motrix",
-   "title": "agalwood/Motrix",
-   "title_original": "agalwood/Motrix",
-   "description": "A full-featured download manager.",
-   "image": "https://opengraph.githubassets.com/1/agalwood/Motrix",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/agalwood/Motrix"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 609,
-   "source_score": 609,
-   "found_at": "2026-08-19T07:29:25.812276+00:00",
-   "title_ru": "agalwood/Motrix",
-   "summary_ru": "Полнофункциональный менеджер загрузок.",
-   "description_ru": "Полнофункциональный менеджер загрузок.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 95,
-   "published_at": "2026-08-19T07:29:25.812276+00:00"
   },
   {
    "url": "https://bandarlabs.github.io/Cobalt",
