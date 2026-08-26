@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-23T07:24:37+00:00",
+ "updated_at": "2026-08-26T21:40:51.472Z",
  "items": [
+  {
+   "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+   "url_key": "github.com/tencentcloud/tencentdb-agent-memory",
+   "title": "TencentCloud/TencentDB-Agent-Memory",
+   "description": "Память агента TencentDB — это центр памяти на уровне команды для агентов ИИ, который превращает разговоры, документы и код в четыре повторно используемых ресурса памяти (память чата, навыки, LLM-Wiki, код-график), которые управляются, совместно используются и используются агентами и платформами. · TypeScript",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 24663,
+   "enriched": true,
+   "added_at": "2026-08-26T21:40:47.805Z"
+  },
   {
    "url": "https://zapsplat.com/sound-effect-category/sound-design",
    "url_key": "zapsplat.com/sound-effect-category/sound-design",
