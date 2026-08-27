@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-08-26T07:37:04.192092+00:00",
+ "updated_at": "2026-08-27T17:58:05.016863+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 34,
+  "rejected": 33,
   "ai": 0
  },
  "items": [
@@ -78,78 +78,6 @@
    "content_status": "ready",
    "quality_score": 100,
    "published_at": "2026-08-21T07:34:29.689759+00:00"
-  },
-  {
-   "url": "https://github.com/amadeusprotocol/node",
-   "url_key": "github.com/amadeusprotocol/node",
-   "canonical_url": "https://github.com/amadeusprotocol/node",
-   "title": "amadeusprotocol/node",
-   "title_original": "amadeusprotocol/node",
-   "description": "Contribute to amadeusprotocol/node development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/amadeusprotocol/node",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/amadeusprotocol/node"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 1397,
-   "source_score": 1397,
-   "found_at": "2026-08-20T07:32:22.562739+00:00",
-   "title_ru": "amadeusprotocol/node",
-   "summary_ru": "Внесите свой вклад в разработку протокола/узла amadeus, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в разработку протокола/узла amadeus, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-08-20T07:32:22.562739+00:00"
-  },
-  {
-   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-   "url_key": "github.com/mukul975/anthropic-cybersecurity-skills",
-   "canonical_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-   "title": "mukul975/Anthropic-Cybersecurity-Skills",
-   "title_original": "mukul975/Anthropic-Cybersecurity-Skills",
-   "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-   "image": "https://opengraph.githubassets.com/1/mukul975/Anthropic-Cybersecurity-Skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 766,
-   "source_score": 766,
-   "found_at": "2026-08-20T07:32:22.562739+00:00",
-   "title_ru": "mukul975/Anthropic-Cybersecurity-Skills",
-   "summary_ru": "817 структурированных навыков кибербезопасности для агентов ИИ · Сопоставлены с 6 платформами: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF и MITRE F3 (Борьба с мошенничеством) · Стандарт Agentskills.io · Работает с Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI и более чем 20 платформами · 29 доменов безопасности · Apache 2.0",
-   "description_ru": "817 структурированных навыков кибербезопасности для агентов ИИ · Сопоставлены с 6 платформами: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF и MITRE F3 (Борьба с мошенничеством) · Стандарт Agentskills.io · Работает с Claude C",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 99,
-   "published_at": "2026-08-20T07:32:22.562739+00:00"
   },
   {
    "url": "https://bandarlabs.github.io/Cobalt",
@@ -258,78 +186,6 @@
    "content_status": "ready",
    "quality_score": 92,
    "published_at": "2026-08-21T07:34:29.689759+00:00"
-  },
-  {
-   "url": "https://github.com/jundot/omlx",
-   "url_key": "github.com/jundot/omlx",
-   "canonical_url": "https://github.com/jundot/omlx",
-   "title": "jundot/omlx",
-   "title_original": "jundot/omlx",
-   "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-   "image": "https://opengraph.githubassets.com/1/jundot/omlx",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/jundot/omlx"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 472,
-   "source_score": 472,
-   "found_at": "2026-08-20T07:32:22.562739+00:00",
-   "title_ru": "jundot/omlx",
-   "summary_ru": "Сервер вывода LLM с непрерывной пакетной обработкой и SSD-кэшированием для Apple Silicon — управление из строки меню macOS",
-   "description_ru": "Сервер вывода LLM с непрерывной пакетной обработкой и SSD-кэшированием для Apple Silicon — управление из строки меню macOS",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-08-20T07:32:22.562739+00:00"
-  },
-  {
-   "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
-   "url_key": "github.com/genlayerlabs/genlayer-project-boilerplate",
-   "canonical_url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
-   "title": "genlayerlabs/genlayer-project-boilerplate",
-   "title_original": "genlayerlabs/genlayer-project-boilerplate",
-   "description": "Contribute to genlayerlabs/genlayer-project-boilerplate development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/genlayerlabs/genlayer-project-boilerplate",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 430,
-   "source_score": 430,
-   "found_at": "2026-08-20T07:32:22.562739+00:00",
-   "title_ru": "genlayerlabs/genlayer-project-boilerplate",
-   "summary_ru": "Внесите свой вклад в разработку genlayerlabs/genlayer-project-boilerplate, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в разработку genlayerlabs/genlayer-project-boilerplate, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-08-20T07:32:22.562739+00:00"
   },
   {
    "url": "https://github.com/cursor/plugins",
