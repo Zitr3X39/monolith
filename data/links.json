@@ -1,7 +1,39 @@
 {
  "version": 1,
- "updated_at": "2026-08-26T21:40:51.472Z",
+ "updated_at": "2026-08-28T16:48:34.291Z",
  "items": [
+  {
+   "url": "https://github.com/htdt/godogen",
+   "url_key": "github.com/htdt/godogen",
+   "title": "htdt/godogen",
+   "description": "",
+   "note": "",
+   "domain": "github.com",
+   "category": "other",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": true,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-08-28T16:48:30.824Z"
+  },
+  {
+   "url": "https://oracle.com/ua/cloud/free",
+   "url_key": "oracle.com/ua/cloud/free",
+   "title": "free",
+   "description": "",
+   "note": "",
+   "domain": "oracle.com",
+   "category": "devops",
+   "type": "site",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-08-26T21:46:40.476Z"
+  },
   {
    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
    "url_key": "github.com/tencentcloud/tencentdb-agent-memory",
