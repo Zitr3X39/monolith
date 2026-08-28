@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:07:46.365Z",
+ "updated_at": "2026-08-28T17:07:54.058Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -41,7 +41,7 @@
    "description": "Кураторская коллекция из более чем 1000 навыков агентов от официальных команд разработчиков и сообщества, совместимая с Claude Code, Codex, Gemini CLI, Cursor и другими.",
    "note": "",
    "domain": "github.com",
-   "category": "vibecoding",
+   "category": "design",
    "type": "github",
    "source": "Вручную",
    "tags": [],
