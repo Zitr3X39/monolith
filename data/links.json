@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:07:54.058Z",
+ "updated_at": "2026-08-28T17:17:26.426Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -57,7 +57,7 @@
    "description": "Автономная разработка игр для Godot, Bevy и Babylon.js с использованием Claude Code и Codex · Python",
    "note": "",
    "domain": "github.com",
-   "category": "other",
+   "category": "gamedev",
    "type": "github",
    "source": "Вручную",
    "tags": [],
