@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:17:26.426Z",
+ "updated_at": "2026-08-28T17:17:29.925Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -61,7 +61,7 @@
    "type": "github",
    "source": "Вручную",
    "tags": [],
-   "favorite": false,
+   "favorite": true,
    "stars": 6475,
    "enriched": true,
    "added_at": "2026-08-28T16:48:30.824Z"
