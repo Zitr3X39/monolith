@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:18:32.463Z",
+ "updated_at": "2026-08-28T19:08:13+00:00",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -69,8 +69,8 @@
   {
    "url": "https://oracle.com/ua/cloud/free",
    "url_key": "oracle.com/ua/cloud/free",
-   "title": "free",
-   "description": "",
+   "title": "Oracle Cloud Free Tier | Oracle Україна",
+   "description": "Oracle Cloud Free Tier забезпечує для компаній доступ до Always Free Cloud Services, які можна використовувати необмежений час.",
    "note": "",
    "domain": "oracle.com",
    "category": "devops",
@@ -79,8 +79,9 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-08-26T21:46:40.476Z"
+   "enriched": true,
+   "added_at": "2026-08-26T21:46:40.476Z",
+   "desc_tries": 1
   },
   {
    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
