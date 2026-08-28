@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:06:27.981Z",
+ "updated_at": "2026-08-28T17:07:24.211Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -374,7 +374,7 @@
    "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. · Python",
    "note": "",
    "domain": "github.com",
-   "category": "video",
+   "category": "design",
    "type": "github",
    "source": "Вручную",
    "tags": [],
