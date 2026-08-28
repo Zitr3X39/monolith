@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:18:15.418Z",
+ "updated_at": "2026-08-28T17:18:32.463Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -646,7 +646,7 @@
    "description": "Agent Skills · TypeScript",
    "note": "",
    "domain": "github.com",
-   "category": "ai-skills",
+   "category": "design",
    "type": "github",
    "source": "Вручную",
    "tags": [],
