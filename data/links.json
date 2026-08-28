@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T17:07:24.211Z",
+ "updated_at": "2026-08-28T17:07:46.365Z",
  "items": [
   {
    "url": "https://github.com/nexu-io/open-design",
@@ -25,7 +25,7 @@
    "description": "Более 100 тщательно подобранных подсказок Seedance 2.5 с реальными превью видео, а также устанавливаемый навык агента, который оптимизирует подсказки, создает раскадровки и видео с помощью моделей Seedance. · TypeScript",
    "note": "",
    "domain": "github.com",
-   "category": "vibecoding",
+   "category": "design",
    "type": "github",
    "source": "Вручную",
    "tags": [],
