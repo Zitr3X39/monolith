@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-09-01T13:34:55.934Z",
+ "updated_at": "2026-09-01T15:06:08.628Z",
  "items": [
+  {
+   "url": "https://github.com/nvidia/skillspector",
+   "url_key": "github.com/nvidia/skillspector",
+   "title": "NVIDIA/SkillSpector",
+   "description": "Сканер безопасности для навыков агента ИИ. Обнаруживайте уязвимости, вредоносные шаблоны, угрозы безопасности, оперативное внедрение, кражу данных и риски цепочки поставок в навыках Claude Code, Codex и MCP перед их установкой. · Питон",
+   "note": "",
+   "domain": "github.com",
+   "category": "other",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 15513,
+   "enriched": true,
+   "added_at": "2026-09-01T15:06:04.082Z"
+  },
   {
    "url": "https://github.com/browserbase/stagehand",
    "url_key": "github.com/browserbase/stagehand",
