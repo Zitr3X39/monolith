@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-08-28T19:08:13+00:00",
+ "updated_at": "2026-09-01T13:28:19.840Z",
  "items": [
+  {
+   "url": "https://github.com/nousresearch/hermes-agent",
+   "url_key": "github.com/nousresearch/hermes-agent",
+   "title": "nousresearch/hermes-agent",
+   "description": "",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": true,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-09-01T13:28:16.845Z"
+  },
   {
    "url": "https://github.com/nexu-io/open-design",
    "url_key": "github.com/nexu-io/open-design",
