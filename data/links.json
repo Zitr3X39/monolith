@@ -1,21 +1,37 @@
 {
  "version": 1,
- "updated_at": "2026-09-01T13:28:19.840Z",
+ "updated_at": "2026-09-01T13:34:55.934Z",
  "items": [
+  {
+   "url": "https://github.com/browserbase/stagehand",
+   "url_key": "github.com/browserbase/stagehand",
+   "title": "browserbase/stagehand",
+   "description": "SDK для браузерных агентов · TypeScript",
+   "note": "",
+   "domain": "github.com",
+   "category": "other",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 24119,
+   "enriched": true,
+   "added_at": "2026-09-01T13:34:51.823Z"
+  },
   {
    "url": "https://github.com/nousresearch/hermes-agent",
    "url_key": "github.com/nousresearch/hermes-agent",
-   "title": "nousresearch/hermes-agent",
-   "description": "",
+   "title": "NousResearch/hermes-agent",
+   "description": "Агент, который растет вместе с вами · Python",
    "note": "",
    "domain": "github.com",
    "category": "vibecoding",
    "type": "github",
    "source": "Вручную",
    "tags": [],
-   "favorite": true,
-   "stars": 0,
-   "enriched": false,
+   "favorite": false,
+   "stars": 239313,
+   "enriched": true,
    "added_at": "2026-09-01T13:28:16.845Z"
   },
   {
