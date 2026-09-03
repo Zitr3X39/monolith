@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-09-01T15:06:08.628Z",
+ "updated_at": "2026-09-03T19:03:01.566Z",
  "items": [
+  {
+   "url": "https://github.com/blader/humanizer",
+   "url_key": "github.com/blader/humanizer",
+   "title": "blader/humanizer",
+   "description": "Навык агента, удаляющий из текста следы написания, созданные ИИ · Python",
+   "note": "",
+   "domain": "github.com",
+   "category": "other",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 41313,
+   "enriched": true,
+   "added_at": "2026-09-03T19:02:59.085Z"
+  },
   {
    "url": "https://github.com/nvidia/skillspector",
    "url_key": "github.com/nvidia/skillspector",
