@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-09-03T11:49:28.675556+00:00",
+ "updated_at": "2026-09-04T11:52:12.664010+00:00",
  "meta": {
-  "fresh": 20,
-  "rejected": 12,
+  "fresh": 0,
+  "rejected": 31,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/DietrichGebert/ponytail",
-   "url_key": "github.com/dietrichgebert/ponytail",
-   "canonical_url": "https://github.com/DietrichGebert/ponytail",
-   "title": "DietrichGebert/ponytail",
-   "title_original": "DietrichGebert/ponytail",
-   "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-   "image": "https://opengraph.githubassets.com/1/DietrichGebert/ponytail",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/DietrichGebert/ponytail"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1354,
-   "source_score": 1354,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "DietrichGebert/ponytail",
-   "summary_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
-   "description_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
   {
    "url": "https://github.com/averygan/reclip",
    "url_key": "github.com/averygan/reclip",
@@ -77,150 +41,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 97,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/affaan-m/ECC",
-   "url_key": "github.com/affaan-m/ecc",
-   "canonical_url": "https://github.com/affaan-m/ECC",
-   "title": "affaan-m/ECC",
-   "title_original": "affaan-m/ECC",
-   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-   "image": "https://opengraph.githubassets.com/1/affaan-m/ECC",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/affaan-m/ECC"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 516,
-   "source_score": 516,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "affaan-m/ECC",
-   "summary_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "description_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 93,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/blader/humanizer",
-   "url_key": "github.com/blader/humanizer",
-   "canonical_url": "https://github.com/blader/humanizer",
-   "title": "blader/humanizer",
-   "title_original": "blader/humanizer",
-   "description": "Agent skill that removes signs of AI-generated writing from text",
-   "image": "https://opengraph.githubassets.com/1/blader/humanizer",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/blader/humanizer"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 374,
-   "source_score": 374,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "blader/humanizer",
-   "summary_ru": "Навык агента, удаляющий из текста следы написания, созданного ИИ.",
-   "description_ru": "Навык агента, удаляющий из текста следы написания, созданного ИИ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/google-research/timesfm",
-   "url_key": "github.com/google-research/timesfm",
-   "canonical_url": "https://github.com/google-research/timesfm",
-   "title": "google-research/timesfm",
-   "title_original": "google-research/timesfm",
-   "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-   "image": "https://opengraph.githubassets.com/1/google-research/timesfm",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/google-research/timesfm"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 343,
-   "source_score": 343,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "google-research/timesfm",
-   "summary_ru": "TimesFM (основанная модель временных рядов) — это предварительно обученная базовая модель временных рядов, разработанная Google Research для прогнозирования временных рядов.",
-   "description_ru": "TimesFM (основанная модель временных рядов) — это предварительно обученная базовая модель временных рядов, разработанная Google Research для прогнозирования временных рядов.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/anthropics/skills",
-   "url_key": "github.com/anthropics/skills",
-   "canonical_url": "https://github.com/anthropics/skills",
-   "title": "anthropics/skills",
-   "title_original": "anthropics/skills",
-   "description": "Public repository for Agent Skills",
-   "image": "https://opengraph.githubassets.com/1/anthropics/skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 277,
-   "source_score": 277,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "anthropics/skills",
-   "summary_ru": "Публичный репозиторий навыков агента",
-   "description_ru": "Публичный репозиторий навыков агента",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
    "published_at": "2026-09-03T11:49:28.675556+00:00"
   },
   {
@@ -260,42 +80,6 @@
    "published_at": "2026-09-03T11:49:28.675556+00:00"
   },
   {
-   "url": "https://github.com/JuliusBrussee/caveman",
-   "url_key": "github.com/juliusbrussee/caveman",
-   "canonical_url": "https://github.com/JuliusBrussee/caveman",
-   "title": "JuliusBrussee/caveman",
-   "title_original": "JuliusBrussee/caveman",
-   "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-   "image": "https://opengraph.githubassets.com/1/JuliusBrussee/caveman",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/JuliusBrussee/caveman"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 238,
-   "source_score": 238,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "JuliusBrussee/caveman",
-   "summary_ru": "🪨 зачем использовать много жетонов, когда мало токенов делают трюк — навык Клода Кода, который сокращает 65% токенов, разговаривая как пещерный человек",
-   "description_ru": "🪨 зачем использовать много жетонов, когда мало токенов делают трюк — навык Клода Кода, который сокращает 65% токенов, разговаривая как пещерный человек",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
    "url": "https://github.com/ByteByteGoHq/system-design-101",
    "url_key": "github.com/bytebytegohq/system-design-101",
    "canonical_url": "https://github.com/ByteByteGoHq/system-design-101",
@@ -329,42 +113,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 84,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/magnitudedev/magnitude",
-   "url_key": "github.com/magnitudedev/magnitude",
-   "canonical_url": "https://github.com/magnitudedev/magnitude",
-   "title": "magnitudedev/magnitude",
-   "title_original": "magnitudedev/magnitude",
-   "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
-   "image": "https://opengraph.githubassets.com/1/magnitudedev/magnitude",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/magnitudedev/magnitude"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 130,
-   "source_score": 130,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "magnitudedev/magnitude",
-   "summary_ru": "Сервер вывода с открытым исходным кодом, который запускает лучшие локальные модели для вашего оборудования, подключенный к уже используемому вами агенту. Работает с Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi и Cline.",
-   "description_ru": "Сервер вывода с открытым исходным кодом, который запускает лучшие локальные модели для вашего оборудования, подключенный к уже используемому вами агенту. Работает с Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi и Cline.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 83,
    "published_at": "2026-09-03T11:49:28.675556+00:00"
   },
   {
@@ -509,42 +257,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 81,
-   "published_at": "2026-09-03T11:49:28.675556+00:00"
-  },
-  {
-   "url": "https://github.com/fmtlib/fmt",
-   "url_key": "github.com/fmtlib/fmt",
-   "canonical_url": "https://github.com/fmtlib/fmt",
-   "title": "fmtlib/fmt",
-   "title_original": "fmtlib/fmt",
-   "description": "A modern formatting library",
-   "image": "https://opengraph.githubassets.com/1/fmtlib/fmt",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/fmtlib/fmt"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 14,
-   "source_score": 14,
-   "found_at": "2026-09-03T11:49:28.675556+00:00",
-   "title_ru": "fmtlib/fmt",
-   "summary_ru": "Современная библиотека форматирования",
-   "description_ru": "Современная библиотека форматирования",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 80,
    "published_at": "2026-09-03T11:49:28.675556+00:00"
   },
   {
