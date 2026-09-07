@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-09-06T11:25:17.151919+00:00",
+ "updated_at": "2026-09-07T13:07:15.263713+00:00",
  "meta": {
-  "fresh": 15,
-  "rejected": 15,
+  "fresh": 0,
+  "rejected": 33,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/affaan-m/ECC",
-   "url_key": "github.com/affaan-m/ecc",
-   "canonical_url": "https://github.com/affaan-m/ECC",
-   "title": "affaan-m/ECC",
-   "title_original": "affaan-m/ECC",
-   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-   "image": "https://opengraph.githubassets.com/1/affaan-m/ECC",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/affaan-m/ECC"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1314,
-   "source_score": 1314,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "affaan-m/ECC",
-   "summary_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "description_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
   {
    "url": "https://github.com/DietrichGebert/ponytail",
    "url_key": "github.com/dietrichgebert/ponytail",
@@ -545,42 +509,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 83,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
-   "url": "https://github.com/BraveOPotato/FckSignups",
-   "url_key": "github.com/braveopotato/fcksignups",
-   "canonical_url": "https://github.com/BraveOPotato/FckSignups",
-   "title": "BraveOPotato/FckSignups",
-   "title_original": "BraveOPotato/FckSignups",
-   "description": "A list of tools that are open-source, in-browser, and require no-signups!",
-   "image": "https://opengraph.githubassets.com/1/BraveOPotato/FckSignups",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/BraveOPotato/FckSignups"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "design",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 68,
-   "source_score": 68,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "BraveOPotato/FckSignups",
-   "summary_ru": "Список инструментов с открытым исходным кодом, встроенных в браузер и не требующих регистрации!",
-   "description_ru": "Список инструментов с открытым исходным кодом, встроенных в браузер и не требующих регистрации!",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 82,
    "published_at": "2026-09-06T11:25:17.151919+00:00"
   },
   {
