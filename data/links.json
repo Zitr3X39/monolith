@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-09-03T19:03:01.566Z",
+ "updated_at": "2026-09-07T10:42:50.665184+00:00",
  "items": [
   {
    "url": "https://github.com/blader/humanizer",
@@ -1580,6 +1580,22 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
+  },
+  {
+   "url": "https://github.com/badVIno-ctrl/IIOL/blob/main/AI",
+   "url_key": "github.com/badvino-ctrl/iiol/blob/main/ai",
+   "title": "github.com",
+   "description": "",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-09-07T10:42:50.664976+00:00"
   }
  ]
 }
