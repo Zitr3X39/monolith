@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-09-07T13:07:15.263713+00:00",
+ "updated_at": "2026-09-08T11:52:51.310067+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 33,
+  "rejected": 34,
   "ai": 0
  },
  "items": [
@@ -35,42 +35,6 @@
    "title_ru": "DietrichGebert/ponytail",
    "summary_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
    "description_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
-   "url": "https://github.com/cathrynlavery/diagram-design",
-   "url_key": "github.com/cathrynlavery/diagram-design",
-   "canonical_url": "https://github.com/cathrynlavery/diagram-design",
-   "title": "cathrynlavery/diagram-design",
-   "title_original": "cathrynlavery/diagram-design",
-   "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-   "image": "https://opengraph.githubassets.com/1/cathrynlavery/diagram-design",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/cathrynlavery/diagram-design"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 855,
-   "source_score": 855,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "cathrynlavery/diagram-design",
-   "summary_ru": "38 типов редакционных диаграмм для Claude Code, Codex и Pi. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
-   "description_ru": "38 типов редакционных диаграмм для Claude Code, Codex и Pi. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
