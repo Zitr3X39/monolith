@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-09-09T12:02:09+00:00",
+ "updated_at": "2026-09-13T11:51:10.715Z",
  "items": [
+  {
+   "url": "https://github.com/badVIno-ctrl/viora-skills/tree/main/channel-skill",
+   "url_key": "github.com/badvino-ctrl/viora-skills/tree/main/channel-skill",
+   "title": "badVIno-ctrl/viora-skills",
+   "description": "Навыки кодирования для агентов: первый навык предназначен для проектирования, второй — для качественного кода, третий — для тестирования безопасности. · Питон",
+   "note": "",
+   "domain": "github.com",
+   "category": "other",
+   "type": "github",
+   "source": "Вручную",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": true,
+   "added_at": "2026-09-13T11:51:06.507Z"
+  },
   {
    "url": "https://github.com/badVIno-ctrl/IIOL/blob/main/AI",
    "url_key": "github.com/badvino-ctrl/iiol/blob/main/ai",
