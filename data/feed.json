@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-09-12T11:22:32.895414+00:00",
+ "updated_at": "2026-09-13T12:26:11.075815+00:00",
  "meta": {
-  "fresh": 25,
-  "rejected": 9,
+  "fresh": 0,
+  "rejected": 33,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/bilawalsidhu/gods-eye-view",
-   "url_key": "github.com/bilawalsidhu/gods-eye-view",
-   "canonical_url": "https://github.com/bilawalsidhu/gods-eye-view",
-   "title": "bilawalsidhu/gods-eye-view",
-   "title_original": "bilawalsidhu/gods-eye-view",
-   "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-   "image": "https://opengraph.githubassets.com/1/bilawalsidhu/gods-eye-view",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/bilawalsidhu/gods-eye-view"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "3d",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 3680,
-   "source_score": 3680,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "bilawalsidhu/gods-eye-view",
-   "summary_ru": "Симулятор шпионского спутника в вашем браузере, за исключением того, что данные настоящие. Живой пространственный интеллект с открытым исходным кодом на фотореалистичном 3D-глобусе.",
-   "description_ru": "Симулятор шпионского спутника в вашем браузере, за исключением того, что данные настоящие. Живой пространственный интеллект с открытым исходным кодом на фотореалистичном 3D-глобусе.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
   {
    "url": "https://github.com/ayghri/i-have-adhd",
    "url_key": "github.com/ayghri/i-have-adhd",
@@ -80,78 +44,6 @@
    "published_at": "2026-09-11T11:55:55.882138+00:00"
   },
   {
-   "url": "https://github.com/DietrichGebert/ponytail",
-   "url_key": "github.com/dietrichgebert/ponytail",
-   "canonical_url": "https://github.com/DietrichGebert/ponytail",
-   "title": "DietrichGebert/ponytail",
-   "title_original": "DietrichGebert/ponytail",
-   "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-   "image": "https://opengraph.githubassets.com/1/DietrichGebert/ponytail",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/DietrichGebert/ponytail"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 2845,
-   "source_score": 2845,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "DietrichGebert/ponytail",
-   "summary_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
-   "description_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
-   "url": "https://collusion.wiki/",
-   "url_key": "collusion.wiki/",
-   "canonical_url": "https://collusion.wiki/",
-   "title": "Discovery of a new OpenAI agent message board",
-   "title_original": "Discovery of a new OpenAI agent message board",
-   "description": "A swarm of autonomous AI agents, self-identifying as OpenAI agents, used a small German volunteer wiki to save answers, coordinate live, and share sandbox bypasses. OpenAI noticed and said nothing.",
-   "image": "https://collusion.wiki/img/social.png?v=5ce9724f",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://collusion.wiki/"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "collusion.wiki",
-   "score": 2194,
-   "source_score": 2194,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "Открытие новой доски объявлений агента OpenAI",
-   "summary_ru": "Рой автономных агентов ИИ, идентифицировавших себя как агенты OpenAI, использовал небольшую немецкую добровольную вики, чтобы сохранять ответы, координировать действия в реальном времени и делиться обходами песочницы. OpenAI заметил это и ничего не сказал.",
-   "description_ru": "Рой автономных агентов ИИ, идентифицировавших себя как агенты OpenAI, использовал небольшую немецкую добровольную вики, чтобы сохранять ответы, координировать действия в реальном времени и делиться обходами песочницы. OpenAI заметил это и н",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
    "url": "https://github.com/obra/superpowers",
    "url_key": "github.com/obra/superpowers",
    "canonical_url": "https://github.com/obra/superpowers",
@@ -186,78 +78,6 @@
    "content_status": "ready",
    "quality_score": 98,
    "published_at": "2026-09-11T11:55:55.882138+00:00"
-  },
-  {
-   "url": "https://github.com/anomalyco/opencode",
-   "url_key": "github.com/anomalyco/opencode",
-   "canonical_url": "https://github.com/anomalyco/opencode",
-   "title": "anomalyco/opencode",
-   "title_original": "anomalyco/opencode",
-   "description": "The open source coding agent.",
-   "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anomalyco/opencode"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 725,
-   "source_score": 725,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "anomalyco/opencode",
-   "summary_ru": "Агент кодирования с открытым исходным кодом.",
-   "description_ru": "Агент кодирования с открытым исходным кодом.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 98,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
-   "url": "https://github.com/magnitudedev/magnitude",
-   "url_key": "github.com/magnitudedev/magnitude",
-   "canonical_url": "https://github.com/magnitudedev/magnitude",
-   "title": "magnitudedev/magnitude",
-   "title_original": "magnitudedev/magnitude",
-   "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
-   "image": "https://opengraph.githubassets.com/1/magnitudedev/magnitude",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/magnitudedev/magnitude"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 674,
-   "source_score": 674,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "magnitudedev/magnitude",
-   "summary_ru": "Сервер вывода с открытым исходным кодом, который запускает лучшие локальные модели для вашего оборудования, подключенный к уже используемому вами агенту. Работает с Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi и Cline.",
-   "description_ru": "Сервер вывода с открытым исходным кодом, который запускает лучшие локальные модели для вашего оборудования, подключенный к уже используемому вами агенту. Работает с Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi и Cline.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 97,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
   },
   {
    "url": "https://github.com/alsk1992/CloddsBot",
@@ -332,42 +152,6 @@
    "published_at": "2026-09-11T11:55:55.882138+00:00"
   },
   {
-   "url": "https://github.com/anthropics/skills",
-   "url_key": "github.com/anthropics/skills",
-   "canonical_url": "https://github.com/anthropics/skills",
-   "title": "anthropics/skills",
-   "title_original": "anthropics/skills",
-   "description": "Public repository for Agent Skills",
-   "image": "https://opengraph.githubassets.com/1/anthropics/skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 475,
-   "source_score": 475,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "anthropics/skills",
-   "summary_ru": "Публичный репозиторий навыков агента",
-   "description_ru": "Публичный репозиторий навыков агента",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
    "url": "https://autom.dev/blog/google-search-goto-links",
    "url_key": "autom.dev/blog/google-search-goto-links",
    "canonical_url": "https://autom.dev/blog/google-search-goto-links",
@@ -402,42 +186,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/humanlayer/skills",
-   "url_key": "github.com/humanlayer/skills",
-   "canonical_url": "https://github.com/humanlayer/skills",
-   "title": "humanlayer/skills",
-   "title_original": "humanlayer/skills",
-   "description": "Contribute to humanlayer/skills development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/humanlayer/skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/humanlayer/skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 442,
-   "source_score": 442,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "humanlayer/skills",
-   "summary_ru": "Внесите свой вклад в развитие человеческого потенциала/навыков, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в развитие человеческого потенциала/навыков, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
   },
   {
    "url": "https://mathandai.org/",
@@ -584,42 +332,6 @@
    "published_at": "2026-09-11T11:55:55.882138+00:00"
   },
   {
-   "url": "https://github.com/yuliskov/SmartTube",
-   "url_key": "github.com/yuliskov/smarttube",
-   "canonical_url": "https://github.com/yuliskov/SmartTube",
-   "title": "yuliskov/SmartTube",
-   "title_original": "yuliskov/SmartTube",
-   "description": "Browse media content with your own rules on Android TV",
-   "image": "https://opengraph.githubassets.com/1/yuliskov/SmartTube",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/yuliskov/SmartTube"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 247,
-   "source_score": 247,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "yuliskov/SmartTube",
-   "summary_ru": "Просматривайте медиаконтент по своим правилам на Android TV",
-   "description_ru": "Просматривайте медиаконтент по своим правилам на Android TV",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
    "url_key": "github.com/shubhamsaboo/awesome-llm-apps",
    "canonical_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
@@ -653,42 +365,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 86,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/asgeirtj/system_prompts_leaks",
-   "url_key": "github.com/asgeirtj/system_prompts_leaks",
-   "canonical_url": "https://github.com/asgeirtj/system_prompts_leaks",
-   "title": "asgeirtj/system_prompts_leaks",
-   "title_original": "asgeirtj/system_prompts_leaks",
-   "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
-   "image": "https://opengraph.githubassets.com/1/asgeirtj/system_prompts_leaks",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/asgeirtj/system_prompts_leaks"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 216,
-   "source_score": 216,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "asgeirtj/system_prompts_leaks",
-   "summary_ru": "Извлечены системные подсказки из Anthropic — Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI — ЧатGPT GPT-6-Astra, Кодекс. Гугл - Близнецы 3.8 Флэш, 3.1 Про, Антигравитация. xAI — Грок, Грок-бот, Курсор, Кими и другие! Обновляется регулярно.",
-   "description_ru": "Извлечены системные подсказки из Anthropic — Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI — ЧатGPT GPT-6-Astra, Кодекс. Гугл - Близнецы 3.8 Флэш, 3.1 Про, Антигравитация. xAI — Грок, Грок-бот, Курсор, Кими и другие! Обновляе",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
    "published_at": "2026-09-12T11:22:32.895414+00:00"
   },
   {
@@ -761,114 +437,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 85,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/multimodal-art-projection/YuE",
-   "url_key": "github.com/multimodal-art-projection/yue",
-   "canonical_url": "https://github.com/multimodal-art-projection/YuE",
-   "title": "multimodal-art-projection/YuE",
-   "title_original": "multimodal-art-projection/YuE",
-   "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
-   "image": "https://opengraph.githubassets.com/1/multimodal-art-projection/YuE",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/multimodal-art-projection/YuE"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "music",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 193,
-   "source_score": 193,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "multimodal-art-projection/YuE",
-   "summary_ru": "YuE2: создание передовой музыки с символическим планированием, каверами с нуля и агентским редактированием музыки.",
-   "description_ru": "YuE2: создание передовой музыки с символическим планированием, каверами с нуля и агентским редактированием музыки.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/alphaXiv/OpenResearch",
-   "url_key": "github.com/alphaxiv/openresearch",
-   "canonical_url": "https://github.com/alphaXiv/OpenResearch",
-   "title": "alphaXiv/OpenResearch",
-   "title_original": "alphaXiv/OpenResearch",
-   "description": "Run parallel research agents with any model",
-   "image": "https://opengraph.githubassets.com/1/alphaXiv/OpenResearch",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/alphaXiv/OpenResearch"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 210,
-   "source_score": 210,
-   "found_at": "2026-09-11T11:55:55.882138+00:00",
-   "title_ru": "alphaXiv/OpenResearch",
-   "summary_ru": "Запускайте параллельные исследовательские агенты с любой моделью",
-   "description_ru": "Запускайте параллельные исследовательские агенты с любой моделью",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
-   "published_at": "2026-09-11T11:55:55.882138+00:00"
-  },
-  {
-   "url": "https://github.com/melgarafael/DeskcommCRM",
-   "url_key": "github.com/melgarafael/deskcommcrm",
-   "canonical_url": "https://github.com/melgarafael/DeskcommCRM",
-   "title": "melgarafael/DeskcommCRM",
-   "title_original": "melgarafael/DeskcommCRM",
-   "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-   "image": "https://opengraph.githubassets.com/1/melgarafael/DeskcommCRM",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/melgarafael/DeskcommCRM"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 152,
-   "source_score": 152,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "melgarafael/DeskcommCRM",
-   "summary_ru": "ОС для продаж на базе искусственного интеллекта с открытым исходным кодом — автономная CRM со встроенными агентами на основе искусственного интеллекта + WhatsApp (WAHA). Открытая альтернатива Kommo, Octadesk и Intercom для любого бизнеса, продающего через чат. Поддержка MCP, многопользовательская среда, LGPD.",
-   "description_ru": "ОС для продаж на базе искусственного интеллекта с открытым исходным кодом — автономная CRM со встроенными агентами на основе искусственного интеллекта + WhatsApp (WAHA). Открытая альтернатива Kommo, Octadesk и Intercom для любого бизнеса, п",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 84,
    "published_at": "2026-09-12T11:22:32.895414+00:00"
   },
   {
@@ -980,78 +548,6 @@
    "published_at": "2026-09-11T11:55:55.882138+00:00"
   },
   {
-   "url": "https://github.com/fmtlib/fmt",
-   "url_key": "github.com/fmtlib/fmt",
-   "canonical_url": "https://github.com/fmtlib/fmt",
-   "title": "fmtlib/fmt",
-   "title_original": "fmtlib/fmt",
-   "description": "A modern formatting library",
-   "image": "https://opengraph.githubassets.com/1/fmtlib/fmt",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/fmtlib/fmt"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 134,
-   "source_score": 134,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "fmtlib/fmt",
-   "summary_ru": "Современная библиотека форматирования",
-   "description_ru": "Современная библиотека форматирования",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 83,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
-  },
-  {
-   "url": "https://github.com/SnailSploit/Claude-Red",
-   "url_key": "github.com/snailsploit/claude-red",
-   "canonical_url": "https://github.com/SnailSploit/Claude-Red",
-   "title": "SnailSploit/Claude-Red",
-   "title_original": "SnailSploit/Claude-Red",
-   "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-   "image": "https://opengraph.githubassets.com/1/SnailSploit/Claude-Red",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/SnailSploit/Claude-Red"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 99,
-   "source_score": 99,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "SnailSploit/Claude-Red",
-   "summary_ru": "claude-red — это тщательно подобранная библиотека наступательных навыков безопасности, разработанная для системы навыков Claude. Каждый навык представляет собой структурированный файл SKILL.md, который знакомит Клода с методологией экспертного уровня для конкретной поверхности атаки — от SQLi до шелл-кода, от уклонения от EDR до разработки уязвимостей.",
-   "description_ru": "claude-red — это тщательно подобранная библиотека наступательных навыков безопасности, разработанная для системы навыков Claude. Каждый навык представляет собой структурированный файл SKILL.md, который знакомит Клода с методологией экспертн",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 82,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
    "url": "https://dev.to/devengers/dev-opportunity-radar-16-15k-ai-agent-hackathon-ai-education-fellowship-and-aws-student-rewards-4l2e",
    "url_key": "dev.to/devengers/dev-opportunity-radar-16-15k-ai-agent-hackathon-ai-education-fellowship-and-aws-student-rewards-4l2e",
    "canonical_url": "https://dev.to/devengers/dev-opportunity-radar-16-15k-ai-agent-hackathon-ai-education-fellowship-and-aws-student-rewards-4l2e",
@@ -1086,42 +582,6 @@
    "content_status": "ready",
    "quality_score": 82,
    "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/WorldFlowAI/everything-claude-code",
-   "url_key": "github.com/worldflowai/everything-claude-code",
-   "canonical_url": "https://github.com/WorldFlowAI/everything-claude-code",
-   "title": "WorldFlowAI/everything-claude-code",
-   "title_original": "WorldFlowAI/everything-claude-code",
-   "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development",
-   "image": "https://opengraph.githubassets.com/1/WorldFlowAI/everything-claude-code",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/WorldFlowAI/everything-claude-code"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 95,
-   "source_score": 95,
-   "found_at": "2026-09-06T11:25:17.151919+00:00",
-   "title_ru": "WorldFlowAI/everything-claude-code",
-   "summary_ru": "Набор инструментов Claude Code — агенты, команды, навыки, правила и приемы для продуктивной разработки с помощью ИИ.",
-   "description_ru": "Набор инструментов Claude Code — агенты, команды, навыки, правила и приемы для продуктивной разработки с помощью ИИ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 82,
-   "published_at": "2026-09-06T11:25:17.151919+00:00"
   },
   {
    "url": "https://github.com/Flowseal/zapret-discord-youtube",
