@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-09-13T11:51:10.715Z",
+ "updated_at": "2026-09-13T11:51:14.358Z",
  "items": [
   {
    "url": "https://github.com/badVIno-ctrl/viora-skills/tree/main/channel-skill",
@@ -13,7 +13,7 @@
    "type": "github",
    "source": "Вручную",
    "tags": [],
-   "favorite": false,
+   "favorite": true,
    "stars": 0,
    "enriched": true,
    "added_at": "2026-09-13T11:51:06.507Z"
