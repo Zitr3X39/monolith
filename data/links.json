@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-09-13T11:51:37.123Z",
+ "updated_at": "2026-09-15T18:19:49.336341+00:00",
  "items": [
   {
    "url": "https://github.com/badVIno-ctrl/viora-skills/tree/main/channel-skill",
@@ -1613,6 +1613,38 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
+  },
+  {
+   "url": "https://badvino-ctrl.github.io/IIOL/design/v1.html",
+   "url_key": "badvino-ctrl.github.io/iiol/design/v1.html",
+   "title": "badvino-ctrl.github.io",
+   "description": "Йоооуу чувачи\n\nСобрал 8 бесплатных сервисов для дизайна, кода и учёбы.\n\n#сервисы\n\nЧАТ | GITHUB | YOUTUBE | ТГК\n\n\nтакже, хочется напомнить о себе:\n\n1. IIOL - мой репозиторий с полезной инфой. \ndesign - папка в IIOL с неве",
+   "note": "",
+   "domain": "badvino-ctrl.github.io",
+   "category": "ai-skills",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-09-15T18:19:49.335959+00:00"
+  },
+  {
+   "url": "https://badvino-ctrl.github.io/IIOL/design/v77.html",
+   "url_key": "badvino-ctrl.github.io/iiol/design/v77.html",
+   "title": "badvino-ctrl.github.io",
+   "description": "Йоооуу чувачи\n\nСобрал 8 бесплатных сервисов для дизайна, кода и учёбы.\n\n#сервисы\n\nЧАТ | GITHUB | YOUTUBE | ТГК\n\n\nтакже, хочется напомнить о себе:\n\n1. IIOL - мой репозиторий с полезной инфой. \ndesign - папка в IIOL с неве",
+   "note": "",
+   "domain": "badvino-ctrl.github.io",
+   "category": "ai-skills",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-09-15T18:19:49.336140+00:00"
   }
  ]
 }
