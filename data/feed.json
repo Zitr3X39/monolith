@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-09-18T11:58:13.905000+00:00",
+ "updated_at": "2026-09-19T11:42:09.586236+00:00",
  "meta": {
-  "fresh": 26,
-  "rejected": 8,
+  "fresh": 0,
+  "rejected": 34,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/cloudflare/security-audit-skill",
-   "url_key": "github.com/cloudflare/security-audit-skill",
-   "canonical_url": "https://github.com/cloudflare/security-audit-skill",
-   "title": "cloudflare/security-audit-skill",
-   "title_original": "cloudflare/security-audit-skill",
-   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-   "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/cloudflare/security-audit-skill"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 3607,
-   "source_score": 3607,
-   "found_at": "2026-09-18T11:58:13.905000+00:00",
-   "title_ru": "cloudflare/security-audit-skill",
-   "summary_ru": "Навыки кодировщика для многоэтапного аудита безопасности с независимо проверенными машиночитаемыми результатами.",
-   "description_ru": "Навыки кодировщика для многоэтапного аудита безопасности с независимо проверенными машиночитаемыми результатами.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
   {
    "url": "https://github.com/alibaba/open-code-review",
    "url_key": "github.com/alibaba/open-code-review",
@@ -404,42 +368,6 @@
    "published_at": "2026-09-17T12:18:05.892517+00:00"
   },
   {
-   "url": "https://github.com/addyosmani/agent-skills",
-   "url_key": "github.com/addyosmani/agent-skills",
-   "canonical_url": "https://github.com/addyosmani/agent-skills",
-   "title": "addyosmani/agent-skills",
-   "title_original": "addyosmani/agent-skills",
-   "description": "Production-grade engineering skills for AI coding agents.",
-   "image": "https://opengraph.githubassets.com/1/addyosmani/agent-skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/addyosmani/agent-skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 680,
-   "source_score": 680,
-   "found_at": "2026-09-18T11:58:13.905000+00:00",
-   "title_ru": "addyosmani/agent-skills",
-   "summary_ru": "Инженерные навыки производственного уровня для агентов кодирования ИИ.",
-   "description_ru": "Инженерные навыки производственного уровня для агентов кодирования ИИ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 97,
-   "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
-  {
    "url": "https://github.com/jamiepine/voicebox",
    "url_key": "github.com/jamiepine/voicebox",
    "canonical_url": "https://github.com/jamiepine/voicebox",
@@ -510,42 +438,6 @@
    "content_status": "ready",
    "quality_score": 96,
    "published_at": "2026-09-16T12:18:09.958726+00:00"
-  },
-  {
-   "url": "https://github.com/alsk1992/CloddsBot",
-   "url_key": "github.com/alsk1992/cloddsbot",
-   "canonical_url": "https://github.com/alsk1992/CloddsBot",
-   "title": "alsk1992/CloddsBot",
-   "title_original": "alsk1992/CloddsBot",
-   "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
-   "image": "https://opengraph.githubassets.com/1/alsk1992/CloddsBot",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/alsk1992/CloddsBot"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 626,
-   "source_score": 626,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "alsk1992/CloddsBot",
-   "summary_ru": "Торговый агент с открытым исходным кодом, работающий автономно на более чем 1000 рынках — Polymarket, Kalshi, Binance, Hyperliquid, Solana DEX, 5 сетей EVM. Сканирует границы, выполняет мгновенно, управляет рисками, пока вы спите. Протокол агентской торговли для межмашинных платежей. Самостоятельное размещение. Построен на Клоде.",
-   "description_ru": "Торговый агент с открытым исходным кодом, работающий автономно на более чем 1000 рынках — Polymarket, Kalshi, Binance, Hyperliquid, Solana DEX, 5 сетей EVM. Сканирует границы, выполняет мгновенно, управляет рисками, пока вы спите. Протокол ",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 96,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
   },
   {
    "url": "https://github.com/supabase/supabase",
@@ -656,42 +548,6 @@
    "published_at": "2026-09-17T12:18:05.892517+00:00"
   },
   {
-   "url": "https://github.com/anthropics/claude-code",
-   "url_key": "github.com/anthropics/claude-code",
-   "canonical_url": "https://github.com/anthropics/claude-code",
-   "title": "anthropics/claude-code",
-   "title_original": "anthropics/claude-code",
-   "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-   "image": "https://opengraph.githubassets.com/1/anthropics/claude-code",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/claude-code"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 538,
-   "source_score": 538,
-   "found_at": "2026-09-18T11:58:13.905000+00:00",
-   "title_ru": "anthropics/claude-code",
-   "summary_ru": "Claude Code — это агентный инструмент кодирования, который находится в вашем терминале, понимает вашу кодовую базу и помогает вам быстрее кодировать, выполняя рутинные задачи, объясняя сложный код и обрабатывая рабочие процессы git — и все это с помощью команд на естественном языке.",
-   "description_ru": "Claude Code — это агентный инструмент кодирования, который находится в вашем терминале, понимает вашу кодовую базу и помогает вам быстрее кодировать, выполняя рутинные задачи, объясняя сложный код и обрабатывая рабочие процессы git — и все ",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 93,
-   "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
-  {
    "url": "https://github.com/ankitects/anki",
    "url_key": "github.com/ankitects/anki",
    "canonical_url": "https://github.com/ankitects/anki",
@@ -726,78 +582,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
-  {
-   "url": "https://autom.dev/blog/google-search-goto-links",
-   "url_key": "autom.dev/blog/google-search-goto-links",
-   "canonical_url": "https://autom.dev/blog/google-search-goto-links",
-   "title": "google.com/goto: Google's anti-scraping update",
-   "title_original": "google.com/goto: Google's anti-scraping update",
-   "description": "Piloterr is a software platform that enables forward-thinking companies to leverage the full potential of the web.",
-   "image": "https://tlyriaxy.sirv.com/Piloterr/cover.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://autom.dev/blog/google-search-goto-links"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "vibecoding",
-   "topic": "automation",
-   "topic_name": "Автоматизация",
-   "domain": "autom.dev",
-   "score": 458,
-   "source_score": 458,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "google.com/goto: обновление Google для защиты от парсинга",
-   "summary_ru": "Piloterr — это программная платформа, которая позволяет дальновидным компаниям использовать весь потенциал Интернета.",
-   "description_ru": "Piloterr — это программная платформа, которая позволяет дальновидным компаниям использовать весь потенциал Интернета.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://mathandai.org/",
-   "url_key": "mathandai.org/",
-   "canonical_url": "https://mathandai.org/",
-   "title": "A misalignment of AI in mathematics",
-   "title_original": "A misalignment of AI in mathematics",
-   "description": "Read the declaration and add your name.",
-   "image": "",
-   "media_kind": "fallback",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://mathandai.org/"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "mathandai.org",
-   "score": 962,
-   "source_score": 962,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "Несовпадение ИИ в математике",
-   "summary_ru": "Прочтите декларацию и укажите свое имя.",
-   "description_ru": "Прочтите декларацию и укажите свое имя.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 90,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
   },
   {
    "url": "https://github.com/TencentCloud/Octop",
@@ -836,42 +620,6 @@
    "published_at": "2026-09-18T11:58:13.905000+00:00"
   },
   {
-   "url": "https://github.com/armory3d/armorpaint",
-   "url_key": "github.com/armory3d/armorpaint",
-   "canonical_url": "https://github.com/armory3d/armorpaint",
-   "title": "armory3d/armorpaint",
-   "title_original": "armory3d/armorpaint",
-   "description": "Graphics Creation Tools",
-   "image": "https://opengraph.githubassets.com/1/armory3d/armorpaint",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/armory3d/armorpaint"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "3d",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 350,
-   "source_score": 350,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "armory3d/armorpaint",
-   "summary_ru": "Инструменты для создания графики",
-   "description_ru": "Инструменты для создания графики",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
    "url": "https://github.com/roboflow/supervision",
    "url_key": "github.com/roboflow/supervision",
    "canonical_url": "https://github.com/roboflow/supervision",
@@ -908,42 +656,6 @@
    "published_at": "2026-09-17T12:18:05.892517+00:00"
   },
   {
-   "url": "https://cel.cs.brown.edu/blog/design-space-async-await",
-   "url_key": "cel.cs.brown.edu/blog/design-space-async-await",
-   "canonical_url": "https://cel.cs.brown.edu/blog/design-space-async-await",
-   "title": "A Design Space Exploration of Async/Await",
-   "title_original": "A Design Space Exploration of Async/Await",
-   "description": "Every language pitches async/await as synchronous-looking code, and the same two keywords appear everywhere. But behind the shared syntax hide nine independent design decisions, and no two of seven modern runtimes agree on what even the simplest async programs should do! In this paper we map the design space of async/await so you can find out where your language stands.",
-   "image": "https://cel.cs.brown.edu/assets/cel-spaced-BGjllCyA.webp",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://cel.cs.brown.edu/blog/design-space-async-await"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "design",
-   "topic": "ux-design",
-   "topic_name": "UX / веб-дизайн",
-   "domain": "cel.cs.brown.edu",
-   "score": 301,
-   "source_score": 301,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "Исследование пространства проектирования Async/Await",
-   "summary_ru": "Каждый язык представляет async/await как синхронный код, и везде встречаются одни и те же два ключевых слова. Но за общим синтаксисом скрываются девять независимых проектных решений, и ни одна из семи современных сред выполнения не сходится во мнениях относительно того, что должны делать даже самые простые асинхронные программы! В этой статье мы отображаем пространство проектирования async/await, чтобы вы могли узнать, где находится ваш язык.",
-   "description_ru": "Каждый язык представляет async/await как синхронный код, и везде встречаются одни и те же два ключевых слова. Но за общим синтаксисом скрываются девять независимых проектных решений, и ни одна из семи современных сред выполнения не сходится",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
    "url": "https://github.com/Fission-AI/OpenSpec",
    "url_key": "github.com/fission-ai/openspec",
    "canonical_url": "https://github.com/Fission-AI/OpenSpec",
@@ -971,42 +683,6 @@
    "title_ru": "Fission-AI/OpenSpec",
    "summary_ru": "Разработка на основе спецификаций (SDD) для помощников по программированию с использованием искусственного интеллекта.",
    "description_ru": "Разработка на основе спецификаций (SDD) для помощников по программированию с использованием искусственного интеллекта.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
-   "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
-  {
-   "url": "https://github.com/anthropics/knowledge-work-plugins",
-   "url_key": "github.com/anthropics/knowledge-work-plugins",
-   "canonical_url": "https://github.com/anthropics/knowledge-work-plugins",
-   "title": "anthropics/knowledge-work-plugins",
-   "title_original": "anthropics/knowledge-work-plugins",
-   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-   "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/knowledge-work-plugins"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 287,
-   "source_score": 287,
-   "found_at": "2026-09-18T11:58:13.905000+00:00",
-   "title_ru": "anthropics/knowledge-work-plugins",
-   "summary_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
-   "description_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
@@ -1088,42 +764,6 @@
    "published_at": "2026-09-18T11:58:13.905000+00:00"
   },
   {
-   "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-   "url_key": "github.com/shubhamsaboo/awesome-llm-apps",
-   "canonical_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-   "title": "Shubhamsaboo/awesome-llm-apps",
-   "title_original": "Shubhamsaboo/awesome-llm-apps",
-   "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-   "image": "https://opengraph.githubassets.com/1/Shubhamsaboo/awesome-llm-apps",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 237,
-   "source_score": 237,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "Shubhamsaboo/awesome-llm-apps",
-   "summary_ru": "Более 100 AI-агентов, навыков агентов и приложений RAG — бесплатно и с открытым исходным кодом.",
-   "description_ru": "Более 100 AI-агентов, навыков агентов и приложений RAG — бесплатно и с открытым исходным кодом.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
    "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
    "url_key": "github.com/jemalloc/jemalloc/releases/tag/5.4.0",
    "canonical_url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
@@ -1158,78 +798,6 @@
    "content_status": "ready",
    "quality_score": 85,
    "published_at": "2026-09-18T11:58:13.905000+00:00"
-  },
-  {
-   "url": "https://github.com/Sonarr/Sonarr",
-   "url_key": "github.com/sonarr/sonarr",
-   "canonical_url": "https://github.com/Sonarr/Sonarr",
-   "title": "Sonarr/Sonarr",
-   "title_original": "Sonarr/Sonarr",
-   "description": "Smart PVR for newsgroup and bittorrent users.",
-   "image": "https://opengraph.githubassets.com/1/Sonarr/Sonarr",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/Sonarr/Sonarr"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "news",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 191,
-   "source_score": 191,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "Sonarr/Sonarr",
-   "summary_ru": "Умный PVR для пользователей групп новостей и BitTorrent.",
-   "description_ru": "Умный PVR для пользователей групп новостей и BitTorrent.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
-  },
-  {
-   "url": "https://github.com/p1neappleXpress/OpenFlux",
-   "url_key": "github.com/p1neapplexpress/openflux",
-   "canonical_url": "https://github.com/p1neappleXpress/OpenFlux",
-   "title": "p1neappleXpress/OpenFlux",
-   "title_original": "p1neappleXpress/OpenFlux",
-   "description": "Network stack research tool. TCP tunnel with pluggable transports.",
-   "image": "https://opengraph.githubassets.com/1/p1neappleXpress/OpenFlux",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/p1neappleXpress/OpenFlux"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "design",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 198,
-   "source_score": 198,
-   "found_at": "2026-09-12T11:22:32.895414+00:00",
-   "title_ru": "p1neappleXpress/OpenFlux",
-   "summary_ru": "Инструмент исследования сетевого стека. TCP-туннель с подключаемыми транспортами.",
-   "description_ru": "Инструмент исследования сетевого стека. TCP-туннель с подключаемыми транспортами.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
-   "published_at": "2026-09-12T11:22:32.895414+00:00"
   },
   {
    "url": "https://github.com/supermemoryai/supermemory",
