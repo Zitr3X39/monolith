@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-09-20T13:43:57.001Z",
+ "updated_at": "2026-09-20T13:44:13.949Z",
  "items": [
   {
    "url": "https://github.com/stanford-oval/storm",
@@ -25,7 +25,7 @@
    "description": "Гламурное агентное кодирование для всех 💘 · Go",
    "note": "",
    "domain": "github.com",
-   "category": "other",
+   "category": "devops",
    "type": "github",
    "source": "Вручную",
    "tags": [],
