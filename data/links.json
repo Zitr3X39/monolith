@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-09-20T13:44:13.949Z",
+ "updated_at": "2026-09-20T13:44:31.211Z",
  "items": [
   {
    "url": "https://github.com/stanford-oval/storm",
@@ -41,7 +41,7 @@
    "description": "Платформа автоматизации браузера ИИ · Python",
    "note": "",
    "domain": "github.com",
-   "category": "other",
+   "category": "automation",
    "type": "github",
    "source": "Вручную",
    "tags": [],
