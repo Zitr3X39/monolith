@@ -1,12 +1,12 @@
 {
  "version": 1,
- "updated_at": "2026-09-20T13:44:52.278Z",
+ "updated_at": "2026-09-21T13:27:48+00:00",
  "items": [
   {
    "url": "https://github.com/stanford-oval/storm",
    "url_key": "github.com/stanford-oval/storm",
    "title": "stanford-oval/storm",
-   "description": "",
+   "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations. · Python",
    "note": "",
    "domain": "github.com",
    "category": "books",
@@ -14,9 +14,10 @@
    "source": "Вручную",
    "tags": [],
    "favorite": false,
-   "stars": 31453,
+   "stars": 31456,
    "enriched": true,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://github.com/charmbracelet/crush",
@@ -69,8 +70,8 @@
   {
    "url": "https://magicui.design/",
    "url_key": "magicui.design/",
-   "title": "magicui.design",
-   "description": "",
+   "title": "Magic UI",
+   "description": "Beautiful UI components and templates to make your landing page look stunning.",
    "note": "",
    "domain": "magicui.design",
    "category": "design",
@@ -79,14 +80,15 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "enriched": true,
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://coss.com/ui",
    "url_key": "coss.com/ui",
-   "title": "ui",
-   "description": "",
+   "title": "A new, modern UI component library built on top of Base UI - coss ui",
+   "description": "Built for developers and AI.",
    "note": "",
    "domain": "coss.com",
    "category": "design",
@@ -95,14 +97,15 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "enriched": true,
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://21st.dev/",
    "url_key": "21st.dev/",
-   "title": "21st.dev",
-   "description": "",
+   "title": "React Components, Templates & Themes — 12,000+ Crafted UI | 21st | 21st",
+   "description": "12,000+ hand-crafted React and Tailwind CSS components, templates, and shadcn themes by real design engineers. Preview live, install with one command — for you and your AI agent.",
    "note": "",
    "domain": "21st.dev",
    "category": "design",
@@ -111,14 +114,15 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "enriched": true,
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://kokonutui.com/docs/backgrounds/flow-field",
    "url_key": "kokonutui.com/docs/backgrounds/flow-field",
-   "title": "flow field",
-   "description": "",
+   "title": "Flow Field | KokonutUI",
+   "description": "Canvas particle flow field background with noise-driven streams of glowing light, color themes and density options. Built with React and Motion.",
    "note": "",
    "domain": "kokonutui.com",
    "category": "design",
@@ -127,14 +131,15 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "enriched": true,
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://land-book.com/",
    "url_key": "land-book.com/",
-   "title": "land-book.com",
-   "description": "",
+   "title": "Landbook - website design inspiration gallery",
+   "description": "Find the best hand-picked website design inspiration. We're a curated website design gallery for Creatives, updated daily.",
    "note": "",
    "domain": "land-book.com",
    "category": "design",
@@ -143,8 +148,9 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "enriched": true,
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://siteinspire.com/",
@@ -160,7 +166,8 @@
    "favorite": false,
    "stars": 0,
    "enriched": false,
-   "added_at": "2026-09-20T13:43:22.235Z"
+   "added_at": "2026-09-20T13:43:22.235Z",
+   "desc_tries": 1
   },
   {
    "url": "https://badvino-ctrl.github.io/IIOL/design/v77.html",
