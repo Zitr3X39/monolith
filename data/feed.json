@@ -1,12 +1,48 @@
 {
  "version": 2,
- "updated_at": "2026-09-27T12:34:19.444030+00:00",
+ "updated_at": "2026-09-28T14:41:33.205730+00:00",
  "meta": {
-  "fresh": 25,
-  "rejected": 9,
+  "fresh": 20,
+  "rejected": 8,
   "ai": 0
  },
  "items": [
+  {
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "url_key": "github.com/debpalash/voicestudio",
+   "canonical_url": "https://github.com/debpalash/VoiceStudio",
+   "title": "debpalash/VoiceStudio",
+   "title_original": "debpalash/VoiceStudio",
+   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "video",
+   "topic": "ux-design",
+   "topic_name": "UX / веб-дизайн",
+   "domain": "github.com",
+   "score": 3274,
+   "source_score": 3274,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "title_ru": "debpalash/VoiceStudio",
+   "summary_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
+   "description_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
+  },
   {
    "url": "https://github.com/paperclipai/paperclip",
    "url_key": "github.com/paperclipai/paperclip",
@@ -29,9 +65,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 2527,
-   "source_score": 2527,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
+   "score": 3185,
+   "source_score": 3185,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
    "title_ru": "paperclipai/paperclip",
    "summary_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
    "description_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
@@ -41,7 +77,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
   },
   {
    "url": "https://github.com/vectorize-io/hindsight",
@@ -65,9 +101,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 4463,
-   "source_score": 4463,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
+   "score": 4413,
+   "source_score": 4413,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
    "title_ru": "vectorize-io/hindsight",
    "summary_ru": "Взгляд в прошлое: память агента, которая учится",
    "description_ru": "Взгляд в прошлое: память агента, которая учится",
@@ -77,7 +113,43 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
+  },
+  {
+   "url": "https://github.com/mvschwarz/openrig",
+   "url_key": "github.com/mvschwarz/openrig",
+   "canonical_url": "https://github.com/mvschwarz/openrig",
+   "title": "mvschwarz/openrig",
+   "title_original": "mvschwarz/openrig",
+   "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+   "image": "https://opengraph.githubassets.com/1/mvschwarz/openrig",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/mvschwarz/openrig"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 781,
+   "source_score": 781,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "title_ru": "mvschwarz/openrig",
+   "summary_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
+   "description_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
   },
   {
    "url": "https://github.com/dream-num/univer",
@@ -101,9 +173,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 920,
-   "source_score": 920,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
+   "score": 1105,
+   "source_score": 1105,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
    "title_ru": "dream-num/univer",
    "summary_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
    "description_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
@@ -113,7 +185,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
   },
   {
    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
@@ -366,42 +438,6 @@
    "content_status": "ready",
    "quality_score": 95,
    "published_at": "2026-09-23T12:25:29.656310+00:00"
-  },
-  {
-   "url": "https://github.com/trycua/cua",
-   "url_key": "github.com/trycua/cua",
-   "canonical_url": "https://github.com/trycua/cua",
-   "title": "trycua/cua",
-   "title_original": "trycua/cua",
-   "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-   "image": "https://opengraph.githubassets.com/1/trycua/cua",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/trycua/cua"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 609,
-   "source_score": 609,
-   "found_at": "2026-09-21T13:27:48.071222+00:00",
-   "title_ru": "trycua/cua",
-   "summary_ru": "Масштабируйте использование компьютеров версии 2.0 с помощью драйверов с открытым исходным кодом, множества различных ОС и тестов для обучения, оценки и генерации данных.",
-   "description_ru": "Масштабируйте использование компьютеров версии 2.0 с помощью драйверов с открытым исходным кодом, множества различных ОС и тестов для обучения, оценки и генерации данных.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 95,
-   "published_at": "2026-09-21T13:27:48.071222+00:00"
   },
   {
    "url": "https://github.com/zhaoxuya520/reverse-skill",
@@ -692,42 +728,6 @@
    "published_at": "2026-09-24T12:24:27.304805+00:00"
   },
   {
-   "url": "https://github.com/coder/coder",
-   "url_key": "github.com/coder/coder",
-   "canonical_url": "https://github.com/coder/coder",
-   "title": "coder/coder",
-   "title_original": "coder/coder",
-   "description": "Secure environments for developers and their agents",
-   "image": "https://opengraph.githubassets.com/1/coder/coder",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/coder/coder"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 461,
-   "source_score": 461,
-   "found_at": "2026-09-21T13:27:48.071222+00:00",
-   "title_ru": "coder/coder",
-   "summary_ru": "Безопасная среда для разработчиков и их агентов",
-   "description_ru": "Безопасная среда для разработчиков и их агентов",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-09-21T13:27:48.071222+00:00"
-  },
-  {
    "url": "https://github.com/InfinityLoop1308/PipePipe",
    "url_key": "github.com/infinityloop1308/pipepipe",
    "canonical_url": "https://github.com/InfinityLoop1308/PipePipe",
@@ -872,55 +872,55 @@
    "published_at": "2026-09-23T12:25:29.656310+00:00"
   },
   {
-   "url": "https://github.com/zhouxiaoka/autoclip",
-   "url_key": "github.com/zhouxiaoka/autoclip",
-   "canonical_url": "https://github.com/zhouxiaoka/autoclip",
-   "title": "zhouxiaoka/autoclip",
-   "title_original": "zhouxiaoka/autoclip",
-   "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
-   "image": "https://opengraph.githubassets.com/1/zhouxiaoka/autoclip",
+   "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity",
+   "url_key": "thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity",
+   "canonical_url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity",
+   "title": "AI companies in race to demonstrate their model most threatening to humanity",
+   "title_original": "AI companies in race to demonstrate their model most threatening to humanity",
+   "description": "In the midst of growing fears that artificial intelligence is advancing at such a rate that it may compel itself to end all life on earth, AI giants from OpenAI to Anthropic are switching up their …",
+   "image": "https://i0.wp.com/thecivilian.co.nz/wp-content/uploads/2026/09/aiendoftheworldstory.jpg?fit=872%2C591&ssl=1",
    "media_kind": "image",
-   "source": "GitHub Trending",
+   "source": "Hacker News",
    "sources": [
     {
-     "name": "GitHub Trending",
-     "url": "https://github.com/zhouxiaoka/autoclip"
+     "name": "Hacker News",
+     "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity"
     }
    ],
    "source_count": 1,
-   "type": "github",
+   "type": "site",
    "category": "vibecoding",
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 395,
-   "source_score": 395,
-   "found_at": "2026-09-21T13:27:48.071222+00:00",
-   "title_ru": "zhouxiaoka/autoclip",
-   "summary_ru": "AutoClip: обрезка видео и создание выделенных участков на базе искусственного интеллекта · Инструмент второго поколения для интеллектуального выделения и обрезки выделенных участков.",
-   "description_ru": "AutoClip: обрезка видео и создание выделенных участков на базе искусственного интеллекта · Инструмент второго поколения для интеллектуального выделения и обрезки выделенных участков.",
+   "domain": "thecivilian.co.nz",
+   "score": 367,
+   "source_score": 367,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "title_ru": "Компании, занимающиеся искусственным интеллектом, стремятся продемонстрировать свою модель, наиболее опасную для человечества",
+   "summary_ru": "В разгар растущих опасений, что искусственный интеллект развивается такими темпами, что может заставить себя уничтожить всю жизнь на Земле, гиганты искусственного интеллекта, от OpenAI до Anthropic, меняют свои…",
+   "description_ru": "В разгар растущих опасений, что искусственный интеллект развивается такими темпами, что может заставить себя уничтожить всю жизнь на Земле, гиганты искусственного интеллекта, от OpenAI до Anthropic, меняют свои…",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 90,
-   "published_at": "2026-09-21T13:27:48.071222+00:00"
+   "quality_score": 89,
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
   },
   {
-   "url": "https://github.com/Crosstalk-Solutions/project-nomad",
-   "url_key": "github.com/crosstalk-solutions/project-nomad",
-   "canonical_url": "https://github.com/Crosstalk-Solutions/project-nomad",
-   "title": "Crosstalk-Solutions/project-nomad",
-   "title_original": "Crosstalk-Solutions/project-nomad",
-   "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
-   "image": "https://opengraph.githubassets.com/1/Crosstalk-Solutions/project-nomad",
+   "url": "https://github.com/byoungd/up",
+   "url_key": "github.com/byoungd/up",
+   "canonical_url": "https://github.com/byoungd/up",
+   "title": "byoungd/up",
+   "title_original": "byoungd/up",
+   "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
+   "image": "https://opengraph.githubassets.com/1/byoungd/up",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/Crosstalk-Solutions/project-nomad"
+     "url": "https://github.com/byoungd/up"
     }
    ],
    "source_count": 1,
@@ -929,19 +929,19 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 360,
-   "source_score": 360,
-   "found_at": "2026-09-21T13:27:48.071222+00:00",
-   "title_ru": "Crosstalk-Solutions/project-nomad",
-   "summary_ru": "Project NOMAD — это офлайн-сервер знаний и образования. Википедия, тысячи книг, курсов, карт и дополнительный локальный искусственный интеллект — все работает на вашем оборудовании без необходимости подключения к Интернету.",
-   "description_ru": "Project NOMAD — это офлайн-сервер знаний и образования. Википедия, тысячи книг, курсов, карт и дополнительный локальный искусственный интеллект — все работает на вашем оборудовании без необходимости подключения к Интернету.",
+   "score": 310,
+   "source_score": 310,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "title_ru": "byoungd/up",
+   "summary_ru": "Расширенное руководство, которое может вам очень пригодиться 🎉 . Расширенное руководство Хань Сянькая по жизни Расширенное руководство по жизни Необыкновенная жизнь Расширенное руководство по жизни AI Learning Руководство AI Руководство Хань Сянькая по обучению AI Руководство по изучению английского языка/Учебное пособие по изучению английского языка/Изучение английского языка/Изучение английского языка",
+   "description_ru": "Расширенное руководство, которое может вам очень пригодиться 🎉 . Расширенное руководство Хань Сянькая по жизни Расширенное руководство по жизни Необыкновенная жизнь Расширенное руководство по жизни AI Learning Руководство AI Руководство Хан",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-09-21T13:27:48.071222+00:00"
+   "quality_score": 88,
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
   },
   {
    "url": "https://github.com/NVIDIA/Model-Optimizer",
@@ -1088,6 +1088,42 @@
    "published_at": "2026-09-25T12:24:15.839576+00:00"
   },
   {
+   "url": "https://github.com/cs341-illinois/coursebook",
+   "url_key": "github.com/cs341-illinois/coursebook",
+   "canonical_url": "https://github.com/cs341-illinois/coursebook",
+   "title": "cs341-illinois/coursebook",
+   "title_original": "cs341-illinois/coursebook",
+   "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+   "image": "https://opengraph.githubassets.com/1/cs341-illinois/coursebook",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/cs341-illinois/coursebook"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "learning",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 265,
+   "source_score": 265,
+   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "title_ru": "cs341-illinois/coursebook",
+   "summary_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
+   "description_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 87,
+   "published_at": "2026-09-28T14:41:33.205730+00:00"
+  },
+  {
    "url": "https://github.com/block/buzz",
    "url_key": "github.com/block/buzz",
    "canonical_url": "https://github.com/block/buzz",
@@ -1230,42 +1266,6 @@
    "content_status": "ready",
    "quality_score": 86,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://fly.io/blog/vscode-ssh-wtf",
-   "url_key": "fly.io/blog/vscode-ssh-wtf",
-   "canonical_url": "https://fly.io/blog/vscode-ssh-wtf",
-   "title": "VSCode's SSH Agent Is Bananas (2025)",
-   "title_original": "VSCode's SSH Agent Is Bananas (2025)",
-   "description": "Documentation and guides from the team at Fly.io.",
-   "image": "https://fly.io/static/images/fly-social-square.webp",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://fly.io/blog/vscode-ssh-wtf"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "fly.io",
-   "score": 254,
-   "source_score": 254,
-   "found_at": "2026-09-24T12:24:27.304805+00:00",
-   "title_ru": "SSH-агент VSCode - бананы (2025 г.)",
-   "summary_ru": "Документация и руководства от команды Fly.io.",
-   "description_ru": "Документация и руководства от команды Fly.io.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
-   "published_at": "2026-09-24T12:24:27.304805+00:00"
   }
  ]
 }
