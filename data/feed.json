@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-09-28T14:41:33.205730+00:00",
+ "updated_at": "2026-09-29T13:32:03.768901+00:00",
  "meta": {
   "fresh": 20,
-  "rejected": 8,
+  "rejected": 14,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ux-design",
    "topic_name": "UX / веб-дизайн",
    "domain": "github.com",
-   "score": 3274,
-   "source_score": 3274,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "score": 4712,
+   "source_score": 4712,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
    "title_ru": "debpalash/VoiceStudio",
    "summary_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
    "description_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
@@ -41,22 +41,22 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
-   "url": "https://github.com/paperclipai/paperclip",
-   "url_key": "github.com/paperclipai/paperclip",
-   "canonical_url": "https://github.com/paperclipai/paperclip",
-   "title": "paperclipai/paperclip",
-   "title_original": "paperclipai/paperclip",
-   "description": "The open-source app everyone uses to manage agents at work",
-   "image": "https://opengraph.githubassets.com/1/paperclipai/paperclip",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "url_key": "github.com/nvidia/openshell",
+   "canonical_url": "https://github.com/NVIDIA/OpenShell",
+   "title": "NVIDIA/OpenShell",
+   "title_original": "NVIDIA/OpenShell",
+   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+   "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/paperclipai/paperclip"
+     "url": "https://github.com/NVIDIA/OpenShell"
     }
    ],
    "source_count": 1,
@@ -65,19 +65,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 3185,
-   "source_score": 3185,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
-   "title_ru": "paperclipai/paperclip",
-   "summary_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
-   "description_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
+   "score": 978,
+   "source_score": 978,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "NVIDIA/OpenShell",
+   "summary_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов искусственного интеллекта.",
+   "description_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов искусственного интеллекта.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
    "url": "https://github.com/vectorize-io/hindsight",
@@ -101,9 +101,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 4413,
-   "source_score": 4413,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
+   "score": 2541,
+   "source_score": 2541,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
    "title_ru": "vectorize-io/hindsight",
    "summary_ru": "Взгляд в прошлое: память агента, которая учится",
    "description_ru": "Взгляд в прошлое: память агента, которая учится",
@@ -113,22 +113,22 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
-   "url": "https://github.com/mvschwarz/openrig",
-   "url_key": "github.com/mvschwarz/openrig",
-   "canonical_url": "https://github.com/mvschwarz/openrig",
-   "title": "mvschwarz/openrig",
-   "title_original": "mvschwarz/openrig",
-   "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
-   "image": "https://opengraph.githubassets.com/1/mvschwarz/openrig",
+   "url": "https://github.com/paperclipai/paperclip",
+   "url_key": "github.com/paperclipai/paperclip",
+   "canonical_url": "https://github.com/paperclipai/paperclip",
+   "title": "paperclipai/paperclip",
+   "title_original": "paperclipai/paperclip",
+   "description": "The open-source app everyone uses to manage agents at work",
+   "image": "https://opengraph.githubassets.com/1/paperclipai/paperclip",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/mvschwarz/openrig"
+     "url": "https://github.com/paperclipai/paperclip"
     }
    ],
    "source_count": 1,
@@ -137,55 +137,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 781,
-   "source_score": 781,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
-   "title_ru": "mvschwarz/openrig",
-   "summary_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
-   "description_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
+   "score": 2412,
+   "source_score": 2412,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "paperclipai/paperclip",
+   "summary_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
+   "description_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
-  },
-  {
-   "url": "https://github.com/dream-num/univer",
-   "url_key": "github.com/dream-num/univer",
-   "canonical_url": "https://github.com/dream-num/univer",
-   "title": "dream-num/univer",
-   "title_original": "dream-num/univer",
-   "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-   "image": "https://opengraph.githubassets.com/1/dream-num/univer",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/dream-num/univer"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1105,
-   "source_score": 1105,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
-   "title_ru": "dream-num/univer",
-   "summary_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
-   "description_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
@@ -209,9 +173,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 848,
-   "source_score": 848,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
+   "score": 1287,
+   "source_score": 1287,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
    "title_ru": "rohitg00/ai-engineering-from-scratch",
    "summary_ru": "Изучите это. Постройте это. Отправьте это другим.",
    "description_ru": "Изучите это. Постройте это. Отправьте это другим.",
@@ -221,7 +185,43 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
+  },
+  {
+   "url": "https://github.com/VectifyAI/PageIndex",
+   "url_key": "github.com/vectifyai/pageindex",
+   "canonical_url": "https://github.com/VectifyAI/PageIndex",
+   "title": "VectifyAI/PageIndex",
+   "title_original": "VectifyAI/PageIndex",
+   "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+   "image": "https://opengraph.githubassets.com/1/VectifyAI/PageIndex",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/VectifyAI/PageIndex"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "other",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 822,
+   "source_score": 822,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "VectifyAI/PageIndex",
+   "summary_ru": "📑 PageIndex: указатель документов для безвекторного RAG на основе рассуждений.",
+   "description_ru": "📑 PageIndex: указатель документов для безвекторного RAG на основе рассуждений.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
    "url": "https://github.com/google/ax",
@@ -332,6 +332,78 @@
    "published_at": "2026-09-23T12:25:29.656310+00:00"
   },
   {
+   "url": "https://github.com/mvschwarz/openrig",
+   "url_key": "github.com/mvschwarz/openrig",
+   "canonical_url": "https://github.com/mvschwarz/openrig",
+   "title": "mvschwarz/openrig",
+   "title_original": "mvschwarz/openrig",
+   "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+   "image": "https://opengraph.githubassets.com/1/mvschwarz/openrig",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/mvschwarz/openrig"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 733,
+   "source_score": 733,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "mvschwarz/openrig",
+   "summary_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
+   "description_ru": "Мультиагентная система, которая запускает Claude Code и Codex вместе как одну систему.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 98,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
+  },
+  {
+   "url": "https://github.com/dream-num/univer",
+   "url_key": "github.com/dream-num/univer",
+   "canonical_url": "https://github.com/dream-num/univer",
+   "title": "dream-num/univer",
+   "title_original": "dream-num/univer",
+   "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+   "image": "https://opengraph.githubassets.com/1/dream-num/univer",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/dream-num/univer"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 692,
+   "source_score": 692,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "dream-num/univer",
+   "summary_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
+   "description_ru": "Пакет Office для агентов искусственного интеллекта — электронные таблицы, документы, слайды, холст, реляционные таблицы и PDF в одной среде выполнения.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 97,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
+  },
+  {
    "url": "https://anthropic.com/news/claude-discovers-novel-enzyme-system",
    "url_key": "anthropic.com/news/claude-discovers-novel-enzyme-system",
    "canonical_url": "https://anthropic.com/news/claude-discovers-novel-enzyme-system",
@@ -438,6 +510,42 @@
    "content_status": "ready",
    "quality_score": 95,
    "published_at": "2026-09-23T12:25:29.656310+00:00"
+  },
+  {
+   "url": "https://github.com/cs341-illinois/coursebook",
+   "url_key": "github.com/cs341-illinois/coursebook",
+   "canonical_url": "https://github.com/cs341-illinois/coursebook",
+   "title": "cs341-illinois/coursebook",
+   "title_original": "cs341-illinois/coursebook",
+   "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+   "image": "https://opengraph.githubassets.com/1/cs341-illinois/coursebook",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/cs341-illinois/coursebook"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "learning",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 569,
+   "source_score": 569,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "cs341-illinois/coursebook",
+   "summary_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
+   "description_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
    "url": "https://github.com/zhaoxuya520/reverse-skill",
@@ -584,6 +692,42 @@
    "published_at": "2026-09-26T11:56:22.882874+00:00"
   },
   {
+   "url": "https://github.com/t8y2/dbx",
+   "url_key": "github.com/t8y2/dbx",
+   "canonical_url": "https://github.com/t8y2/dbx",
+   "title": "t8y2/dbx",
+   "title_original": "t8y2/dbx",
+   "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+   "image": "https://opengraph.githubassets.com/1/t8y2/dbx",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/t8y2/dbx"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 460,
+   "source_score": 460,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "t8y2/dbx",
+   "summary_ru": "Облегченный кросс-платформенный клиент базы данных размером 25 МБ для более чем 100 баз данных, включая MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server и Dameng. Встроенный AI, сервер MCP, интерфейс командной строки, рабочий стол и Docker. AI Assistant и MCP.",
+   "description_ru": "Облегченный кросс-платформенный клиент базы данных размером 25 МБ для более чем 100 баз данных, включая MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server и Dameng. Встроенный AI, сервер MCP, интерфейс командной строки, рабочий с",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 92,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
+  },
+  {
    "url": "https://ollaya.dev/",
    "url_key": "ollaya.dev/",
    "canonical_url": "https://ollaya.dev/",
@@ -728,6 +872,42 @@
    "published_at": "2026-09-24T12:24:27.304805+00:00"
   },
   {
+   "url": "https://github.com/oblien/openship",
+   "url_key": "github.com/oblien/openship",
+   "canonical_url": "https://github.com/oblien/openship",
+   "title": "oblien/openship",
+   "title_original": "oblien/openship",
+   "description": "Self-hosted deployment platform",
+   "image": "https://opengraph.githubassets.com/1/oblien/openship",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/oblien/openship"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "devops",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 436,
+   "source_score": 436,
+   "found_at": "2026-09-29T13:32:03.768901+00:00",
+   "title_ru": "oblien/openship",
+   "summary_ru": "Самостоятельная платформа развертывания",
+   "description_ru": "Самостоятельная платформа развертывания",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 91,
+   "published_at": "2026-09-29T13:32:03.768901+00:00"
+  },
+  {
    "url": "https://github.com/InfinityLoop1308/PipePipe",
    "url_key": "github.com/infinityloop1308/pipepipe",
    "canonical_url": "https://github.com/InfinityLoop1308/PipePipe",
@@ -762,42 +942,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://poloclub.github.io/transformer-explainer",
-   "url_key": "poloclub.github.io/transformer-explainer",
-   "canonical_url": "https://poloclub.github.io/transformer-explainer",
-   "title": "Transformers Explained Visually",
-   "title_original": "Transformers Explained Visually",
-   "description": "An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT.",
-   "image": "https://poloclub.github.io/transformer-explainer/preview/summary.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://poloclub.github.io/transformer-explainer"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "other",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "poloclub.github.io",
-   "score": 456,
-   "source_score": 456,
-   "found_at": "2026-09-22T12:12:03.838789+00:00",
-   "title_ru": "Трансформеры объяснены визуально",
-   "summary_ru": "Интерактивный инструмент визуализации, показывающий, как модели преобразователей работают в больших языковых моделях (LLM), таких как GPT.",
-   "description_ru": "Интерактивный инструмент визуализации, показывающий, как модели преобразователей работают в больших языковых моделях (LLM), таких как GPT.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-09-22T12:12:03.838789+00:00"
   },
   {
    "url": "https://github.com/HKUDS/CLI-Anything",
@@ -1088,42 +1232,6 @@
    "published_at": "2026-09-25T12:24:15.839576+00:00"
   },
   {
-   "url": "https://github.com/cs341-illinois/coursebook",
-   "url_key": "github.com/cs341-illinois/coursebook",
-   "canonical_url": "https://github.com/cs341-illinois/coursebook",
-   "title": "cs341-illinois/coursebook",
-   "title_original": "cs341-illinois/coursebook",
-   "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
-   "image": "https://opengraph.githubassets.com/1/cs341-illinois/coursebook",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/cs341-illinois/coursebook"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "learning",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 265,
-   "source_score": 265,
-   "found_at": "2026-09-28T14:41:33.205730+00:00",
-   "title_ru": "cs341-illinois/coursebook",
-   "summary_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
-   "description_ru": "Учебник по вводному системному программированию с открытым исходным кодом для Университета Иллинойса",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
-   "published_at": "2026-09-28T14:41:33.205730+00:00"
-  },
-  {
    "url": "https://github.com/block/buzz",
    "url_key": "github.com/block/buzz",
    "canonical_url": "https://github.com/block/buzz",
@@ -1157,114 +1265,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 87,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://github.com/mvt-project/mvt",
-   "url_key": "github.com/mvt-project/mvt",
-   "canonical_url": "https://github.com/mvt-project/mvt",
-   "title": "mvt-project/mvt",
-   "title_original": "mvt-project/mvt",
-   "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-   "image": "https://opengraph.githubassets.com/1/mvt-project/mvt",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/mvt-project/mvt"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "tools",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 275,
-   "source_score": 275,
-   "found_at": "2026-09-24T12:24:27.304805+00:00",
-   "title_ru": "mvt-project/mvt",
-   "summary_ru": "MVT (Mobile Verification Toolkit) помогает проводить экспертизу мобильных устройств с целью обнаружения признаков потенциального компрометации.",
-   "description_ru": "MVT (Mobile Verification Toolkit) помогает проводить экспертизу мобильных устройств с целью обнаружения признаков потенциального компрометации.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
-   "published_at": "2026-09-24T12:24:27.304805+00:00"
-  },
-  {
-   "url": "https://github.com/openbao/openbao",
-   "url_key": "github.com/openbao/openbao",
-   "canonical_url": "https://github.com/openbao/openbao",
-   "title": "openbao/openbao",
-   "title_original": "openbao/openbao",
-   "description": "OpenBao is a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.",
-   "image": "https://opengraph.githubassets.com/1/openbao/openbao",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/openbao/openbao"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "tools",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 232,
-   "source_score": 232,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
-   "title_ru": "openbao/openbao",
-   "summary_ru": "OpenBao — это программное решение для управления, хранения и распространения конфиденциальных данных, включая секреты, сертификаты и ключи.",
-   "description_ru": "OpenBao — это программное решение для управления, хранения и распространения конфиденциальных данных, включая секреты, сертификаты и ключи.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://github.com/anthropics/claude-code-action",
-   "url_key": "github.com/anthropics/claude-code-action",
-   "canonical_url": "https://github.com/anthropics/claude-code-action",
-   "title": "anthropics/claude-code-action",
-   "title_original": "anthropics/claude-code-action",
-   "description": "Contribute to anthropics/claude-code-action development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/anthropics/claude-code-action",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/claude-code-action"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 225,
-   "source_score": 225,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
-   "title_ru": "anthropics/claude-code-action",
-   "summary_ru": "Внесите свой вклад в разработку антропики/claude-code-action, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в разработку антропики/claude-code-action, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 86,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
   }
  ]
