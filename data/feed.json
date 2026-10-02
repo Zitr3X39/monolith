@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-10-01T14:00:14.500611+00:00",
+ "updated_at": "2026-10-02T13:19:53.748259+00:00",
  "meta": {
-  "fresh": 24,
-  "rejected": 8,
+  "fresh": 21,
+  "rejected": 10,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 1179,
-   "source_score": 1179,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
+   "score": 1429,
+   "source_score": 1429,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
    "title_ru": "DietrichGebert/ponytail",
    "summary_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
    "description_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
@@ -41,43 +41,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
-  },
-  {
-   "url": "https://github.com/NVIDIA/OpenShell",
-   "url_key": "github.com/nvidia/openshell",
-   "canonical_url": "https://github.com/NVIDIA/OpenShell",
-   "title": "NVIDIA/OpenShell",
-   "title_original": "NVIDIA/OpenShell",
-   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-   "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/NVIDIA/OpenShell"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 2503,
-   "source_score": 2503,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
-   "title_ru": "NVIDIA/OpenShell",
-   "summary_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов ИИ.",
-   "description_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов ИИ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
   },
   {
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
@@ -332,42 +296,6 @@
    "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
-   "url": "https://github.com/google/ax",
-   "url_key": "github.com/google/ax",
-   "canonical_url": "https://github.com/google/ax",
-   "title": "google/ax",
-   "title_original": "google/ax",
-   "description": "Google's open agentic orchestration runtime",
-   "image": "https://opengraph.githubassets.com/1/google/ax",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/google/ax"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1373,
-   "source_score": 1373,
-   "found_at": "2026-09-25T12:24:15.839576+00:00",
-   "title_ru": "google/ax",
-   "summary_ru": "Открытая среда выполнения агентной оркестровки Google",
-   "description_ru": "Открытая среда выполнения агентной оркестровки Google",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-09-25T12:24:15.839576+00:00"
-  },
-  {
    "url": "https://github.com/ninjahawk/livenerf",
    "url_key": "github.com/ninjahawk/livenerf",
    "canonical_url": "https://github.com/ninjahawk/livenerf",
@@ -402,6 +330,42 @@
    "content_status": "ready",
    "quality_score": 98,
    "published_at": "2026-09-30T13:09:06.868968+00:00"
+  },
+  {
+   "url": "https://github.com/Panniantong/Agent-Reach",
+   "url_key": "github.com/panniantong/agent-reach",
+   "canonical_url": "https://github.com/Panniantong/Agent-Reach",
+   "title": "Panniantong/Agent-Reach",
+   "title_original": "Panniantong/Agent-Reach",
+   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+   "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/Panniantong/Agent-Reach"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "video",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 683,
+   "source_score": 683,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "Panniantong/Agent-Reach",
+   "summary_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
+   "description_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 97,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
   },
   {
    "url": "https://github.com/dream-num/univer",
@@ -476,42 +440,6 @@
    "published_at": "2026-10-01T14:00:14.500611+00:00"
   },
   {
-   "url": "https://github.com/heygen-com/hyperframes",
-   "url_key": "github.com/heygen-com/hyperframes",
-   "canonical_url": "https://github.com/heygen-com/hyperframes",
-   "title": "heygen-com/hyperframes",
-   "title_original": "heygen-com/hyperframes",
-   "description": "Write HTML. Render video. Built for agents.",
-   "image": "https://opengraph.githubassets.com/1/heygen-com/hyperframes",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/heygen-com/hyperframes"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "3d",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 624,
-   "source_score": 624,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
-   "title_ru": "heygen-com/hyperframes",
-   "summary_ru": "Напишите HTML. Рендеринг видео. Создан для агентов.",
-   "description_ru": "Напишите HTML. Рендеринг видео. Создан для агентов.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 96,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
-  },
-  {
    "url": "https://github.com/HunxByts/GhostTrack",
    "url_key": "github.com/hunxbyts/ghosttrack",
    "canonical_url": "https://github.com/HunxByts/GhostTrack",
@@ -548,6 +476,78 @@
    "published_at": "2026-10-01T14:00:14.500611+00:00"
   },
   {
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "url_key": "github.com/nvidia/openshell",
+   "canonical_url": "https://github.com/NVIDIA/OpenShell",
+   "title": "NVIDIA/OpenShell",
+   "title_original": "NVIDIA/OpenShell",
+   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+   "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/NVIDIA/OpenShell"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 584,
+   "source_score": 584,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "NVIDIA/OpenShell",
+   "summary_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов ИИ.",
+   "description_ru": "OpenShell — это безопасная частная среда выполнения для автономных агентов ИИ.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 95,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
+  },
+  {
+   "url": "https://github.com/heygen-com/hyperframes",
+   "url_key": "github.com/heygen-com/hyperframes",
+   "canonical_url": "https://github.com/heygen-com/hyperframes",
+   "title": "heygen-com/hyperframes",
+   "title_original": "heygen-com/hyperframes",
+   "description": "Write HTML. Render video. Built for agents.",
+   "image": "https://opengraph.githubassets.com/1/heygen-com/hyperframes",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/heygen-com/hyperframes"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "3d",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 584,
+   "source_score": 584,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "heygen-com/hyperframes",
+   "summary_ru": "Напишите HTML. Рендеринг видео. Создан для агентов.",
+   "description_ru": "Напишите HTML. Рендеринг видео. Создан для агентов.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 95,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
+  },
+  {
    "url": "https://github.com/obra/superpowers",
    "url_key": "github.com/obra/superpowers",
    "canonical_url": "https://github.com/obra/superpowers",
@@ -569,9 +569,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 594,
-   "source_score": 594,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
+   "score": 561,
+   "source_score": 561,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
    "title_ru": "obra/superpowers",
    "summary_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
    "description_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
@@ -580,8 +580,44 @@
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 95,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
+   "quality_score": 94,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
+  },
+  {
+   "url": "https://blog.cloudflare.com/clef-decision-models",
+   "url_key": "blog.cloudflare.com/clef-decision-models",
+   "canonical_url": "https://blog.cloudflare.com/clef-decision-models",
+   "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+   "title_original": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+   "description": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
+   "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M3TJV43SPQCPKJ6GBXFCDKNE.01M3TJV53VYDMVNCZDPH1FBFYN.png",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://blog.cloudflare.com/clef-decision-models"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "devops",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "blog.cloudflare.com",
+   "score": 549,
+   "source_score": 549,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "Клеф: модели принятия решений с открытым весом и новая платформа тонкой настройки RL",
+   "summary_ru": "Мы представляем Clef и Clef-flash, модели принятия решений с открытым исходным кодом, размещенные на Workers AI для высокоскоростной классификации и агентных рабочих процессов. Также запускается: новая платформа обучения с подкреплением, которая позволяет разработчикам точно настраивать модели принятия решений, используя собственные данные.",
+   "description_ru": "Мы представляем Clef и Clef-flash, модели принятия решений с открытым исходным кодом, размещенные на Workers AI для высокоскоростной классификации и агентных рабочих процессов. Также запускается: новая платформа обучения с подкреплением, ко",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
   },
   {
    "url": "https://github.com/cs341-illinois/coursebook",
@@ -800,6 +836,42 @@
    "published_at": "2026-09-26T11:56:22.882874+00:00"
   },
   {
+   "url": "https://blog.gitbutler.com/git-3-sha-256",
+   "url_key": "blog.gitbutler.com/git-3-sha-256",
+   "canonical_url": "https://blog.gitbutler.com/git-3-sha-256",
+   "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+   "title_original": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+   "description": "Git 3.0 will make SHA-256 the new default content hashing algorithm and it will be an incomprehensibly expensive and ultimately valueless and avoidable global nightmare.",
+   "image": "https://gitbutler-docs-images-public.s3.us-east-1.amazonaws.com/git-3-sha-256.webp",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://blog.gitbutler.com/git-3-sha-256"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "other",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "blog.gitbutler.com",
+   "score": 436,
+   "source_score": 436,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "Предстоящий дефолт SHA-256 в Git 3.0 станет дорогостоящей ошибкой",
+   "summary_ru": "Git 3.0 сделает SHA-256 новым алгоритмом хеширования контента по умолчанию, и это станет непостижимо дорогим и в конечном итоге бесполезным глобальным кошмаром, которого можно избежать.",
+   "description_ru": "Git 3.0 сделает SHA-256 новым алгоритмом хеширования контента по умолчанию, и это станет непостижимо дорогим и в конечном итоге бесполезным глобальным кошмаром, которого можно избежать.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 91,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
+  },
+  {
    "url": "https://github.com/oblien/openship",
    "url_key": "github.com/oblien/openship",
    "canonical_url": "https://github.com/oblien/openship",
@@ -870,42 +942,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://github.com/mksglu/context-mode",
-   "url_key": "github.com/mksglu/context-mode",
-   "canonical_url": "https://github.com/mksglu/context-mode",
-   "title": "mksglu/context-mode",
-   "title_original": "mksglu/context-mode",
-   "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-   "image": "https://opengraph.githubassets.com/1/mksglu/context-mode",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/mksglu/context-mode"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 357,
-   "source_score": 357,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
-   "title_ru": "mksglu/context-mode",
-   "summary_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочницы» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
-   "description_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочницы» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
   },
   {
    "url": "https://github.com/pablostanley/yoinks",
@@ -1124,40 +1160,40 @@
    "published_at": "2026-09-27T12:34:19.444030+00:00"
   },
   {
-   "url": "https://github.com/devdotfast/whiteboard",
-   "url_key": "github.com/devdotfast/whiteboard",
-   "canonical_url": "https://github.com/devdotfast/whiteboard",
-   "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-   "title_original": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-   "description": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/08242ea4df5b7958d8cd57b8d8cf8fc044e36b7cd415f9c4fe74acdcd24e3257/devdotfast/whiteboard",
+   "url": "https://github.com/mksglu/context-mode",
+   "url_key": "github.com/mksglu/context-mode",
+   "canonical_url": "https://github.com/mksglu/context-mode",
+   "title": "mksglu/context-mode",
+   "title_original": "mksglu/context-mode",
+   "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+   "image": "https://opengraph.githubassets.com/1/mksglu/context-mode",
    "media_kind": "image",
-   "source": "Hacker News",
+   "source": "GitHub Trending",
    "sources": [
     {
-     "name": "Hacker News",
-     "url": "https://github.com/devdotfast/whiteboard"
+     "name": "GitHub Trending",
+     "url": "https://github.com/mksglu/context-mode"
     }
    ],
    "source_count": 1,
    "type": "github",
-   "category": "design",
-   "topic": "ux-design",
-   "topic_name": "UX / веб-дизайн",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 332,
-   "source_score": 332,
-   "found_at": "2026-09-25T12:24:15.839576+00:00",
-   "title_ru": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-   "summary_ru": "холст с открытым исходным кодом для продуманного проектирования программного обеспечения. Внесите свой вклад в разработку devdotfast/whiteboard, создав учетную запись на GitHub.",
-   "description_ru": "холст с открытым исходным кодом для продуманного проектирования программного обеспечения. Внесите свой вклад в разработку devdotfast/whiteboard, создав учетную запись на GitHub.",
+   "score": 276,
+   "source_score": 276,
+   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "title_ru": "mksglu/context-mode",
+   "summary_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочница» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
+   "description_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочница» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-09-25T12:24:15.839576+00:00"
+   "quality_score": 87,
+   "published_at": "2026-10-02T13:19:53.748259+00:00"
   },
   {
    "url": "https://github.com/earendil-works/pi",
@@ -1230,42 +1266,6 @@
    "content_status": "ready",
    "quality_score": 87,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
-   "url_key": "github.com/streetcomplete/streetcomplete/issues/5421",
-   "canonical_url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
-   "title": "StreetComplete on iOS is now in public beta",
-   "title_original": "StreetComplete on iOS is now in public beta",
-   "description": "This ticket is something like the master ticket to coordinate development on an iOS port of StreetComplete. It replaces #1892 which also included a lot of discussion and research / observation work...",
-   "image": "https://opengraph.githubassets.com/1214691b40da9a4bc4a5f40865a62f189fb798e48ff011b7e4a9cad9eaca61af/streetcomplete/StreetComplete/issues/5421",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://github.com/streetcomplete/StreetComplete/issues/5421"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 196,
-   "source_score": 196,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
-   "title_ru": "StreetComplete on iOS is now in public beta",
-   "summary_ru": "Этот билет является чем-то вроде основного билета для координации разработки iOS-порта StreetComplete. Он заменяет № 1892, который также включал в себя множество обсуждений и исследований/наблюдений...",
-   "description_ru": "Этот билет является чем-то вроде основного билета для координации разработки iOS-порта StreetComplete. Он заменяет № 1892, который также включал в себя множество обсуждений и исследований/наблюдений...",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
   }
  ]
 }
