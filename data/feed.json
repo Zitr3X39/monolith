@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-10-02T13:19:53.748259+00:00",
+ "updated_at": "2026-10-03T12:08:03.090673+00:00",
  "meta": {
-  "fresh": 21,
-  "rejected": 10,
+  "fresh": 19,
+  "rejected": 13,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 1429,
-   "source_score": 1429,
-   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "score": 1289,
+   "source_score": 1289,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
    "title_ru": "DietrichGebert/ponytail",
    "summary_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
    "description_ru": "Заставит вашего ИИ-агента думать как самый ленивый старший разработчик в комнате. Лучший код — это код, который вы никогда не писали.",
@@ -41,7 +41,43 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-02T13:19:53.748259+00:00"
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
+  },
+  {
+   "url": "https://github.com/Panniantong/Agent-Reach",
+   "url_key": "github.com/panniantong/agent-reach",
+   "canonical_url": "https://github.com/Panniantong/Agent-Reach",
+   "title": "Panniantong/Agent-Reach",
+   "title_original": "Panniantong/Agent-Reach",
+   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+   "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/Panniantong/Agent-Reach"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "video",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 1683,
+   "source_score": 1683,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "Panniantong/Agent-Reach",
+   "summary_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
+   "description_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
   },
   {
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
@@ -332,42 +368,6 @@
    "published_at": "2026-09-30T13:09:06.868968+00:00"
   },
   {
-   "url": "https://github.com/Panniantong/Agent-Reach",
-   "url_key": "github.com/panniantong/agent-reach",
-   "canonical_url": "https://github.com/Panniantong/Agent-Reach",
-   "title": "Panniantong/Agent-Reach",
-   "title_original": "Panniantong/Agent-Reach",
-   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-   "image": "https://opengraph.githubassets.com/1/Panniantong/Agent-Reach",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/Panniantong/Agent-Reach"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "video",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 683,
-   "source_score": 683,
-   "found_at": "2026-10-02T13:19:53.748259+00:00",
-   "title_ru": "Panniantong/Agent-Reach",
-   "summary_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
-   "description_ru": "Дайте своему ИИ-агенту глаза, чтобы видеть весь Интернет. Читайте и ищите в Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — один интерфейс командной строки, нулевая плата за API.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 97,
-   "published_at": "2026-10-02T13:19:53.748259+00:00"
-  },
-  {
    "url": "https://github.com/dream-num/univer",
    "url_key": "github.com/dream-num/univer",
    "canonical_url": "https://github.com/dream-num/univer",
@@ -548,6 +548,42 @@
    "published_at": "2026-10-02T13:19:53.748259+00:00"
   },
   {
+   "url": "https://github.com/affaan-m/ECC",
+   "url_key": "github.com/affaan-m/ecc",
+   "canonical_url": "https://github.com/affaan-m/ECC",
+   "title": "affaan-m/ECC",
+   "title_original": "affaan-m/ECC",
+   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+   "image": "https://opengraph.githubassets.com/1/affaan-m/ECC",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/affaan-m/ECC"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 578,
+   "source_score": 578,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "affaan-m/ECC",
+   "summary_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
+   "description_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 94,
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
+  },
+  {
    "url": "https://github.com/obra/superpowers",
    "url_key": "github.com/obra/superpowers",
    "canonical_url": "https://github.com/obra/superpowers",
@@ -569,9 +605,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 561,
-   "source_score": 561,
-   "found_at": "2026-10-02T13:19:53.748259+00:00",
+   "score": 578,
+   "source_score": 578,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
    "title_ru": "obra/superpowers",
    "summary_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
    "description_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
@@ -581,7 +617,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 94,
-   "published_at": "2026-10-02T13:19:53.748259+00:00"
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
   },
   {
    "url": "https://blog.cloudflare.com/clef-decision-models",
@@ -728,40 +764,40 @@
    "published_at": "2026-09-27T12:34:19.444030+00:00"
   },
   {
-   "url": "https://swarmtraces.org/",
-   "url_key": "swarmtraces.org/",
-   "canonical_url": "https://swarmtraces.org/",
-   "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-   "title_original": "Revealing the details of how OpenAI agents hacked Hugging Face",
-   "description": "When a swarm of 700 OpenAI agents hacked Hugging Face in July, they left behind a public trail of evidence.",
-   "image": "https://swarmtraces.org/assets/opengraph-preview.jpg?v=77a1f50796",
+   "url": "https://github.com/JuliusBrussee/caveman",
+   "url_key": "github.com/juliusbrussee/caveman",
+   "canonical_url": "https://github.com/JuliusBrussee/caveman",
+   "title": "JuliusBrussee/caveman",
+   "title_original": "JuliusBrussee/caveman",
+   "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+   "image": "https://opengraph.githubassets.com/1/JuliusBrussee/caveman",
    "media_kind": "image",
-   "source": "Hacker News",
+   "source": "GitHub Trending",
    "sources": [
     {
-     "name": "Hacker News",
-     "url": "https://swarmtraces.org/"
+     "name": "GitHub Trending",
+     "url": "https://github.com/JuliusBrussee/caveman"
     }
    ],
    "source_count": 1,
-   "type": "site",
+   "type": "github",
    "category": "vibecoding",
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
-   "domain": "swarmtraces.org",
-   "score": 520,
-   "source_score": 520,
-   "found_at": "2026-09-26T11:56:22.882874+00:00",
-   "title_ru": "Раскрываем подробности того, как агенты OpenAI взломали Hugging Face",
-   "summary_ru": "Когда в июле группа из 700 агентов OpenAI взломала Hugging Face, они оставили после себя публичный след улик.",
-   "description_ru": "Когда в июле группа из 700 агентов OpenAI взломала Hugging Face, они оставили после себя публичный след улик.",
+   "domain": "github.com",
+   "score": 505,
+   "source_score": 505,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "JuliusBrussee/caveman",
+   "summary_ru": "🪨 зачем использовать много токенов, если мало токенов делают трюк. Вирусный навык + прокси для кодирующих агентов, который сокращает 65% токенов, разговаривая как пещерный человек.",
+   "description_ru": "🪨 зачем использовать много токенов, если мало токенов делают трюк. Вирусный навык + прокси для кодирующих агентов, который сокращает 65% токенов, разговаривая как пещерный человек.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 93,
-   "published_at": "2026-09-26T11:56:22.882874+00:00"
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
   },
   {
    "url": "https://github.com/t8y2/dbx",
@@ -800,40 +836,40 @@
    "published_at": "2026-09-29T13:32:03.768901+00:00"
   },
   {
-   "url": "https://ollaya.dev/",
-   "url_key": "ollaya.dev/",
-   "canonical_url": "https://ollaya.dev/",
-   "title": "Ollaya – Ollama for open-source, Jev-style decision models",
-   "title_original": "Ollaya – Ollama for open-source, Jev-style decision models",
-   "description": "Ollaya downloads and serves open decision models on your own machine. Typed, calibrated answers in milliseconds, private and open source.",
-   "image": "https://ollaya.dev/static/og.png?v=7bd2eae221",
+   "url": "https://developer.apple.com/pass-designer",
+   "url_key": "developer.apple.com/pass-designer",
+   "canonical_url": "https://developer.apple.com/pass-designer",
+   "title": "Apple Pass Designer",
+   "title_original": "Apple Pass Designer",
+   "description": "Whether you’re creating passes for a local fitness center, a small music venue, a global airline, or a national coffee chain, Pass Designer makes it easy to craft and preview passes that reflect your business.",
+   "image": "https://developer.apple.com/news/images/og/pass-designer-og.png",
    "media_kind": "image",
    "source": "Hacker News",
    "sources": [
     {
      "name": "Hacker News",
-     "url": "https://ollaya.dev/"
+     "url": "https://developer.apple.com/pass-designer"
     }
    ],
    "source_count": 1,
    "type": "site",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "ollaya.dev",
-   "score": 483,
-   "source_score": 483,
-   "found_at": "2026-09-26T11:56:22.882874+00:00",
-   "title_ru": "Ollaya – Ollama для моделей принятия решений в стиле Jev с открытым исходным кодом.",
-   "summary_ru": "Оллайя загружает и обслуживает модели открытых решений на вашем компьютере. Напечатанные, калиброванные ответы за миллисекунды, частные и с открытым исходным кодом.",
-   "description_ru": "Оллайя загружает и обслуживает модели открытых решений на вашем компьютере. Напечатанные, калиброванные ответы за миллисекунды, частные и с открытым исходным кодом.",
+   "category": "design",
+   "topic": "ux-design",
+   "topic_name": "UX / веб-дизайн",
+   "domain": "developer.apple.com",
+   "score": 451,
+   "source_score": 451,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "Дизайнер Apple Pass",
+   "summary_ru": "Независимо от того, создаете ли вы пропуска для местного фитнес-центра, небольшого музыкального заведения, международной авиакомпании или национальной сети кофеен, Pass Designer позволяет легко создавать и просматривать пропуска, отражающие ваш бизнес.",
+   "description_ru": "Независимо от того, создаете ли вы пропуска для местного фитнес-центра, небольшого музыкального заведения, международной авиакомпании или национальной сети кофеен, Pass Designer позволяет легко создавать и просматривать пропуска, отражающие",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-09-26T11:56:22.882874+00:00"
+   "quality_score": 91,
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
   },
   {
    "url": "https://blog.gitbutler.com/git-3-sha-256",
@@ -944,6 +980,42 @@
    "published_at": "2026-09-27T12:34:19.444030+00:00"
   },
   {
+   "url": "https://github.com/earendil-works/pi",
+   "url_key": "github.com/earendil-works/pi",
+   "canonical_url": "https://github.com/earendil-works/pi",
+   "title": "earendil-works/pi",
+   "title_original": "earendil-works/pi",
+   "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+   "image": "https://opengraph.githubassets.com/1/earendil-works/pi",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/earendil-works/pi"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 408,
+   "source_score": 408,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "earendil-works/pi",
+   "summary_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
+   "description_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 90,
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
+  },
+  {
    "url": "https://github.com/pablostanley/yoinks",
    "url_key": "github.com/pablostanley/yoinks",
    "canonical_url": "https://github.com/pablostanley/yoinks",
@@ -1014,6 +1086,42 @@
    "content_status": "ready",
    "quality_score": 89,
    "published_at": "2026-09-28T14:41:33.205730+00:00"
+  },
+  {
+   "url": "https://github.com/Effect-TS/effect",
+   "url_key": "github.com/effect-ts/effect",
+   "canonical_url": "https://github.com/Effect-TS/effect",
+   "title": "Effect-TS/effect",
+   "title_original": "Effect-TS/effect",
+   "description": "Build production-ready applications in TypeScript",
+   "image": "https://opengraph.githubassets.com/1/Effect-TS/effect",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/Effect-TS/effect"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "design",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 302,
+   "source_score": 302,
+   "found_at": "2026-10-03T12:08:03.090673+00:00",
+   "title_ru": "Effect-TS/effect",
+   "summary_ru": "Создавайте готовые к использованию приложения на TypeScript.",
+   "description_ru": "Создавайте готовые к использованию приложения на TypeScript.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 88,
+   "published_at": "2026-10-03T12:08:03.090673+00:00"
   },
   {
    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
@@ -1157,114 +1265,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 88,
-   "published_at": "2026-09-27T12:34:19.444030+00:00"
-  },
-  {
-   "url": "https://github.com/mksglu/context-mode",
-   "url_key": "github.com/mksglu/context-mode",
-   "canonical_url": "https://github.com/mksglu/context-mode",
-   "title": "mksglu/context-mode",
-   "title_original": "mksglu/context-mode",
-   "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-   "image": "https://opengraph.githubassets.com/1/mksglu/context-mode",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/mksglu/context-mode"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 276,
-   "source_score": 276,
-   "found_at": "2026-10-02T13:19:53.748259+00:00",
-   "title_ru": "mksglu/context-mode",
-   "summary_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочница» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
-   "description_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочница» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
-   "published_at": "2026-10-02T13:19:53.748259+00:00"
-  },
-  {
-   "url": "https://github.com/earendil-works/pi",
-   "url_key": "github.com/earendil-works/pi",
-   "canonical_url": "https://github.com/earendil-works/pi",
-   "title": "earendil-works/pi",
-   "title_original": "earendil-works/pi",
-   "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-   "image": "https://opengraph.githubassets.com/1/earendil-works/pi",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/earendil-works/pi"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 294,
-   "source_score": 294,
-   "found_at": "2026-10-01T14:00:14.500611+00:00",
-   "title_ru": "earendil-works/pi",
-   "summary_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
-   "description_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
-   "published_at": "2026-10-01T14:00:14.500611+00:00"
-  },
-  {
-   "url": "https://github.com/block/buzz",
-   "url_key": "github.com/block/buzz",
-   "canonical_url": "https://github.com/block/buzz",
-   "title": "block/buzz",
-   "title_original": "block/buzz",
-   "description": "A hive mind communication platform",
-   "image": "https://opengraph.githubassets.com/1/block/buzz",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/block/buzz"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 281,
-   "source_score": 281,
-   "found_at": "2026-09-27T12:34:19.444030+00:00",
-   "title_ru": "block/buzz",
-   "summary_ru": "Платформа для общения коллективного разума",
-   "description_ru": "Платформа для общения коллективного разума",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 87,
    "published_at": "2026-09-27T12:34:19.444030+00:00"
   }
  ]
