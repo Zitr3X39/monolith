@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-10-09T13:58:45.217625+00:00",
+ "updated_at": "2026-10-10T13:08:41.053178+00:00",
  "meta": {
-  "fresh": 18,
-  "rejected": 12,
+  "fresh": 22,
+  "rejected": 10,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 15335,
-   "source_score": 15335,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
+   "score": 25784,
+   "source_score": 25784,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
    "title_ru": "morluto/rea",
    "summary_ru": "Реконструируйте с помощью агентов все, что угодно, от поведения приложений до собственных двоичных файлов.",
    "description_ru": "Реконструируйте с помощью агентов все, что угодно, от поведения приложений до собственных двоичных файлов.",
@@ -41,7 +41,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/boykopovar/AnyPS5",
@@ -65,9 +65,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 5925,
-   "source_score": 5925,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
+   "score": 5831,
+   "source_score": 5831,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
    "title_ru": "boykopovar/AnyPS5",
    "summary_ru": "Инструмент для автоматического переноса исполняемых файлов PS5 на Linux и Windows.",
    "description_ru": "Инструмент для автоматического переноса исполняемых файлов PS5 на Linux и Windows.",
@@ -77,43 +77,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
-  },
-  {
-   "url": "https://github.com/cathrynlavery/diagram-design",
-   "url_key": "github.com/cathrynlavery/diagram-design",
-   "canonical_url": "https://github.com/cathrynlavery/diagram-design",
-   "title": "cathrynlavery/diagram-design",
-   "title_original": "cathrynlavery/diagram-design",
-   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-   "image": "https://opengraph.githubassets.com/1/cathrynlavery/diagram-design",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/cathrynlavery/diagram-design"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1744,
-   "source_score": 1744,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
-   "title_ru": "cathrynlavery/diagram-design",
-   "summary_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 42 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
-   "description_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 42 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/storytold/artcraft",
@@ -137,9 +101,9 @@
    "topic": "ux-design",
    "topic_name": "UX / веб-дизайн",
    "domain": "github.com",
-   "score": 3723,
-   "source_score": 3723,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
+   "score": 3217,
+   "source_score": 3217,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
    "title_ru": "storytold/artcraft",
    "summary_ru": "ArtCraft — это специализированная система для художников, дизайнеров и кинематографистов.",
    "description_ru": "ArtCraft — это специализированная система для художников, дизайнеров и кинематографистов.",
@@ -149,7 +113,43 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
+  },
+  {
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "url_key": "github.com/cathrynlavery/diagram-design",
+   "canonical_url": "https://github.com/cathrynlavery/diagram-design",
+   "title": "cathrynlavery/diagram-design",
+   "title_original": "cathrynlavery/diagram-design",
+   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "image": "https://opengraph.githubassets.com/1/cathrynlavery/diagram-design",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/cathrynlavery/diagram-design"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 1189,
+   "source_score": 1189,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "cathrynlavery/diagram-design",
+   "summary_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
+   "description_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://anthropic.com/claude-haiku-5-5",
@@ -368,42 +368,6 @@
    "published_at": "2026-10-09T13:58:45.217625+00:00"
   },
   {
-   "url": "https://github.com/anthropics/knowledge-work-plugins",
-   "url_key": "github.com/anthropics/knowledge-work-plugins",
-   "canonical_url": "https://github.com/anthropics/knowledge-work-plugins",
-   "title": "anthropics/knowledge-work-plugins",
-   "title_original": "anthropics/knowledge-work-plugins",
-   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-   "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/knowledge-work-plugins"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 714,
-   "source_score": 714,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
-   "title_ru": "anthropics/knowledge-work-plugins",
-   "summary_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
-   "description_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 98,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
-  },
-  {
    "url": "https://github.com/thedotmack/claude-mem",
    "url_key": "github.com/thedotmack/claude-mem",
    "canonical_url": "https://github.com/thedotmack/claude-mem",
@@ -438,6 +402,42 @@
    "content_status": "ready",
    "quality_score": 97,
    "published_at": "2026-10-08T14:10:33.118183+00:00"
+  },
+  {
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "url_key": "github.com/anthropics/knowledge-work-plugins",
+   "canonical_url": "https://github.com/anthropics/knowledge-work-plugins",
+   "title": "anthropics/knowledge-work-plugins",
+   "title_original": "anthropics/knowledge-work-plugins",
+   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+   "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/anthropics/knowledge-work-plugins"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 626,
+   "source_score": 626,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "anthropics/knowledge-work-plugins",
+   "summary_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
+   "description_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 96,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/ayghri/i-have-adhd",
@@ -512,78 +512,6 @@
    "published_at": "2026-10-06T13:45:31.591974+00:00"
   },
   {
-   "url": "https://github.com/affaan-m/ECC",
-   "url_key": "github.com/affaan-m/ecc",
-   "canonical_url": "https://github.com/affaan-m/ECC",
-   "title": "affaan-m/ECC",
-   "title_original": "affaan-m/ECC",
-   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-   "image": "https://opengraph.githubassets.com/1/affaan-m/ECC",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/affaan-m/ECC"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 578,
-   "source_score": 578,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "affaan-m/ECC",
-   "summary_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "description_ru": "Агент использует систему оптимизации производительности. Навыки, инстинкты, память, безопасность и первая исследовательская разработка для Claude Code, Codex, Opencode, Cursor и других программ.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 94,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
-  },
-  {
-   "url": "https://github.com/obra/superpowers",
-   "url_key": "github.com/obra/superpowers",
-   "canonical_url": "https://github.com/obra/superpowers",
-   "title": "obra/superpowers",
-   "title_original": "obra/superpowers",
-   "description": "An agentic skills framework & software development methodology that works.",
-   "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/obra/superpowers"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 578,
-   "source_score": 578,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "obra/superpowers",
-   "summary_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
-   "description_ru": "Работающая система агентских навыков и методология разработки программного обеспечения.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 94,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
-  },
-  {
    "url": "https://github.com/cloudflare/security-audit-skill",
    "url_key": "github.com/cloudflare/security-audit-skill",
    "canonical_url": "https://github.com/cloudflare/security-audit-skill",
@@ -656,40 +584,40 @@
    "published_at": "2026-10-05T15:23:31.563862+00:00"
   },
   {
-   "url": "https://github.com/JuliusBrussee/caveman",
-   "url_key": "github.com/juliusbrussee/caveman",
-   "canonical_url": "https://github.com/JuliusBrussee/caveman",
-   "title": "JuliusBrussee/caveman",
-   "title_original": "JuliusBrussee/caveman",
-   "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
-   "image": "https://opengraph.githubassets.com/1/JuliusBrussee/caveman",
+   "url": "https://rea.tools/",
+   "url_key": "rea.tools/",
+   "canonical_url": "https://rea.tools/",
+   "title": "REA Reverse – Engineer Anything",
+   "title_original": "REA Reverse – Engineer Anything",
+   "description": "Reverse engineer apps, binaries and browser behavior with your coding agent. Follow clear guides and try interactive examples with REA.",
+   "image": "https://rea.tools/assets/social-card.png",
    "media_kind": "image",
-   "source": "GitHub Trending",
+   "source": "Hacker News",
    "sources": [
     {
-     "name": "GitHub Trending",
-     "url": "https://github.com/JuliusBrussee/caveman"
+     "name": "Hacker News",
+     "url": "https://rea.tools/"
     }
    ],
    "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 505,
-   "source_score": 505,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "JuliusBrussee/caveman",
-   "summary_ru": "🪨 зачем использовать много токенов, если мало токенов делают трюк. Вирусный навык + прокси для кодирующих агентов, который сокращает 65% токенов, разговаривая как пещерный человек.",
-   "description_ru": "🪨 зачем использовать много токенов, если мало токенов делают трюк. Вирусный навык + прокси для кодирующих агентов, который сокращает 65% токенов, разговаривая как пещерный человек.",
+   "type": "site",
+   "category": "gamedev",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "rea.tools",
+   "score": 500,
+   "source_score": 500,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "REA Reverse – проектируйте что угодно",
+   "summary_ru": "Реконструируйте приложения, двоичные файлы и поведение браузера с помощью вашего агента кодирования. Следуйте четким руководствам и попробуйте интерактивные примеры с REA.",
+   "description_ru": "Реконструируйте приложения, двоичные файлы и поведение браузера с помощью вашего агента кодирования. Следуйте четким руководствам и попробуйте интерактивные примеры с REA.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 93,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
+   "quality_score": 92,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/pingdotgg/t3code",
@@ -728,42 +656,6 @@
    "published_at": "2026-10-05T15:23:31.563862+00:00"
   },
   {
-   "url": "https://developer.apple.com/pass-designer",
-   "url_key": "developer.apple.com/pass-designer",
-   "canonical_url": "https://developer.apple.com/pass-designer",
-   "title": "Apple Pass Designer",
-   "title_original": "Apple Pass Designer",
-   "description": "Whether you’re creating passes for a local fitness center, a small music venue, a global airline, or a national coffee chain, Pass Designer makes it easy to craft and preview passes that reflect your business.",
-   "image": "https://developer.apple.com/news/images/og/pass-designer-og.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://developer.apple.com/pass-designer"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "design",
-   "topic": "ux-design",
-   "topic_name": "UX / веб-дизайн",
-   "domain": "developer.apple.com",
-   "score": 451,
-   "source_score": 451,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "Дизайнер Apple Pass",
-   "summary_ru": "Независимо от того, создаете ли вы пропуска для местного фитнес-центра, небольшого музыкального заведения, международной авиакомпании или национальной сети кофеен, Pass Designer позволяет легко создавать и просматривать пропуска, отражающие ваш бизнес.",
-   "description_ru": "Независимо от того, создаете ли вы пропуска для местного фитнес-центра, небольшого музыкального заведения, международной авиакомпании или национальной сети кофеен, Pass Designer позволяет легко создавать и просматривать пропуска, отражающие",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
-  },
-  {
    "url": "https://github.com/liquidslr/system-design-notes",
    "url_key": "github.com/liquidslr/system-design-notes",
    "canonical_url": "https://github.com/liquidslr/system-design-notes",
@@ -800,19 +692,19 @@
    "published_at": "2026-10-08T14:10:33.118183+00:00"
   },
   {
-   "url": "https://github.com/earendil-works/pi",
-   "url_key": "github.com/earendil-works/pi",
-   "canonical_url": "https://github.com/earendil-works/pi",
-   "title": "earendil-works/pi",
-   "title_original": "earendil-works/pi",
-   "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-   "image": "https://opengraph.githubassets.com/1/earendil-works/pi",
+   "url": "https://github.com/hugohe3/ppt-master",
+   "url_key": "github.com/hugohe3/ppt-master",
+   "canonical_url": "https://github.com/hugohe3/ppt-master",
+   "title": "hugohe3/ppt-master",
+   "title_original": "hugohe3/ppt-master",
+   "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+   "image": "https://opengraph.githubassets.com/1/hugohe3/ppt-master",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/earendil-works/pi"
+     "url": "https://github.com/hugohe3/ppt-master"
     }
    ],
    "source_count": 1,
@@ -821,19 +713,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 408,
-   "source_score": 408,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "earendil-works/pi",
-   "summary_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
-   "description_ru": "Инструментарий агента AI: унифицированный API LLM, цикл агента, TUI, CLI агента кодирования.",
+   "score": 372,
+   "source_score": 372,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "hugohe3/ppt-master",
+   "summary_ru": "Искусственный интеллект превращает документы или темы в настоящие, собственные колоды PowerPoint — с собственными формами, переходами и анимацией, диаграммами и таблицами на основе данных по запросу, аудиозаписью из заметок докладчика и поддержкой ваших собственных шаблонов .pptx. · Хьюго Хе",
+   "description_ru": "Искусственный интеллект превращает документы или темы в настоящие, собственные колоды PowerPoint — с собственными формами, переходами и анимацией, диаграммами и таблицами на основе данных по запросу, аудиозаписью из заметок докладчика и под",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 90,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
+   "quality_score": 89,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://developers.openai.com/api/docs/guides/decisions",
@@ -944,40 +836,40 @@
    "published_at": "2026-10-09T13:58:45.217625+00:00"
   },
   {
-   "url": "https://github.com/Effect-TS/effect",
-   "url_key": "github.com/effect-ts/effect",
-   "canonical_url": "https://github.com/Effect-TS/effect",
-   "title": "Effect-TS/effect",
-   "title_original": "Effect-TS/effect",
-   "description": "Build production-ready applications in TypeScript",
-   "image": "https://opengraph.githubassets.com/1/Effect-TS/effect",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "url_key": "github.com/multica-ai/andrej-karpathy-skills",
+   "canonical_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "title": "multica-ai/andrej-karpathy-skills",
+   "title_original": "multica-ai/andrej-karpathy-skills",
+   "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+   "image": "https://opengraph.githubassets.com/1/multica-ai/andrej-karpathy-skills",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/Effect-TS/effect"
+     "url": "https://github.com/multica-ai/andrej-karpathy-skills"
     }
    ],
    "source_count": 1,
    "type": "github",
-   "category": "design",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 302,
-   "source_score": 302,
-   "found_at": "2026-10-03T12:08:03.090673+00:00",
-   "title_ru": "Effect-TS/effect",
-   "summary_ru": "Создавайте готовые к использованию приложения на TypeScript.",
-   "description_ru": "Создавайте готовые к использованию приложения на TypeScript.",
+   "score": 279,
+   "source_score": 279,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "multica-ai/andrej-karpathy-skills",
+   "summary_ru": "Единый файл CLAUDE.md для улучшения поведения Claude Code, созданный на основе наблюдений Андрея Карпати о подводных камнях кодирования LLM.",
+   "description_ru": "Единый файл CLAUDE.md для улучшения поведения Claude Code, созданный на основе наблюдений Андрея Карпати о подводных камнях кодирования LLM.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-10-03T12:08:03.090673+00:00"
+   "quality_score": 87,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/EpicGames/raddebugger",
@@ -1014,6 +906,42 @@
    "content_status": "ready",
    "quality_score": 87,
    "published_at": "2026-10-08T14:10:33.118183+00:00"
+  },
+  {
+   "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover",
+   "url_key": "beaksec.github.io/posts/telegram-desktop-one-click-account-takeover",
+   "canonical_url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover",
+   "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+   "title_original": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+   "description": "An unescaped separator in Telegram Desktop’s single-instance IPC lets one clicked link read arbitrary files off the disk and send them to the attacker, session files included.",
+   "image": "https://beaksec.github.io/assets/img/posts/telegram-desktop-one-click-account-takeover/cover.png",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "security",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "beaksec.github.io",
+   "score": 228,
+   "source_score": 228,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "Уязвимость Telegram Desktop позволяла украсть любой файл пользователя",
+   "summary_ru": "Неэкранированный разделитель в одноэкземплярном IPC Telegram Desktop позволяет одним нажатием ссылки считывать произвольные файлы с диска и отправлять их злоумышленнику, включая файлы сеансов.",
+   "description_ru": "Неэкранированный разделитель в одноэкземплярном IPC Telegram Desktop позволяет одним нажатием ссылки считывать произвольные файлы с диска и отправлять их злоумышленнику, включая файлы сеансов.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 86,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/trycua/cua",
@@ -1160,6 +1088,42 @@
    "published_at": "2026-10-08T14:10:33.118183+00:00"
   },
   {
+   "url": "https://github.com/mksglu/context-mode",
+   "url_key": "github.com/mksglu/context-mode",
+   "canonical_url": "https://github.com/mksglu/context-mode",
+   "title": "mksglu/context-mode",
+   "title_original": "mksglu/context-mode",
+   "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+   "image": "https://opengraph.githubassets.com/1/mksglu/context-mode",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/mksglu/context-mode"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 178,
+   "source_score": 178,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "mksglu/context-mode",
+   "summary_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочницы» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
+   "description_ru": "Оптимизация контекстного окна для агентов кодирования ИИ. Вывод инструмента «песочницы» (сокращение на 98%), сохранение памяти сеанса и обеспечение маршрутизации между 17 платформами с помощью перехватчиков MCP +.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 84,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
+  },
+  {
    "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
    "url_key": "github.com/franzenzenhofer/big-arrow-on-the-screen",
    "canonical_url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
@@ -1194,6 +1158,42 @@
    "content_status": "ready",
    "quality_score": 84,
    "published_at": "2026-10-09T13:58:45.217625+00:00"
+  },
+  {
+   "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
+   "url_key": "blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
+   "canonical_url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
+   "title": "Can you use autoregressive diffusion to generate market data?",
+   "title_original": "Can you use autoregressive diffusion to generate market data?",
+   "description": "The following is part of a series of posts about 2026 summer intern projects – for more, see “What the interns have wrought, special jumbo 2026 edition”",
+   "image": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/dit-generative-10x.gif",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "other",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "blog.janestreet.com",
+   "score": 117,
+   "source_score": 117,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "Можете ли вы использовать авторегрессионную диффузию для создания рыночных данных?",
+   "summary_ru": "Следующее является частью серии публикаций о летних стажерских проектах 2026 года. Подробнее см. «Что сделали стажеры, специальное издание 2026 года».",
+   "description_ru": "Следующее является частью серии публикаций о летних стажерских проектах 2026 года. Подробнее см. «Что сделали стажеры, специальное издание 2026 года».",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 83,
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/Robbyant/lingbot-map",
@@ -1232,19 +1232,19 @@
    "published_at": "2026-10-09T13:58:45.217625+00:00"
   },
   {
-   "url": "https://github.com/BerriAI/litellm",
-   "url_key": "github.com/berriai/litellm",
-   "canonical_url": "https://github.com/BerriAI/litellm",
-   "title": "BerriAI/litellm",
-   "title_original": "BerriAI/litellm",
-   "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
-   "image": "https://opengraph.githubassets.com/1/BerriAI/litellm",
+   "url": "https://github.com/pytorch/pytorch",
+   "url_key": "github.com/pytorch/pytorch",
+   "canonical_url": "https://github.com/pytorch/pytorch",
+   "title": "pytorch/pytorch",
+   "title_original": "pytorch/pytorch",
+   "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+   "image": "https://opengraph.githubassets.com/1/pytorch/pytorch",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/BerriAI/litellm"
+     "url": "https://github.com/pytorch/pytorch"
     }
    ],
    "source_count": 1,
@@ -1253,19 +1253,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 95,
-   "source_score": 95,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
-   "title_ru": "BerriAI/litellm",
-   "summary_ru": "Самый быстрый и простой AI-шлюз. Ядро Rust с Python SDK. Вызов более 100 API-интерфейсов LLM в формате OpenAI (или собственном) с отслеживанием затрат, ограждениями, балансировкой нагрузки и журналированием [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
-   "description_ru": "Самый быстрый и простой AI-шлюз. Ядро Rust с Python SDK. Вызов более 100 API-интерфейсов LLM в формате OpenAI (или собственном) с отслеживанием затрат, ограждениями, балансировкой нагрузки и журналированием [Bedrock, Azure, OpenAI, Anthropi",
+   "score": 81,
+   "source_score": 81,
+   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "title_ru": "pytorch/pytorch",
+   "summary_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
+   "description_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 82,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
+   "published_at": "2026-10-10T13:08:41.053178+00:00"
   }
  ]
 }
