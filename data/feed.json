@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-10-10T13:08:41.053178+00:00",
+ "updated_at": "2026-10-11T13:37:45.997940+00:00",
  "meta": {
-  "fresh": 22,
-  "rejected": 10,
+  "fresh": 12,
+  "rejected": 15,
   "ai": 0
  },
  "items": [
@@ -29,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 25784,
-   "source_score": 25784,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "score": 25585,
+   "source_score": 25585,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
    "title_ru": "morluto/rea",
    "summary_ru": "Реконструируйте с помощью агентов все, что угодно, от поведения приложений до собственных двоичных файлов.",
    "description_ru": "Реконструируйте с помощью агентов все, что угодно, от поведения приложений до собственных двоичных файлов.",
@@ -41,7 +41,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
   },
   {
    "url": "https://github.com/boykopovar/AnyPS5",
@@ -65,9 +65,9 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 5831,
-   "source_score": 5831,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "score": 3977,
+   "source_score": 3977,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
    "title_ru": "boykopovar/AnyPS5",
    "summary_ru": "Инструмент для автоматического переноса исполняемых файлов PS5 на Linux и Windows.",
    "description_ru": "Инструмент для автоматического переноса исполняемых файлов PS5 на Linux и Windows.",
@@ -77,7 +77,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
   },
   {
    "url": "https://github.com/storytold/artcraft",
@@ -101,9 +101,9 @@
    "topic": "ux-design",
    "topic_name": "UX / веб-дизайн",
    "domain": "github.com",
-   "score": 3217,
-   "source_score": 3217,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "score": 2956,
+   "source_score": 2956,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
    "title_ru": "storytold/artcraft",
    "summary_ru": "ArtCraft — это специализированная система для художников, дизайнеров и кинематографистов.",
    "description_ru": "ArtCraft — это специализированная система для художников, дизайнеров и кинематографистов.",
@@ -113,7 +113,7 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
   },
   {
    "url": "https://github.com/cathrynlavery/diagram-design",
@@ -121,7 +121,7 @@
    "canonical_url": "https://github.com/cathrynlavery/diagram-design",
    "title": "cathrynlavery/diagram-design",
    "title_original": "cathrynlavery/diagram-design",
-   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
    "image": "https://opengraph.githubassets.com/1/cathrynlavery/diagram-design",
    "media_kind": "image",
    "source": "GitHub Trending",
@@ -137,19 +137,55 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 1189,
-   "source_score": 1189,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
+   "score": 1083,
+   "source_score": 1083,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
    "title_ru": "cathrynlavery/diagram-design",
-   "summary_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
-   "description_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
+   "summary_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
+   "description_ru": "Редакционный дизайн диаграмм для Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid и Pi. 44 типа диаграмм. Автономный HTML + SVG. Никаких теней. Никаких помоев Русалки.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
+  },
+  {
+   "url": "https://github.com/bilawalsidhu/gods-eye-view",
+   "url_key": "github.com/bilawalsidhu/gods-eye-view",
+   "canonical_url": "https://github.com/bilawalsidhu/gods-eye-view",
+   "title": "bilawalsidhu/gods-eye-view",
+   "title_original": "bilawalsidhu/gods-eye-view",
+   "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+   "image": "https://opengraph.githubassets.com/1/bilawalsidhu/gods-eye-view",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "3d",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 872,
+   "source_score": 872,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
+   "title_ru": "bilawalsidhu/gods-eye-view",
+   "summary_ru": "Симулятор шпионского спутника в вашем браузере, за исключением того, что данные настоящие. Живой пространственный интеллект с открытым исходным кодом на фотореалистичном 3D-глобусе.",
+   "description_ru": "Симулятор шпионского спутника в вашем браузере, за исключением того, что данные настоящие. Живой пространственный интеллект с открытым исходным кодом на фотореалистичном 3D-глобусе.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
   },
   {
    "url": "https://anthropic.com/claude-haiku-5-5",
@@ -584,6 +620,42 @@
    "published_at": "2026-10-05T15:23:31.563862+00:00"
   },
   {
+   "url": "https://github.com/chrislgarry/Apollo-11",
+   "url_key": "github.com/chrislgarry/apollo-11",
+   "canonical_url": "https://github.com/chrislgarry/Apollo-11",
+   "title": "chrislgarry/Apollo-11",
+   "title_original": "chrislgarry/Apollo-11",
+   "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+   "image": "https://opengraph.githubassets.com/1/chrislgarry/Apollo-11",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/chrislgarry/Apollo-11"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "design",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 496,
+   "source_score": 496,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
+   "title_ru": "chrislgarry/Apollo-11",
+   "summary_ru": "Исходный исходный код управляющего компьютера Аполлона-11 (AGC) для командного и лунного модулей.",
+   "description_ru": "Исходный исходный код управляющего компьютера Аполлона-11 (AGC) для командного и лунного модулей.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 92,
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
+  },
+  {
    "url": "https://rea.tools/",
    "url_key": "rea.tools/",
    "canonical_url": "https://rea.tools/",
@@ -798,6 +870,42 @@
    "content_status": "ready",
    "quality_score": 89,
    "published_at": "2026-10-06T13:45:31.591974+00:00"
+  },
+  {
+   "url": "https://github.com/pytorch/pytorch",
+   "url_key": "github.com/pytorch/pytorch",
+   "canonical_url": "https://github.com/pytorch/pytorch",
+   "title": "pytorch/pytorch",
+   "title_original": "pytorch/pytorch",
+   "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+   "image": "https://opengraph.githubassets.com/1/pytorch/pytorch",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/pytorch/pytorch"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 314,
+   "source_score": 314,
+   "found_at": "2026-10-11T13:37:45.997940+00:00",
+   "title_ru": "pytorch/pytorch",
+   "summary_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
+   "description_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 88,
+   "published_at": "2026-10-11T13:37:45.997940+00:00"
   },
   {
    "url": "https://github.com/alibaba/open-code-review",
@@ -1158,114 +1266,6 @@
    "content_status": "ready",
    "quality_score": 84,
    "published_at": "2026-10-09T13:58:45.217625+00:00"
-  },
-  {
-   "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
-   "url_key": "blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
-   "canonical_url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data",
-   "title": "Can you use autoregressive diffusion to generate market data?",
-   "title_original": "Can you use autoregressive diffusion to generate market data?",
-   "description": "The following is part of a series of posts about 2026 summer intern projects – for more, see “What the interns have wrought, special jumbo 2026 edition”",
-   "image": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/dit-generative-10x.gif",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "other",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "blog.janestreet.com",
-   "score": 117,
-   "source_score": 117,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
-   "title_ru": "Можете ли вы использовать авторегрессионную диффузию для создания рыночных данных?",
-   "summary_ru": "Следующее является частью серии публикаций о летних стажерских проектах 2026 года. Подробнее см. «Что сделали стажеры, специальное издание 2026 года».",
-   "description_ru": "Следующее является частью серии публикаций о летних стажерских проектах 2026 года. Подробнее см. «Что сделали стажеры, специальное издание 2026 года».",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 83,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
-  },
-  {
-   "url": "https://github.com/Robbyant/lingbot-map",
-   "url_key": "github.com/robbyant/lingbot-map",
-   "canonical_url": "https://github.com/Robbyant/lingbot-map",
-   "title": "Robbyant/lingbot-map",
-   "title_original": "Robbyant/lingbot-map",
-   "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
-   "image": "https://opengraph.githubassets.com/1/Robbyant/lingbot-map",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/Robbyant/lingbot-map"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "3d",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 109,
-   "source_score": 109,
-   "found_at": "2026-10-09T13:58:45.217625+00:00",
-   "title_ru": "Robbyant/lingbot-map",
-   "summary_ru": "[Кандидат на премию ECCV 2026 за лучшую работу] LingBot-Map: преобразователь геометрического контекста для потоковой 3D-реконструкции",
-   "description_ru": "[Кандидат на премию ECCV 2026 за лучшую работу] LingBot-Map: преобразователь геометрического контекста для потоковой 3D-реконструкции",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 83,
-   "published_at": "2026-10-09T13:58:45.217625+00:00"
-  },
-  {
-   "url": "https://github.com/pytorch/pytorch",
-   "url_key": "github.com/pytorch/pytorch",
-   "canonical_url": "https://github.com/pytorch/pytorch",
-   "title": "pytorch/pytorch",
-   "title_original": "pytorch/pytorch",
-   "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-   "image": "https://opengraph.githubassets.com/1/pytorch/pytorch",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/pytorch/pytorch"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 81,
-   "source_score": 81,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
-   "title_ru": "pytorch/pytorch",
-   "summary_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
-   "description_ru": "Тензоры и динамические нейронные сети на Python с сильным ускорением графического процессора",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 82,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
   }
  ]
 }
