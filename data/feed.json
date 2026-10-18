@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-10-17T11:15:44.320309+00:00",
+ "updated_at": "2026-10-18T11:52:05.721027+00:00",
  "meta": {
-  "fresh": 19,
-  "rejected": 13,
+  "fresh": 21,
+  "rejected": 11,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/anthropics/claude-plugins-official",
-   "url_key": "github.com/anthropics/claude-plugins-official",
-   "canonical_url": "https://github.com/anthropics/claude-plugins-official",
-   "title": "anthropics/claude-plugins-official",
-   "title_original": "anthropics/claude-plugins-official",
-   "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-   "image": "https://opengraph.githubassets.com/1/anthropics/claude-plugins-official",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/claude-plugins-official"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1383,
-   "source_score": 1383,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "anthropics/claude-plugins-official",
-   "summary_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
-   "description_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
-  },
   {
    "url": "https://github.com/MadsLorentzen/ai-job-search",
    "url_key": "github.com/madslorentzen/ai-job-search",
@@ -65,9 +29,9 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 1397,
-   "source_score": 1397,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
+   "score": 2213,
+   "source_score": 2213,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
    "title_ru": "MadsLorentzen/ai-job-search",
    "summary_ru": "Поиск работы, который работает на вашем компьютере. Платформа подачи заявок на работу с использованием искусственного интеллекта, созданная на основе Claude Code: оценивайте публикации, адаптируйте резюме, пишите сопроводительные письма, готовьтесь к собеседованиям. Раскошелитесь и владейте им.",
    "description_ru": "Поиск работы, который работает на вашем компьютере. Платформа подачи заявок на работу с использованием искусственного интеллекта, созданная на основе Claude Code: оценивайте публикации, адаптируйте резюме, пишите сопроводительные письма, го",
@@ -77,7 +41,151 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 100,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
+  },
+  {
+   "url": "https://github.com/anthropics/claude-plugins-official",
+   "url_key": "github.com/anthropics/claude-plugins-official",
+   "canonical_url": "https://github.com/anthropics/claude-plugins-official",
+   "title": "anthropics/claude-plugins-official",
+   "title_original": "anthropics/claude-plugins-official",
+   "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+   "image": "https://opengraph.githubassets.com/1/anthropics/claude-plugins-official",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/anthropics/claude-plugins-official"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 1187,
+   "source_score": 1187,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "anthropics/claude-plugins-official",
+   "summary_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
+   "description_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
+  },
+  {
+   "url": "https://github.com/anomalyco/opencode",
+   "url_key": "github.com/anomalyco/opencode",
+   "canonical_url": "https://github.com/anomalyco/opencode",
+   "title": "anomalyco/opencode",
+   "title_original": "anomalyco/opencode",
+   "description": "The open source coding agent.",
+   "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/anomalyco/opencode"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 1417,
+   "source_score": 1417,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "anomalyco/opencode",
+   "summary_ru": "Агент кодирования с открытым исходным кодом.",
+   "description_ru": "Агент кодирования с открытым исходным кодом.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
+  },
+  {
+   "url": "https://github.com/stablyai/orca",
+   "url_key": "github.com/stablyai/orca",
+   "canonical_url": "https://github.com/stablyai/orca",
+   "title": "stablyai/orca",
+   "title_original": "stablyai/orca",
+   "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+   "image": "https://opengraph.githubassets.com/1/stablyai/orca",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/stablyai/orca"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "github.com",
+   "score": 1146,
+   "source_score": 1146,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "stablyai/orca",
+   "summary_ru": "Orca — место для работы с флотом агентов (например, Grok Bot, Claude Code). Запустите любой агент кодирования по собственной подписке. Доступно для настольных компьютеров, мобильных устройств и удаленного выполнения.",
+   "description_ru": "Orca — место для работы с флотом агентов (например, Grok Bot, Claude Code). Запустите любой агент кодирования по собственной подписке. Доступно для настольных компьютеров, мобильных устройств и удаленного выполнения.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
+  },
+  {
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "url_key": "github.com/debpalash/voicestudio",
+   "canonical_url": "https://github.com/debpalash/VoiceStudio",
+   "title": "debpalash/VoiceStudio",
+   "title_original": "debpalash/VoiceStudio",
+   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/debpalash/VoiceStudio"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "video",
+   "topic": "ux-design",
+   "topic_name": "UX / веб-дизайн",
+   "domain": "github.com",
+   "score": 2098,
+   "source_score": 2098,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "debpalash/VoiceStudio",
+   "summary_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
+   "description_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 100,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
   },
   {
    "url": "https://github.com/affaan-m/ECC",
@@ -143,78 +251,6 @@
    "title_ru": "K-Dense-AI/scientific-agent-skills",
    "summary_ru": "Превратите любого ИИ-агента в ИИ-ученого. Научная библиотека агентских навыков №1, которой пользуются более 250 000 ученых по всему миру. 177 готовых к использованию подтвержденных навыков плюс более 100 научных баз данных по биологии, химии, медицине и открытию лекарств. Совместим с курсором, кодом Клода, кодексом, Pi, антигравитацией и открытым стандартом навыков агента.",
    "description_ru": "Превратите любого ИИ-агента в ИИ-ученого. Научная библиотека агентских навыков №1, которой пользуются более 250 000 ученых по всему миру. 177 готовых к использованию подтвержденных навыков плюс более 100 научных баз данных по биологии, хими",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
-  },
-  {
-   "url": "https://github.com/stablyai/orca",
-   "url_key": "github.com/stablyai/orca",
-   "canonical_url": "https://github.com/stablyai/orca",
-   "title": "stablyai/orca",
-   "title_original": "stablyai/orca",
-   "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-   "image": "https://opengraph.githubassets.com/1/stablyai/orca",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/stablyai/orca"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1102,
-   "source_score": 1102,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "stablyai/orca",
-   "summary_ru": "Orca — место для работы с парком агентов (например, Grok Bot, Codex). Запустите любой агент кодирования по собственной подписке. Доступно для настольных компьютеров, мобильных устройств и удаленного выполнения.",
-   "description_ru": "Orca — место для работы с парком агентов (например, Grok Bot, Codex). Запустите любой агент кодирования по собственной подписке. Доступно для настольных компьютеров, мобильных устройств и удаленного выполнения.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
-  },
-  {
-   "url": "https://github.com/debpalash/VoiceStudio",
-   "url_key": "github.com/debpalash/voicestudio",
-   "canonical_url": "https://github.com/debpalash/VoiceStudio",
-   "title": "debpalash/VoiceStudio",
-   "title_original": "debpalash/VoiceStudio",
-   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-   "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/debpalash/VoiceStudio"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "video",
-   "topic": "ux-design",
-   "topic_name": "UX / веб-дизайн",
-   "domain": "github.com",
-   "score": 2135,
-   "source_score": 2135,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "debpalash/VoiceStudio",
-   "summary_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, озвучивать его, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
-   "description_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, озвучивать его, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
@@ -692,19 +728,19 @@
    "published_at": "2026-10-16T11:59:42.911826+00:00"
   },
   {
-   "url": "https://github.com/anthropics/knowledge-work-plugins",
-   "url_key": "github.com/anthropics/knowledge-work-plugins",
-   "canonical_url": "https://github.com/anthropics/knowledge-work-plugins",
-   "title": "anthropics/knowledge-work-plugins",
-   "title_original": "anthropics/knowledge-work-plugins",
-   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-   "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
+   "url": "https://github.com/HKUDS/CLI-Anything",
+   "url_key": "github.com/hkuds/cli-anything",
+   "canonical_url": "https://github.com/HKUDS/CLI-Anything",
+   "title": "HKUDS/CLI-Anything",
+   "title_original": "HKUDS/CLI-Anything",
+   "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+   "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/knowledge-work-plugins"
+     "url": "https://github.com/HKUDS/CLI-Anything"
     }
    ],
    "source_count": 1,
@@ -713,19 +749,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 626,
-   "source_score": 626,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
-   "title_ru": "anthropics/knowledge-work-plugins",
-   "summary_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
-   "description_ru": "Репозиторий плагинов с открытым исходным кодом, в первую очередь предназначенный для использования работниками умственного труда в Claude Cowork.",
+   "score": 582,
+   "source_score": 582,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "HKUDS/CLI-Anything",
+   "summary_ru": "«CLI-Anything: сделать ВСЕ программные агенты нативными» — CLI-Hub: https://clianything.cc/",
+   "description_ru": "«CLI-Anything: сделать ВСЕ программные агенты нативными» — CLI-Hub: https://clianything.cc/",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 96,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
+   "quality_score": 95,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
   },
   {
    "url": "https://github.com/hmjz100/LinkSwift",
@@ -764,19 +800,19 @@
    "published_at": "2026-10-16T11:59:42.911826+00:00"
   },
   {
-   "url": "https://github.com/HKUDS/CLI-Anything",
-   "url_key": "github.com/hkuds/cli-anything",
-   "canonical_url": "https://github.com/HKUDS/CLI-Anything",
-   "title": "HKUDS/CLI-Anything",
-   "title_original": "HKUDS/CLI-Anything",
-   "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-   "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
+   "url": "https://github.com/akitaonrails/ai-memory",
+   "url_key": "github.com/akitaonrails/ai-memory",
+   "canonical_url": "https://github.com/akitaonrails/ai-memory",
+   "title": "akitaonrails/ai-memory",
+   "title_original": "akitaonrails/ai-memory",
+   "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+   "image": "https://opengraph.githubassets.com/1/akitaonrails/ai-memory",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/HKUDS/CLI-Anything"
+     "url": "https://github.com/akitaonrails/ai-memory"
     }
    ],
    "source_count": 1,
@@ -785,55 +821,19 @@
    "topic": "ai-agents",
    "topic_name": "AI / агенты",
    "domain": "github.com",
-   "score": 580,
-   "source_score": 580,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "HKUDS/CLI-Anything",
-   "summary_ru": "«CLI-Anything: сделать ВСЕ программные агенты нативными» — CLI-Hub: https://clianything.cc/",
-   "description_ru": "«CLI-Anything: сделать ВСЕ программные агенты нативными» — CLI-Hub: https://clianything.cc/",
+   "score": 513,
+   "source_score": 513,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "akitaonrails/ai-memory",
+   "summary_ru": "Решение для долговременной памяти для CLI кодирования агентов и облегчения передачи обслуживания между различными поставщиками агентов.",
+   "description_ru": "Решение для долговременной памяти для CLI кодирования агентов и облегчения передачи обслуживания между различными поставщиками агентов.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
-   "quality_score": 94,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
-  },
-  {
-   "url": "https://github.com/anomalyco/opencode",
-   "url_key": "github.com/anomalyco/opencode",
-   "canonical_url": "https://github.com/anomalyco/opencode",
-   "title": "anomalyco/opencode",
-   "title_original": "anomalyco/opencode",
-   "description": "The open source coding agent.",
-   "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anomalyco/opencode"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 488,
-   "source_score": 488,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "anomalyco/opencode",
-   "summary_ru": "Агент кодирования с открытым исходным кодом.",
-   "description_ru": "Агент кодирования с открытым исходным кодом.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
+   "quality_score": 93,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
   },
   {
    "url": "https://github.com/chrislgarry/Apollo-11",
@@ -870,42 +870,6 @@
    "content_status": "ready",
    "quality_score": 92,
    "published_at": "2026-10-11T13:37:45.997940+00:00"
-  },
-  {
-   "url": "https://rea.tools/",
-   "url_key": "rea.tools/",
-   "canonical_url": "https://rea.tools/",
-   "title": "REA Reverse – Engineer Anything",
-   "title_original": "REA Reverse – Engineer Anything",
-   "description": "Reverse engineer apps, binaries and browser behavior with your coding agent. Follow clear guides and try interactive examples with REA.",
-   "image": "https://rea.tools/assets/social-card.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://rea.tools/"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "gamedev",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "rea.tools",
-   "score": 500,
-   "source_score": 500,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
-   "title_ru": "REA Reverse – проектируйте что угодно",
-   "summary_ru": "Реконструируйте приложения, двоичные файлы и поведение браузера с помощью вашего агента кодирования. Следуйте четким руководствам и попробуйте интерактивные примеры с REA.",
-   "description_ru": "Реконструируйте приложения, двоичные файлы и поведение браузера с помощью вашего агента кодирования. Следуйте четким руководствам и попробуйте интерактивные примеры с REA.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 92,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://github.com/mksglu/context-mode",
@@ -980,6 +944,42 @@
    "published_at": "2026-10-15T12:16:00.304000+00:00"
   },
   {
+   "url": "https://github.com/android/skills",
+   "url_key": "github.com/android/skills",
+   "canonical_url": "https://github.com/android/skills",
+   "title": "android/skills",
+   "title_original": "android/skills",
+   "description": "Contribute to android/skills development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/1/android/skills",
+   "media_kind": "image",
+   "source": "GitHub Trending",
+   "sources": [
+    {
+     "name": "GitHub Trending",
+     "url": "https://github.com/android/skills"
+    }
+   ],
+   "source_count": 1,
+   "type": "github",
+   "category": "other",
+   "topic": "dev-tools",
+   "topic_name": "Инструменты разработки",
+   "domain": "github.com",
+   "score": 381,
+   "source_score": 381,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "android/skills",
+   "summary_ru": "Внесите свой вклад в развитие Android/навыков, создав учетную запись на GitHub.",
+   "description_ru": "Внесите свой вклад в развитие Android/навыков, создав учетную запись на GitHub.",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 90,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
+  },
+  {
    "url": "https://github.com/JuliusBrussee/caveman",
    "url_key": "github.com/juliusbrussee/caveman",
    "canonical_url": "https://github.com/JuliusBrussee/caveman",
@@ -1052,19 +1052,19 @@
    "published_at": "2026-10-13T14:40:29.563204+00:00"
   },
   {
-   "url": "https://github.com/android/skills",
-   "url_key": "github.com/android/skills",
-   "canonical_url": "https://github.com/android/skills",
-   "title": "android/skills",
-   "title_original": "android/skills",
-   "description": "Contribute to android/skills development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/android/skills",
+   "url": "https://github.com/cursor/plugins",
+   "url_key": "github.com/cursor/plugins",
+   "canonical_url": "https://github.com/cursor/plugins",
+   "title": "cursor/plugins",
+   "title_original": "cursor/plugins",
+   "description": "Cursor plugin specification and official plugins",
+   "image": "https://opengraph.githubassets.com/1/cursor/plugins",
    "media_kind": "image",
    "source": "GitHub Trending",
    "sources": [
     {
      "name": "GitHub Trending",
-     "url": "https://github.com/android/skills"
+     "url": "https://github.com/cursor/plugins"
     }
    ],
    "source_count": 1,
@@ -1073,19 +1073,19 @@
    "topic": "dev-tools",
    "topic_name": "Инструменты разработки",
    "domain": "github.com",
-   "score": 368,
-   "source_score": 368,
-   "found_at": "2026-10-17T11:15:44.320309+00:00",
-   "title_ru": "android/skills",
-   "summary_ru": "Внесите свой вклад в развитие Android/навыков, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в развитие Android/навыков, создав учетную запись на GitHub.",
+   "score": 351,
+   "source_score": 351,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "cursor/plugins",
+   "summary_ru": "Спецификация плагина курсора и официальные плагины",
+   "description_ru": "Спецификация плагина курсора и официальные плагины",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 89,
-   "published_at": "2026-10-17T11:15:44.320309+00:00"
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
   },
   {
    "url": "https://niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say",
@@ -1122,42 +1122,6 @@
    "content_status": "ready",
    "quality_score": 89,
    "published_at": "2026-10-16T11:59:42.911826+00:00"
-  },
-  {
-   "url": "https://github.com/hugohe3/ppt-master",
-   "url_key": "github.com/hugohe3/ppt-master",
-   "canonical_url": "https://github.com/hugohe3/ppt-master",
-   "title": "hugohe3/ppt-master",
-   "title_original": "hugohe3/ppt-master",
-   "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
-   "image": "https://opengraph.githubassets.com/1/hugohe3/ppt-master",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/hugohe3/ppt-master"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 372,
-   "source_score": 372,
-   "found_at": "2026-10-10T13:08:41.053178+00:00",
-   "title_ru": "hugohe3/ppt-master",
-   "summary_ru": "Искусственный интеллект превращает документы или темы в настоящие, собственные колоды PowerPoint — с собственными формами, переходами и анимацией, диаграммами и таблицами на основе данных по запросу, аудиозаписью из заметок докладчика и поддержкой ваших собственных шаблонов .pptx. · Хьюго Хе",
-   "description_ru": "Искусственный интеллект превращает документы или темы в настоящие, собственные колоды PowerPoint — с собственными формами, переходами и анимацией, диаграммами и таблицами на основе данных по запросу, аудиозаписью из заметок докладчика и под",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-10-10T13:08:41.053178+00:00"
   },
   {
    "url": "https://alexwang.ai/posts/associative-memory",
@@ -1266,6 +1230,42 @@
    "content_status": "ready",
    "quality_score": 88,
    "published_at": "2026-10-12T16:16:59.376677+00:00"
+  },
+  {
+   "url": "https://api-docs.deepseek.com/guides/search",
+   "url_key": "api-docs.deepseek.com/guides/search",
+   "canonical_url": "https://api-docs.deepseek.com/guides/search",
+   "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "title_original": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+   "description": "The Search API and the Fetch API give agents and RAG applications access to live web content:",
+   "image": "https://api-docs.deepseek.com/img/deepseek-social-card.jpeg",
+   "media_kind": "image",
+   "source": "Hacker News",
+   "sources": [
+    {
+     "name": "Hacker News",
+     "url": "https://api-docs.deepseek.com/guides/search"
+    }
+   ],
+   "source_count": 1,
+   "type": "site",
+   "category": "vibecoding",
+   "topic": "ai-agents",
+   "topic_name": "AI / агенты",
+   "domain": "api-docs.deepseek.com",
+   "score": 250,
+   "source_score": 250,
+   "found_at": "2026-10-18T11:52:05.721027+00:00",
+   "title_ru": "Поиск и выборка DeepSeek — 0,75 доллара США за 1000 успешных запросов.",
+   "summary_ru": "API поиска и API Fetch предоставляют агентам и приложениям RAG доступ к действующему веб-контенту:",
+   "description_ru": "API поиска и API Fetch предоставляют агентам и приложениям RAG доступ к действующему веб-контенту:",
+   "translation_status": "generated",
+   "why_it_matters_ru": "",
+   "use_cases_ru": [],
+   "caveats_ru": [],
+   "content_status": "ready",
+   "quality_score": 86,
+   "published_at": "2026-10-18T11:52:05.721027+00:00"
   }
  ]
 }
