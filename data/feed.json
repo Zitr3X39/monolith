@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-10-24T11:42:55.846485+00:00",
+ "updated_at": "2026-10-25T12:11:45.856227+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 29,
+  "rejected": 30,
   "ai": 0
  },
  "items": [
@@ -78,78 +78,6 @@
    "content_status": "ready",
    "quality_score": 100,
    "published_at": "2026-10-20T12:22:45.768928+00:00"
-  },
-  {
-   "url": "https://github.com/anthropics/claude-plugins-official",
-   "url_key": "github.com/anthropics/claude-plugins-official",
-   "canonical_url": "https://github.com/anthropics/claude-plugins-official",
-   "title": "anthropics/claude-plugins-official",
-   "title_original": "anthropics/claude-plugins-official",
-   "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-   "image": "https://opengraph.githubassets.com/1/anthropics/claude-plugins-official",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/claude-plugins-official"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 1187,
-   "source_score": 1187,
-   "found_at": "2026-10-18T11:52:05.721027+00:00",
-   "title_ru": "anthropics/claude-plugins-official",
-   "summary_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
-   "description_ru": "Официальный каталог высококачественных плагинов Claude Code, управляемый Anthropic.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-18T11:52:05.721027+00:00"
-  },
-  {
-   "url": "https://github.com/debpalash/VoiceStudio",
-   "url_key": "github.com/debpalash/voicestudio",
-   "canonical_url": "https://github.com/debpalash/VoiceStudio",
-   "title": "debpalash/VoiceStudio",
-   "title_original": "debpalash/VoiceStudio",
-   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-   "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/debpalash/VoiceStudio"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "video",
-   "topic": "ux-design",
-   "topic_name": "UX / веб-дизайн",
-   "domain": "github.com",
-   "score": 2098,
-   "source_score": 2098,
-   "found_at": "2026-10-18T11:52:05.721027+00:00",
-   "title_ru": "debpalash/VoiceStudio",
-   "summary_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
-   "description_ru": "VoiceStudio — это полностью локальная альтернатива ElevenLabs с открытым исходным кодом, позволяющая клонировать голос, создавать голосовой дизайн, дублировать видео, диктовку, транскрибировать и создавать аудиокниги на 646 языках.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-10-18T11:52:05.721027+00:00"
   },
   {
    "url": "https://github.com/deepseek-ai/DeepInfer",
