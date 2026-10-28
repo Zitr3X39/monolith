@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-10-28T13:39:36+00:00",
+ "updated_at": "2026-10-28T17:21:15.181143+00:00",
  "items": [
   {
    "url": "https://github.com/stanford-oval/storm",
@@ -1812,6 +1812,86 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
+  },
+  {
+   "url": "https://eyecannndy.com/",
+   "url_key": "eyecannndy.com/",
+   "title": "eyecannndy.com",
+   "description": "Собрал для вас легкую подборку инструментов для поиска идей и вдохновения\n\n- Eye Candy Это библиотека с визуальными и техническими приемами -  \n\n- Flim Ai здесь собраны разные кадры из фильмов, клипов и сериалов - https:",
+   "note": "",
+   "domain": "eyecannndy.com",
+   "category": "vibecoding",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-10-28T17:21:15.180757+00:00"
+  },
+  {
+   "url": "https://flim.ai/",
+   "url_key": "flim.ai/",
+   "title": "flim.ai",
+   "description": "Собрал для вас легкую подборку инструментов для поиска идей и вдохновения\n\n- Eye Candy Это библиотека с визуальными и техническими приемами - https://eyecannndy.com/\n\n- Flim Ai здесь собраны разные кадры из фильмов, клип",
+   "note": "",
+   "domain": "flim.ai",
+   "category": "vibecoding",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-10-28T17:21:15.180862+00:00"
+  },
+  {
+   "url": "https://trendlist.org/",
+   "url_key": "trendlist.org/",
+   "title": "trendlist.org",
+   "description": "Собрал для вас легкую подборку инструментов для поиска идей и вдохновения\n\n- Eye Candy Это библиотека с визуальными и техническими приемами - https://eyecannndy.com/\n\n- Flim Ai здесь собраны разные кадры из фильмов, клип",
+   "note": "",
+   "domain": "trendlist.org",
+   "category": "vibecoding",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-10-28T17:21:15.180933+00:00"
+  },
+  {
+   "url": "https://vimeo.com/",
+   "url_key": "vimeo.com/",
+   "title": "vimeo.com",
+   "description": "Собрал для вас легкую подборку инструментов для поиска идей и вдохновения\n\n- Eye Candy Это библиотека с визуальными и техническими приемами - https://eyecannndy.com/\n\n- Flim Ai здесь собраны разные кадры из фильмов, клип",
+   "note": "",
+   "domain": "vimeo.com",
+   "category": "video",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-10-28T17:21:15.180951+00:00"
+  },
+  {
+   "url": "https://designspiration.com/",
+   "url_key": "designspiration.com/",
+   "title": "designspiration.com",
+   "description": "Собрал для вас легкую подборку инструментов для поиска идей и вдохновения\n\n- Eye Candy Это библиотека с визуальными и техническими приемами - https://eyecannndy.com/\n\n- Flim Ai здесь собраны разные кадры из фильмов, клип",
+   "note": "",
+   "domain": "designspiration.com",
+   "category": "vibecoding",
+   "type": "site",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-10-28T17:21:15.181018+00:00"
   }
  ]
 }
