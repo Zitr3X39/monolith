@@ -1,48 +1,12 @@
 {
  "version": 2,
- "updated_at": "2026-11-05T15:03:06.873001+00:00",
+ "updated_at": "2026-11-06T14:41:37.879027+00:00",
  "meta": {
-  "fresh": 22,
-  "rejected": 11,
+  "fresh": 0,
+  "rejected": 34,
   "ai": 0
  },
  "items": [
-  {
-   "url": "https://github.com/NVIDIA/auto-ontology",
-   "url_key": "github.com/nvidia/auto-ontology",
-   "canonical_url": "https://github.com/NVIDIA/auto-ontology",
-   "title": "NVIDIA/auto-ontology",
-   "title_original": "NVIDIA/auto-ontology",
-   "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-   "image": "https://opengraph.githubassets.com/1/NVIDIA/auto-ontology",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/NVIDIA/auto-ontology"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 2707,
-   "source_score": 2707,
-   "found_at": "2026-11-05T15:03:06.873001+00:00",
-   "title_ru": "NVIDIA/auto-ontology",
-   "summary_ru": "Auto Ontology — это среда Python для построения семантических слоев рассуждений на основе графов над данными. Он обеспечивает детерминированную генерацию запросов, лучший поиск контекста и более понятный искусственный интеллект для LLM и рабочих процессов агентов.",
-   "description_ru": "Auto Ontology — это среда Python для построения семантических слоев рассуждений на основе графов над данными. Он обеспечивает детерминированную генерацию запросов, лучший поиск контекста и более понятный искусственный интеллект для LLM и ра",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-05T15:03:06.873001+00:00"
-  },
   {
    "url": "https://github.com/D4Vinci/Scrapling",
    "url_key": "github.com/d4vinci/scrapling",
@@ -1049,42 +1013,6 @@
    "caveats_ru": [],
    "content_status": "ready",
    "quality_score": 86,
-   "published_at": "2026-11-05T15:03:06.873001+00:00"
-  },
-  {
-   "url": "https://github.com/google/skills",
-   "url_key": "github.com/google/skills",
-   "canonical_url": "https://github.com/google/skills",
-   "title": "google/skills",
-   "title_original": "google/skills",
-   "description": "Agent Skills for Google products and technologies",
-   "image": "https://opengraph.githubassets.com/1/google/skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/google/skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 199,
-   "source_score": 199,
-   "found_at": "2026-11-05T15:03:06.873001+00:00",
-   "title_ru": "google/skills",
-   "summary_ru": "Навыки агента для продуктов и технологий Google",
-   "description_ru": "Навыки агента для продуктов и технологий Google",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 85,
    "published_at": "2026-11-05T15:03:06.873001+00:00"
   },
   {
