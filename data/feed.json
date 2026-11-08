@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-11-07T13:38:52.546691+00:00",
+ "updated_at": "2026-11-08T13:57:25.878548+00:00",
  "meta": {
-  "fresh": 23,
-  "rejected": 10,
+  "fresh": 0,
+  "rejected": 29,
   "ai": 0
  },
  "items": [
@@ -35,78 +35,6 @@
    "title_ru": "cloudflare/security-audit-skill",
    "summary_ru": "Навыки кодировщика для многоэтапного аудита безопасности с независимо проверенными машиночитаемыми результатами.",
    "description_ru": "Навыки кодировщика для многоэтапного аудита безопасности с независимо проверенными машиночитаемыми результатами.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-07T13:38:52.546691+00:00"
-  },
-  {
-   "url": "https://github.com/sherlock-project/sherlock",
-   "url_key": "github.com/sherlock-project/sherlock",
-   "canonical_url": "https://github.com/sherlock-project/sherlock",
-   "title": "sherlock-project/sherlock",
-   "title_original": "sherlock-project/sherlock",
-   "description": "Hunt down social media accounts by username across social networks",
-   "image": "https://opengraph.githubassets.com/1/sherlock-project/sherlock",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/sherlock-project/sherlock"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 1761,
-   "source_score": 1761,
-   "found_at": "2026-11-07T13:38:52.546691+00:00",
-   "title_ru": "sherlock-project/sherlock",
-   "summary_ru": "Выслеживайте учетные записи социальных сетей по имени пользователя в социальных сетях",
-   "description_ru": "Выслеживайте учетные записи социальных сетей по имени пользователя в социальных сетях",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-07T13:38:52.546691+00:00"
-  },
-  {
-   "url": "https://github.com/milind-soni/OpenMausBot",
-   "url_key": "github.com/milind-soni/openmausbot",
-   "canonical_url": "https://github.com/milind-soni/OpenMausBot",
-   "title": "milind-soni/OpenMausBot",
-   "title_original": "milind-soni/OpenMausBot",
-   "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-   "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/milind-soni/OpenMausBot"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "automation",
-   "topic": "automation",
-   "topic_name": "Автоматизация",
-   "domain": "github.com",
-   "score": 1986,
-   "source_score": 1986,
-   "found_at": "2026-11-07T13:38:52.546691+00:00",
-   "title_ru": "milind-soni/OpenMausBot",
-   "summary_ru": "Альтернатива Grok Bot с открытым исходным кодом и виртуальной машиной, которую могут использовать боты.",
-   "description_ru": "Альтернатива Grok Bot с открытым исходным кодом и виртуальной машиной, которую могут использовать боты.",
    "translation_status": "generated",
    "why_it_matters_ru": "",
    "use_cases_ru": [],
@@ -906,42 +834,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-11-02T16:40:14.161040+00:00"
-  },
-  {
-   "url": "https://github.com/anthropics/skills",
-   "url_key": "github.com/anthropics/skills",
-   "canonical_url": "https://github.com/anthropics/skills",
-   "title": "anthropics/skills",
-   "title_original": "anthropics/skills",
-   "description": "Public repository for Agent Skills",
-   "image": "https://opengraph.githubassets.com/1/anthropics/skills",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anthropics/skills"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "ai-skills",
-   "topic": "ai-skills",
-   "topic_name": "AI-скиллы",
-   "domain": "github.com",
-   "score": 386,
-   "source_score": 386,
-   "found_at": "2026-11-07T13:38:52.546691+00:00",
-   "title_ru": "anthropics/skills",
-   "summary_ru": "Публичный репозиторий навыков агента",
-   "description_ru": "Публичный репозиторий навыков агента",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 90,
-   "published_at": "2026-11-07T13:38:52.546691+00:00"
   },
   {
    "url": "https://github.com/kornia/kornia",
