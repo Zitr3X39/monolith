@@ -1,9 +1,9 @@
 {
  "version": 2,
- "updated_at": "2026-11-08T13:57:25.878548+00:00",
+ "updated_at": "2026-11-09T16:57:59.540219+00:00",
  "meta": {
   "fresh": 0,
-  "rejected": 29,
+  "rejected": 31,
   "ai": 0
  },
  "items": [
@@ -404,42 +404,6 @@
    "published_at": "2026-11-03T14:44:16.412109+00:00"
   },
   {
-   "url": "https://github.com/pingdotgg/t3code",
-   "url_key": "github.com/pingdotgg/t3code",
-   "canonical_url": "https://github.com/pingdotgg/t3code",
-   "title": "pingdotgg/t3code",
-   "title_original": "pingdotgg/t3code",
-   "description": "Contribute to pingdotgg/t3code development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1/pingdotgg/t3code",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/pingdotgg/t3code"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 3216,
-   "source_score": 3216,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "pingdotgg/t3code",
-   "summary_ru": "Внесите свой вклад в разработку pingdotgg/t3code, создав учетную запись на GitHub.",
-   "description_ru": "Внесите свой вклад в разработку pingdotgg/t3code, создав учетную запись на GitHub.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
-  },
-  {
    "url": "https://github.com/scenario-labs/skills",
    "url_key": "github.com/scenario-labs/skills",
    "canonical_url": "https://github.com/scenario-labs/skills",
@@ -510,42 +474,6 @@
    "content_status": "ready",
    "quality_score": 97,
    "published_at": "2026-11-03T14:44:16.412109+00:00"
-  },
-  {
-   "url": "https://github.com/FlashML-org/FreeToken",
-   "url_key": "github.com/flashml-org/freetoken",
-   "canonical_url": "https://github.com/FlashML-org/FreeToken",
-   "title": "FlashML-org/FreeToken",
-   "title_original": "FlashML-org/FreeToken",
-   "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
-   "image": "https://opengraph.githubassets.com/1/FlashML-org/FreeToken",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/FlashML-org/FreeToken"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 654,
-   "source_score": 654,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "FlashML-org/FreeToken",
-   "summary_ru": "FreeToken переносит обслуживание модели в масштабе центра обработки данных на ваш рабочий стол. Запускайте масштабные модели локально, быстро и эффективно.",
-   "description_ru": "FreeToken переносит обслуживание модели в масштабе центра обработки данных на ваш рабочий стол. Запускайте масштабные модели локально, быстро и эффективно.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 96,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
   },
   {
    "url": "https://github.com/garrytan/gstack",
@@ -728,42 +656,6 @@
    "published_at": "2026-11-03T14:44:16.412109+00:00"
   },
   {
-   "url": "https://github.com/hyprwm/Hyprland",
-   "url_key": "github.com/hyprwm/hyprland",
-   "canonical_url": "https://github.com/hyprwm/Hyprland",
-   "title": "hyprwm/Hyprland",
-   "title_original": "hyprwm/Hyprland",
-   "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-   "image": "https://opengraph.githubassets.com/1/hyprwm/Hyprland",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/hyprwm/Hyprland"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 508,
-   "source_score": 508,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "hyprwm/Hyprland",
-   "summary_ru": "Hyprland — это независимый, легко настраиваемый, динамичный наборщик мозаики Wayland, который не жертвует своим внешним видом.",
-   "description_ru": "Hyprland — это независимый, легко настраиваемый, динамичный наборщик мозаики Wayland, который не жертвует своим внешним видом.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 93,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
-  },
-  {
    "url": "https://github.com/google/skills",
    "url_key": "github.com/google/skills",
    "canonical_url": "https://github.com/google/skills",
@@ -798,78 +690,6 @@
    "content_status": "ready",
    "quality_score": 91,
    "published_at": "2026-11-07T13:38:52.546691+00:00"
-  },
-  {
-   "url": "https://github.com/paperclipai/paperclip",
-   "url_key": "github.com/paperclipai/paperclip",
-   "canonical_url": "https://github.com/paperclipai/paperclip",
-   "title": "paperclipai/paperclip",
-   "title_original": "paperclipai/paperclip",
-   "description": "The open-source app everyone uses to manage agents at work",
-   "image": "https://opengraph.githubassets.com/1/paperclipai/paperclip",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/paperclipai/paperclip"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 451,
-   "source_score": 451,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "paperclipai/paperclip",
-   "summary_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
-   "description_ru": "Приложение с открытым исходным кодом, которое каждый использует для управления агентами на работе.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 91,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
-  },
-  {
-   "url": "https://github.com/kornia/kornia",
-   "url_key": "github.com/kornia/kornia",
-   "canonical_url": "https://github.com/kornia/kornia",
-   "title": "kornia/kornia",
-   "title_original": "kornia/kornia",
-   "description": "🐍 Geometric Computer Vision Library for Spatial AI",
-   "image": "https://opengraph.githubassets.com/1/kornia/kornia",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/kornia/kornia"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 412,
-   "source_score": 412,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "kornia/kornia",
-   "summary_ru": "🐍 Библиотека геометрического компьютерного зрения для пространственного ИИ",
-   "description_ru": "🐍 Библиотека геометрического компьютерного зрения для пространственного ИИ",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 90,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
   },
   {
    "url": "https://github.com/astral-sh/ruff",
@@ -1086,78 +906,6 @@
    "content_status": "ready",
    "quality_score": 88,
    "published_at": "2026-11-04T14:56:42.922565+00:00"
-  },
-  {
-   "url": "https://github.com/karpathy/nanochat",
-   "url_key": "github.com/karpathy/nanochat",
-   "canonical_url": "https://github.com/karpathy/nanochat",
-   "title": "karpathy/nanochat",
-   "title_original": "karpathy/nanochat",
-   "description": "The best ChatGPT that $100 can buy.",
-   "image": "https://opengraph.githubassets.com/1/karpathy/nanochat",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/karpathy/nanochat"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "vibecoding",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 325,
-   "source_score": 325,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "karpathy/nanochat",
-   "summary_ru": "Лучший ChatGPT, который можно купить за 100 долларов.",
-   "description_ru": "Лучший ChatGPT, который можно купить за 100 долларов.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
-  },
-  {
-   "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
-   "url_key": "rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
-   "canonical_url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
-   "title": "Postgres 19 is late because so many more bugs are being found now",
-   "title_original": "Postgres 19 is late because so many more bugs are being found now",
-   "description": "Over the past decade, the timing of PostgreSQL major releases has become very predictable: no earlier than the middle of September, and no l...",
-   "image": "",
-   "media_kind": "fallback",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "rhaas.blogspot.com",
-   "score": 740,
-   "source_score": 740,
-   "found_at": "2026-11-02T16:40:14.161040+00:00",
-   "title_ru": "Postgres 19 опаздывает, потому что сейчас обнаруживается гораздо больше ошибок",
-   "summary_ru": "За последнее десятилетие сроки выхода основных релизов PostgreSQL стали весьма предсказуемыми: не раньше середины сентября и не раньше...",
-   "description_ru": "За последнее десятилетие сроки выхода основных релизов PostgreSQL стали весьма предсказуемыми: не раньше середины сентября и не раньше...",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 88,
-   "published_at": "2026-11-02T16:40:14.161040+00:00"
   }
  ]
 }

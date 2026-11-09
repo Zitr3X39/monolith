@@ -1,7 +1,55 @@
 {
  "version": 1,
- "updated_at": "2026-11-08T19:06:45.568556+00:00",
+ "updated_at": "2026-11-09T16:57:59+00:00",
  "items": [
+  {
+   "url": "https://t.me/Oskar_Hartmann",
+   "url_key": "t.me/oskar_hartmann",
+   "title": "t.me",
+   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
+   "note": "",
+   "domain": "t.me",
+   "category": "automation",
+   "type": "telegram",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-08T19:06:45.568422+00:00"
+  },
+  {
+   "url": "https://t.me/mtokovininchat",
+   "url_key": "t.me/mtokovininchat",
+   "title": "t.me",
+   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
+   "note": "",
+   "domain": "t.me",
+   "category": "automation",
+   "type": "telegram",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-08T19:06:45.568385+00:00"
+  },
+  {
+   "url": "https://t.me/yandexbusiness",
+   "url_key": "t.me/yandexbusiness",
+   "title": "t.me",
+   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
+   "note": "",
+   "domain": "t.me",
+   "category": "automation",
+   "type": "telegram",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-08T19:06:45.568313+00:00"
+  },
   {
    "url": "https://designspiration.com/",
    "url_key": "designspiration.com/",
@@ -247,7 +295,7 @@
    "stars": 0,
    "enriched": false,
    "added_at": "2026-09-20T13:43:22.235Z",
-   "desc_tries": 49
+   "desc_tries": 50
   },
   {
    "url": "https://badvino-ctrl.github.io/IIOL/design/v77.html",
@@ -1892,54 +1940,6 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
-  },
-  {
-   "url": "https://t.me/yandexbusiness",
-   "url_key": "t.me/yandexbusiness",
-   "title": "t.me",
-   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
-   "note": "",
-   "domain": "t.me",
-   "category": "automation",
-   "type": "telegram",
-   "source": "Telegram-бот",
-   "tags": [],
-   "favorite": false,
-   "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-08T19:06:45.568313+00:00"
-  },
-  {
-   "url": "https://t.me/mtokovininchat",
-   "url_key": "t.me/mtokovininchat",
-   "title": "t.me",
-   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
-   "note": "",
-   "domain": "t.me",
-   "category": "automation",
-   "type": "telegram",
-   "source": "Telegram-бот",
-   "tags": [],
-   "favorite": false,
-   "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-08T19:06:45.568385+00:00"
-  },
-  {
-   "url": "https://t.me/Oskar_Hartmann",
-   "url_key": "t.me/oskar_hartmann",
-   "title": "t.me",
-   "description": "💻ГДЕ ИСКАТЬ КЛИЕНТОВ НА ВАЙБКОД\n\nНаучиться вайбкодить не так тяжело, но найти клиентов, которые готовы тебе за это хоть что-то заплатить — тяжелее.\n\nСобрал для вас разные идеи которые помогут монетизировать ваши навыки.\n",
-   "note": "",
-   "domain": "t.me",
-   "category": "automation",
-   "type": "telegram",
-   "source": "Telegram-бот",
-   "tags": [],
-   "favorite": false,
-   "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-08T19:06:45.568422+00:00"
   }
  ]
 }
