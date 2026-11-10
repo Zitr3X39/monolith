@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated_at": "2026-11-09T16:57:59.540219+00:00",
+ "updated_at": "2026-11-10T15:17:43.151119+00:00",
  "meta": {
   "fresh": 0,
   "rejected": 31,
@@ -296,114 +296,6 @@
    "published_at": "2026-11-04T14:56:42.922565+00:00"
   },
   {
-   "url": "https://github.com/JustVugg/colibri",
-   "url_key": "github.com/justvugg/colibri",
-   "canonical_url": "https://github.com/JustVugg/colibri",
-   "title": "JustVugg/colibri",
-   "title_original": "JustVugg/colibri",
-   "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
-   "image": "https://opengraph.githubassets.com/1/JustVugg/colibri",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/JustVugg/colibri"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "gamedev",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "github.com",
-   "score": 803,
-   "source_score": 803,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "JustVugg/colibri",
-   "summary_ru": "Иерархический механизм вывода для передовых моделей MoE: горячие эксперты по графическому процессору (CUDA, Vulkan), теплые в оперативной памяти, холодные потоковые данные из NVMe. Написан на C и работает на уже имеющемся у вас оборудовании.",
-   "description_ru": "Иерархический механизм вывода для передовых моделей MoE: горячие эксперты по графическому процессору (CUDA, Vulkan), теплые в оперативной памяти, холодные потоковые данные из NVMe. Написан на C и работает на уже имеющемся у вас оборудовании",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
-  },
-  {
-   "url": "https://github.com/anomalyco/hex",
-   "url_key": "github.com/anomalyco/hex",
-   "canonical_url": "https://github.com/anomalyco/hex",
-   "title": "anomalyco/hex",
-   "title_original": "anomalyco/hex",
-   "description": "Local voice dictation for mac, windows and linux",
-   "image": "https://opengraph.githubassets.com/1/anomalyco/hex",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/anomalyco/hex"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "video",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 1134,
-   "source_score": 1134,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "anomalyco/hex",
-   "summary_ru": "Локальный голосовой диктовку для Mac, Windows и Linux",
-   "description_ru": "Локальный голосовой диктовку для Mac, Windows и Linux",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
-  },
-  {
-   "url": "https://rikiyat.github.io/blog/weight-space-programming",
-   "url_key": "rikiyat.github.io/blog/weight-space-programming",
-   "canonical_url": "https://rikiyat.github.io/blog/weight-space-programming",
-   "title": "Astra can read and write weights to improve Qwen",
-   "title_original": "Astra can read and write weights to improve Qwen",
-   "description": "We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms.",
-   "image": "https://rikiyat.github.io/images/blog/weight-space-programming.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://rikiyat.github.io/blog/weight-space-programming"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "other",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "rikiyat.github.io",
-   "score": 2872,
-   "source_score": 2872,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "Астра может читать и записывать веса, чтобы улучшить Квен.",
-   "summary_ru": "Мы обнаружили, что передовые LLM на удивление хороши в чтении и записи весов нейронных сетей, намного превосходя то, что мы ожидаем от людей или традиционных алгоритмов.",
-   "description_ru": "Мы обнаружили, что передовые LLM на удивление хороши в чтении и записи весов нейронных сетей, намного превосходя то, что мы ожидаем от людей или традиционных алгоритмов.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 100,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
-  },
-  {
    "url": "https://github.com/scenario-labs/skills",
    "url_key": "github.com/scenario-labs/skills",
    "canonical_url": "https://github.com/scenario-labs/skills",
@@ -438,42 +330,6 @@
    "content_status": "ready",
    "quality_score": 97,
    "published_at": "2026-11-05T15:03:06.873001+00:00"
-  },
-  {
-   "url": "https://github.com/p-e-w/heretic",
-   "url_key": "github.com/p-e-w/heretic",
-   "canonical_url": "https://github.com/p-e-w/heretic",
-   "title": "p-e-w/heretic",
-   "title_original": "p-e-w/heretic",
-   "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
-   "image": "https://opengraph.githubassets.com/1/p-e-w/heretic",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/p-e-w/heretic"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 699,
-   "source_score": 699,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "p-e-w/heretic",
-   "summary_ru": "Модификация языковой модели без обучения: устранение цензуры, подавление неряшливости, уменьшение подхалимства и многое другое.",
-   "description_ru": "Модификация языковой модели без обучения: устранение цензуры, подавление неряшливости, уменьшение подхалимства и многое другое.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 97,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
   },
   {
    "url": "https://github.com/garrytan/gstack",
@@ -620,42 +476,6 @@
    "published_at": "2026-11-07T13:38:52.546691+00:00"
   },
   {
-   "url": "https://github.com/shiyu-coder/Kronos",
-   "url_key": "github.com/shiyu-coder/kronos",
-   "canonical_url": "https://github.com/shiyu-coder/Kronos",
-   "title": "shiyu-coder/Kronos",
-   "title_original": "shiyu-coder/Kronos",
-   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-   "image": "https://opengraph.githubassets.com/1/shiyu-coder/Kronos",
-   "media_kind": "image",
-   "source": "GitHub Trending",
-   "sources": [
-    {
-     "name": "GitHub Trending",
-     "url": "https://github.com/shiyu-coder/Kronos"
-    }
-   ],
-   "source_count": 1,
-   "type": "github",
-   "category": "other",
-   "topic": "dev-tools",
-   "topic_name": "Инструменты разработки",
-   "domain": "github.com",
-   "score": 503,
-   "source_score": 503,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "shiyu-coder/Kronos",
-   "summary_ru": "Кронос: базовая модель языка финансовых рынков",
-   "description_ru": "Кронос: базовая модель языка финансовых рынков",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 93,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
-  },
-  {
    "url": "https://github.com/google/skills",
    "url_key": "github.com/google/skills",
    "canonical_url": "https://github.com/google/skills",
@@ -798,42 +618,6 @@
    "content_status": "ready",
    "quality_score": 89,
    "published_at": "2026-11-04T14:56:42.922565+00:00"
-  },
-  {
-   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
-   "url_key": "honnibal.dev/blog/astra-read-write-misleading",
-   "canonical_url": "https://honnibal.dev/blog/astra-read-write-misleading",
-   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "title_original": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "description": "The experiments that read raw weights and the ones that fix Qwen use completely different techniques.",
-   "image": "https://honnibal.dev/social.png",
-   "media_kind": "image",
-   "source": "Hacker News",
-   "sources": [
-    {
-     "name": "Hacker News",
-     "url": "https://honnibal.dev/blog/astra-read-write-misleading"
-    }
-   ],
-   "source_count": 1,
-   "type": "site",
-   "category": "other",
-   "topic": "ai-agents",
-   "topic_name": "AI / агенты",
-   "domain": "honnibal.dev",
-   "score": 358,
-   "source_score": 358,
-   "found_at": "2026-11-03T14:44:16.412109+00:00",
-   "title_ru": "Сообщение «Астра может читать и записывать веса, чтобы улучшить Квен» вводит в заблуждение.",
-   "summary_ru": "Эксперименты, считывающие необработанные веса, и эксперименты, фиксирующие Квен, используют совершенно разные методы.",
-   "description_ru": "Эксперименты, считывающие необработанные веса, и эксперименты, фиксирующие Квен, используют совершенно разные методы.",
-   "translation_status": "generated",
-   "why_it_matters_ru": "",
-   "use_cases_ru": [],
-   "caveats_ru": [],
-   "content_status": "ready",
-   "quality_score": 89,
-   "published_at": "2026-11-03T14:44:16.412109+00:00"
   },
   {
    "url": "https://github.com/prometheus/prometheus",
