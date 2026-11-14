@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-14T13:51:24+00:00",
+ "updated_at": "2026-11-14T15:00:33.578654+00:00",
  "items": [
   {
    "url": "https://t.me/Oskar_Hartmann",
@@ -1940,6 +1940,54 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
+  },
+  {
+   "url": "https://github.com/storytold/craft-anything",
+   "url_key": "github.com/storytold/craft-anything",
+   "title": "github.com",
+   "description": "4 штуки, которые копируют за нас что угодно: сайт, игру или чужой ролик. Три из них бесплатные.\n\n1.  \n  - Хит GitHub от команды, которая уже копировала софт Adobe. Пишем «Повтори этот сайт». Claude Code собирает свою вер",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-14T15:00:33.578329+00:00"
+  },
+  {
+   "url": "https://github.com/JuneYaooo/rea-video",
+   "url_key": "github.com/juneyaooo/rea-video",
+   "title": "github.com",
+   "description": "4 штуки, которые копируют за нас что угодно: сайт, игру или чужой ролик. Три из них бесплатные.\n\n1. https://github.com/storytold/craft-anything.\n  - Хит GitHub от команды, которая уже копировала софт Adobe. Пишем «Повтор",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-14T15:00:33.578432+00:00"
+  },
+  {
+   "url": "https://github.com/Nutlope/hallmark",
+   "url_key": "github.com/nutlope/hallmark",
+   "title": "github.com",
+   "description": "4 штуки, которые копируют за нас что угодно: сайт, игру или чужой ролик. Три из них бесплатные.\n\n1. https://github.com/storytold/craft-anything.\n  - Хит GitHub от команды, которая уже копировала софт Adobe. Пишем «Повтор",
+   "note": "",
+   "domain": "github.com",
+   "category": "vibecoding",
+   "type": "github",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-14T15:00:33.578506+00:00"
   }
  ]
 }
