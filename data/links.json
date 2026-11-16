@@ -1,7 +1,23 @@
 {
  "version": 1,
- "updated_at": "2026-11-16T08:06:20.420562+00:00",
+ "updated_at": "2026-11-16T16:35:57+00:00",
  "items": [
+  {
+   "url": "https://github.com/TelegramMessenger/widget-sandbox",
+   "url_key": "github.com/telegrammessenger/widget-sandbox",
+   "title": "github.com",
+   "description": "4 штуки для своего бота: сервер, оплата, виджеты и браузер, который не палится. Три из них бесплатные.\n\n1. Oracle Cloud Always Free. Навсегда, плюс $300 на 30 дней.\n- ARM-сервер на 2 ядра и 12 ГБ памяти плюс 2 мини-машин",
+   "note": "",
+   "domain": "github.com",
+   "category": "video",
+   "type": "github",
+   "source": "Telegram-бот",
+   "tags": [],
+   "favorite": false,
+   "stars": 0,
+   "enriched": false,
+   "added_at": "2026-11-16T08:06:20.420393+00:00"
+  },
   {
    "url": "https://github.com/Nutlope/hallmark",
    "url_key": "github.com/nutlope/hallmark",
@@ -343,7 +359,7 @@
    "stars": 0,
    "enriched": false,
    "added_at": "2026-09-20T13:43:22.235Z",
-   "desc_tries": 56
+   "desc_tries": 57
   },
   {
    "url": "https://badvino-ctrl.github.io/IIOL/design/v77.html",
@@ -1988,22 +2004,6 @@
    "stars": 1413,
    "enriched": true,
    "added_at": "2026-08-06T09:23:05.321Z"
-  },
-  {
-   "url": "https://github.com/TelegramMessenger/widget-sandbox",
-   "url_key": "github.com/telegrammessenger/widget-sandbox",
-   "title": "github.com",
-   "description": "4 штуки для своего бота: сервер, оплата, виджеты и браузер, который не палится. Три из них бесплатные.\n\n1. Oracle Cloud Always Free. Навсегда, плюс $300 на 30 дней.\n- ARM-сервер на 2 ядра и 12 ГБ памяти плюс 2 мини-машин",
-   "note": "",
-   "domain": "github.com",
-   "category": "video",
-   "type": "github",
-   "source": "Telegram-бот",
-   "tags": [],
-   "favorite": false,
-   "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-16T08:06:20.420393+00:00"
   }
  ]
 }
