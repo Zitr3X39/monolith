@@ -1,12 +1,12 @@
 {
  "version": 1,
- "updated_at": "2026-11-27T21:45:50.467Z",
+ "updated_at": "2026-11-28T15:53:02+00:00",
  "items": [
   {
    "url": "https://oss.girl-agent.com/",
    "url_key": "oss.girl-agent.com/",
-   "title": "oss.girl-agent.com",
-   "description": "",
+   "title": "girl-agent",
+   "description": "Не ассистент и не бот: ИИ-девушка с памятью, сном, настроением и личными границами.",
    "note": "",
    "domain": "oss.girl-agent.com",
    "category": "vibecoding",
@@ -15,24 +15,26 @@
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-27T21:45:29.290Z"
+   "enriched": true,
+   "added_at": "2026-11-27T21:45:29.290Z",
+   "desc_tries": 1
   },
   {
    "url": "https://dopamine.annenkov.me/",
    "url_key": "dopamine.annenkov.me/",
-   "title": "dopamine.annenkov.me",
-   "description": "",
+   "title": "Dopamine Talk — Clear, Bold, Dopamine-Driven AI Agent Skills",
+   "description": "Bring back dopamine talk with AI coding agents. 5 zero-dependency Markdown skills for chat, planning, engineering, changelogs & READMEs across Claude Code, Codex, Cursor, Antigravity & Gemini CLI (EN & RU).",
    "note": "",
    "domain": "dopamine.annenkov.me",
-   "category": "other",
+   "category": "ai-skills",
    "type": "site",
    "source": "Вручную",
    "tags": [],
    "favorite": false,
    "stars": 0,
-   "enriched": false,
-   "added_at": "2026-11-27T21:44:06.820Z"
+   "enriched": true,
+   "added_at": "2026-11-27T21:44:06.820Z",
+   "desc_tries": 1
   },
   {
    "url": "https://github.com/TelegramMessenger/widget-sandbox",
@@ -391,7 +393,7 @@
    "stars": 0,
    "enriched": false,
    "added_at": "2026-09-20T13:43:22.235Z",
-   "desc_tries": 68
+   "desc_tries": 69
   },
   {
    "url": "https://badvino-ctrl.github.io/IIOL/design/v77.html",
